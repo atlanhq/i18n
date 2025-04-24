@@ -1,0 +1,5 @@
+@atlanhq:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=${ORG_PAT_GITHUB}
+always-auth=true
+auto-install-peers=true
+ignore-workspace-root-check=true

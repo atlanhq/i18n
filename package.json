@@ -1,0 +1,61 @@
+{
+    "name": "@atlan/i18n",
+    "version": "0.1.0",
+    "description": "Internationalization package for Atlan's frontend applications",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "src/locales"
+    ],
+    "exports": {
+        ".": {
+            "require": "./dist/index.js",
+            "import": "./dist/index.mjs",
+            "types": "./dist/index.d.ts"
+        },
+        "./locales/*": "./src/locales/*"
+    },
+    "scripts": {
+        "build": "tsup src/index.ts --format cjs,esm --dts",
+        "lint": "eslint .",
+        "translate": "node scripts/translationScript.mjs",
+        "format": "prettier --write \"src/**/*.{ts,json}\"",
+        "prepublishOnly": "pnpm build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/atlanhq/i18n.git"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com",
+        "access": "restricted"
+    },
+    "keywords": [
+        "i18n",
+        "internationalization",
+        "localization",
+        "translations",
+        "atlan"
+    ],
+    "author": "Atlan",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/atlanhq/i18n/issues"
+    },
+    "homepage": "https://github.com/atlanhq/i18n#readme",
+    "devDependencies": {
+        "typescript": "^5.0.0",
+        "@types/node": "^20.0.0",
+        "jest": "^29.0.0",
+        "@types/jest": "^29.0.0",
+        "eslint": "^8.0.0",
+        "vue-i18n-extract": "^2.0.0",
+        "glob": "^8.1.0",
+        "prettier": "^3.0.0",
+        "tsup": "^8.0.0",
+        "@typescript-eslint/eslint-plugin": "^6.0.0",
+        "@typescript-eslint/parser": "^6.0.0"
+    }
+}

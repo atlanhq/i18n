@@ -1,5 +1,5 @@
 {
-    "name": "@atlan/i18n",
+    "name": "@atlanhq/i18n",
     "version": "0.1.0",
     "description": "Internationalization package for Atlan's frontend applications",
     "main": "dist/index.js",

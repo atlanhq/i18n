@@ -1,6 +1,6 @@
-# Contributing to @atlan/i18n
+# Contributing to @ atlanhq/i18n
 
-First off, thank you for considering contributing to @atlan/i18n! It's people like you that make it a great tool for everyone.
+First off, thank you for considering contributing to @ atlanhq/i18n! It's people like you that make it a great tool for everyone.
 
 ## Code of Conduct
 
@@ -117,4 +117,4 @@ By participating in this project, you are expected to uphold our Code of Conduct
 - Open a new issue for questions or problems
 - Tag maintainers for urgent matters
 
-Thank you for contributing to @atlan/i18n! 
+Thank you for contributing to @ atlanhq/i18n! 

@@ -1,17 +1,17 @@
-# @atlan/i18n
+# @ atlanhq/i18n
 
 This package contains internationalization resources for Atlan frontend applications.
 
 ## Installation
 
 ```bash
-npm install @atlan/i18n
+npm install @ atlanhq/i18n
 ```
 
 ## Usage
 
 ```typescript
-import i18n, { en, fr, jp, pt } from '@atlan/i18n';
+import i18n, { en, fr, jp, pt } from '@ atlanhq/i18n';
 
 // Use individual locales
 console.log(en.some_key);

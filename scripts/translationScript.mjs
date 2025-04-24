@@ -30,12 +30,18 @@ async function translateTextBatch(texts, targetLanguage, inputPrompt) {
         },
         method: 'POST',
         body: JSON.stringify({
-            model: 'gpt-4o-mini',
+            model: 'gpt-4-turbo-preview',
             messages: [{ role: 'user', content: prompt }],
             temperature: 1,
         }),
     })
+    if (!response.ok) {
+        throw new Error(`OpenAI API error: ${response.status} ${response.statusText}`)
+    }
     const data = await response.json()
+    if (!data.choices?.[0]?.message?.content) {
+        throw new Error('Invalid response from OpenAI API')
+    }
     return JSON.parse(data.choices[0].message.content.trim())
 }
 
@@ -76,7 +82,8 @@ async function translateJson(data, targetLanguage) {
                 translatedData[key] = translations[index] || data[key]
             })
         } catch (e) {
-            //
+            console.error(`Error translating batch: ${e.message}`)
+            return textsToTranslate // fallback to original text on error
         }
     }
     return translatedData
@@ -91,6 +98,7 @@ async function translateLocalizationJson(missingEnglishKeys, targetLanguage) {
     try {
         return await translateJson(missingEnglishKeys, targetLanguage)
     } catch (error) {
+        console.error(`Error translating to ${targetLanguage}: ${error.message}`)
         return {}
     }
 }

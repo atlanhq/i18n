@@ -1,50 +1,39 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
+import { createI18n } from 'vue-i18n'
 
 // Export all locales individually for direct access
-export { default as en } from './locales/en.json';
-export { default as es } from './locales/es.json';
-export { default as fr } from './locales/fr.json';
-export { default as de } from './locales/de.json';
-export { default as ja } from './locales/ja.json';
-export { default as ko } from './locales/ko.json';
-export { default as zh } from './locales/zh.json';
+export { default as en } from './locales/en/default.json'
+export { default as fr } from './locales/fr/default.json'
+export { default as jp } from './locales/jp/default.json'
+export { default as pt } from './locales/pt/default.json'
 
-// Export the resources object for i18next initialization
-export const resources = {
-  en: { translation: require('./locales/en.json') },
-  es: { translation: require('./locales/es.json') },
-  fr: { translation: require('./locales/fr.json') },
-  de: { translation: require('./locales/de.json') },
-  ja: { translation: require('./locales/ja.json') },
-  ko: { translation: require('./locales/ko.json') },
-  zh: { translation: require('./locales/zh.json') },
-} as const;
+// Export the messages object for vue-i18n initialization
+export const messages = {
+    en: require('./locales/en/default.json'),
+    fr: require('./locales/fr/default.json'),
+    pt: require('./locales/pt/default.json'),
+    jp: require('./locales/jp/default.json'),
+} as const
 
-export type LocaleKey = keyof typeof resources;
+export type LocaleKey = keyof typeof messages
 
 // Export configuration constants
-export const defaultNS = 'translation';
-export const fallbackLng = 'en';
+export const fallbackLocale = 'en'
 
-// Export a helper to initialize i18next with our configuration
-export const initI18n = (options?: {
-  lng?: LocaleKey;
-  debug?: boolean;
-  interpolation?: Record<string, unknown>;
+// Export a helper to initialize vue-i18n with our configuration
+export const createI18nInstance = (options?: {
+    locale?: LocaleKey
+    fallbackLocale?: LocaleKey
+    legacy?: boolean
+    globalInjection?: boolean
 }) => {
-  return i18n.use(initReactI18next).init({
-    resources,
-    lng: options?.lng || fallbackLng,
-    fallbackLng,
-    defaultNS,
-    debug: options?.debug || false,
-    interpolation: {
-      escapeValue: false,
-      ...options?.interpolation,
-    },
-  });
-};
+    return createI18n({
+        locale: options?.locale || fallbackLocale,
+        fallbackLocale: options?.fallbackLocale || fallbackLocale,
+        messages,
+        legacy: options?.legacy ?? false,
+        globalInjection: options?.globalInjection ?? true,
+    })
+}
 
-// Export the i18n instance as default
-export default i18n;
+// Export default instance
+export default createI18nInstance()

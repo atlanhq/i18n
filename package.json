@@ -19,6 +19,7 @@
     },
     "scripts": {
         "build": "tsup src/index.ts --format cjs,esm --dts",
+        "prepare": "pnpm build",
         "test": "jest",
         "lint": "eslint .",
         "translate": "node scripts/translationScript.mjs",

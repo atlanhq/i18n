@@ -5,6 +5,7 @@ import path from 'path'
 import { glob } from 'glob'
 
 const OPENAPI_API_KEY = process.env.OPENAPI_API_KEY
+const BASE_DIRECTORY = process.env.BASE_DIRECTORY
 
 const OPENAI_API_URL = 'https://api.openai.com/v1/chat/completions'
 
@@ -118,14 +119,14 @@ async function loadLocales(pattern) {
 
 ; (async function () {
     const report = await VueI18NExtract.createI18NReport({
-        vueFiles: './src/**/*.?(js|vue|ts)',
-        languageFiles: './src/locales/**/*.json',
+        vueFiles: `./frontend/src/**/*.?(js|vue|ts)`,
+        languageFiles: `${BASE_DIRECTORY}/src/locales/**/*.json`,
     })
 
     // `vue-i18n-extract` mishandles single quotes within `t` function calls, and double escapes them. As a result
     // they aren't matched to an existing string within the language file, so we manually remove those backslashes
     // and re-filter out entries.
-    const allLocales = await loadLocales('./src/locales/**/*.json')
+    const allLocales = await loadLocales(`${BASE_DIRECTORY}/src/locales/**/*.json`)
 
     const missingKeys = Object.groupBy(
         report.missingKeys
@@ -143,7 +144,7 @@ async function loadLocales(pattern) {
     for (const language in missingKeys) {
         if (language === 'en') {
             fs.writeFileSync(
-                './src/locales/en/default.json',
+                `${BASE_DIRECTORY}/src/locales/en/default.json`,
                 JSON.stringify(
                     {
                         ...allLocales[language],
@@ -165,7 +166,7 @@ async function loadLocales(pattern) {
             )
 
             fs.writeFileSync(
-                `./src/locales/${language}/default.json`,
+                `${BASE_DIRECTORY}/src/locales/${language}/default.json`,
                 JSON.stringify(
                     {
                         ...allLocales[language],

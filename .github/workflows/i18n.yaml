@@ -4,6 +4,9 @@ on:
     schedule:
         - cron: '0 1 * * *'
     workflow_dispatch:
+    push:
+      branches:
+        - fix-i18n-script
 
 permissions:
     id-token: write
@@ -20,63 +23,10 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            # First checkout the frontend repo to scan for new strings
-            - name: Checkout frontend repository
+            - name: Checkout i18n repository
               uses: actions/checkout@v4
               with:
-                  repository: ${{ env.FRONTEND_REPO }}
-                  token: ${{ secrets.ORG_PAT_GITHUB }}
-                  path: frontend
-                  sparse-checkout: |
-                    src/
-                  sparse-checkout-cone-mode: false
-
-            - name: Extract i18n strings
-              run: |
-                  # Create a temporary file for all matches
-                  touch all-matches.txt
-
-                  # Find all relevant files
-                  find frontend/src -type f \( -name "*.ts" -o -name "*.tsx" -o -name "*.vue" -o -name "*.js" -o -name "*.jsx" \) | while read -r file; do
-                      # Extract strings from t() function calls
-                      grep -h -o -E "t\(['\"]([^'\"]*)['\"]" "$file" 2>/dev/null | sed -E "s/t\(['\"]([^'\"]*)['\"].*/\1/" >> all-matches.txt
-                      
-                      # Extract strings from $t() function calls
-                      grep -h -o -E "\\\$t\(['\"]([^'\"]*)['\"]" "$file" 2>/dev/null | sed -E "s/\\\$t\(['\"]([^'\"]*)['\"].*/\1/" >> all-matches.txt
-                      
-                      # Extract strings from template literals in t() and $t()
-                      grep -h -o -E "[t\$t]\(`[^`]*`" "$file" 2>/dev/null | sed -E "s/[t\$t]\(`([^`]*)`/\1/" >> all-matches.txt
-                      
-                      # Extract strings from t() with dynamic values
-                      grep -h -o -E "t\(['\"][^'\"]*\{[^}]*\}[^'\"]*['\"]" "$file" 2>/dev/null | sed -E "s/t\(['\"]([^'\"]*)['\"].*/\1/" >> all-matches.txt
-                  done
-
-                  # Sort unique entries and remove empty lines
-                  sort -u all-matches.txt | grep -v '^$' > extracted-strings.txt
-
-                  # Print some debug information
-                  echo "Found $(wc -l < extracted-strings.txt) unique strings"
-                  echo "Sample of extracted strings:"
-                  head -n 5 extracted-strings.txt
-
-                  # Convert to JSON format
-                  echo "{" > extracted-strings.json
-                  while IFS= read -r line; do
-                    # Escape any special characters in the JSON
-                    escaped_line=$(echo "$line" | sed 's/\\/\\\\/g' | sed 's/"/\\"/g')
-                    echo "  \"$escaped_line\": \"$escaped_line\"," >> extracted-strings.json
-                  done < extracted-strings.txt
-                  sed '$ s/,$//' extracted-strings.json > temp.json && mv temp.json extracted-strings.json
-                  echo "}" >> extracted-strings.json
-
-                  # Validate JSON format
-                  if ! jq empty extracted-strings.json 2>/dev/null; then
-                    echo "Error: Invalid JSON generated"
-                    exit 1
-                  fi
-
-                  # Cleanup temporary files
-                  rm all-matches.txt
+                ref: ${{ env.BASE_BRANCH }}
 
             # Now checkout the i18n repo
             - name: Check if branch exists in i18n repo
@@ -85,19 +35,11 @@ jobs:
                   repository: ${{ github.repository }}
                   branch: ${{ env.BRANCH_NAME }}
 
-            - name: Checkout i18n repository
-              uses: actions/checkout@v4
-              with:
-                  path: i18n
-                  ref: ${{ env.BASE_BRANCH }}
-
             - name: Create & checkout branch in i18n repo
               if: steps.check-branch-exists.outputs.exists == 'false'
-              working-directory: i18n
               run: git checkout -b $BRANCH_NAME
 
             - name: Configure git
-              working-directory: i18n
               run: |
                   git config --global user.name "github-actions[bot]"
                   git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -113,29 +55,30 @@ jobs:
                   node-version: 22
                   cache: 'pnpm'
 
-            - name: Setup .npmrc with secrets
-              working-directory: i18n
-              run: |
-                  cp .npmrc.template .npmrc
-                  sed -i "s|\${ORG_PAT_GITHUB}|${{ secrets.ORG_PAT_GITHUB }}|g" .npmrc
-
             - name: Install i18n packages
-              working-directory: i18n
-              run: pnpm install --frozen-lockfile --prod=false
+              run: pnpm install
+              env:
+                ORG_PAT_GITHUB: ${{ secrets.ORG_PAT_GITHUB }}
+
+            # First checkout the frontend repo to scan for new strings
+            - name: Checkout frontend repository
+              uses: actions/checkout@v4
+              with:
+                repository: ${{ env.FRONTEND_REPO }}
+                token: ${{ secrets.ORG_PAT_GITHUB }}
+                path: frontend
 
             - name: Run translation script
-              working-directory: i18n
-              run: node scripts/translationScript.mjs ../extracted-strings.json
+              run: node scripts/translationScript.mjs
               env:
                   OPENAPI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+                  BASE_DIRECTORY: ${{ github.workspace }}
 
             - name: Run prettier
-              working-directory: i18n
               run: pnpm prettier --write src/locales/**/*.json
 
             - name: Check for changes
               id: check_changes
-              working-directory: i18n
               run: |
                   if [[ -n "$(git status --porcelain)" ]]; then
                     echo "has_changes=true" >> $GITHUB_OUTPUT
@@ -147,7 +90,6 @@ jobs:
 
             - name: Stage, commit and push changes
               if: steps.check_changes.outputs.has_changes == 'true'
-              working-directory: i18n
               run: |
                   git add .
                   git commit -m "chore: update i18n strings" -m "Automated extraction of new i18n strings from frontend"
@@ -155,7 +97,6 @@ jobs:
 
             - name: Create PR if needed
               if: steps.check_branch-exists.outputs.exists == 'false' && steps.check_changes.outputs.has_changes == 'true'
-              working-directory: i18n
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |

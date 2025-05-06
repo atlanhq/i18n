@@ -91,6 +91,7 @@ jobs:
             - name: Stage, commit and push changes
               if: steps.check_changes.outputs.has_changes == 'true'
               run: |
+                  rm -rf frontend
                   git add .
                   git commit -m "chore: update i18n strings" -m "Automated extraction of new i18n strings from frontend"
                   git push origin $BRANCH_NAME

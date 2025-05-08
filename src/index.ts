@@ -27,11 +27,12 @@ export const createI18nInstance = (options?: {
     fallbackLocale?: LocaleKey
     legacy?: boolean
     globalInjection?: boolean
+    messages?: Record<LocaleKey, Record<string, string>>
 }) => {
     return createI18n({
         locale: options?.locale || fallbackLocale,
         fallbackLocale: options?.fallbackLocale || fallbackLocale,
-        messages,
+        messages: options?.messages || messages,
         legacy: options?.legacy ?? false,
         globalInjection: options?.globalInjection ?? true,
     })

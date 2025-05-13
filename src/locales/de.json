@@ -7604,5 +7604,19 @@
     "Stage type": "Stufentyp",
     "Stage URL": "Stufen-URL",
     "Stage region": "Stufenregion",
-    "Stage integration": "Stufenintegration"
+    "Stage integration": "Stufenintegration",
+    "Can't find team link?": "Kannst du den Team-Link nicht finden?",
+    "What's your primary role?": "Was ist deine Hauptrolle?",
+    "Add your slack workspace's member ID": "Füge die Mitglieds-ID deines Slack-Arbeitsbereichs hinzu",
+    "Atlan will send a test payload on this url, you'll need to respond with 2xx status to validate": "Atlan wird eine Testpayload an diese URL senden, du musst mit einem 2xx-Status antworten, um zu validieren",
+    "This asset doesn't have any saved queries": "Dieses Asset hat keine gespeicherten Abfragen",
+    "You don't have permission to add certificate to this asset": "Du hast keine Berechtigung, ein Zertifikat zu diesem Asset hinzuzufügen",
+    "You don't have permission to link terms to this asset": "Du hast keine Berechtigung, Begriffe mit diesem Asset zu verknüpfen",
+    "You don't have permission to add readme for this asset": "Du hast keine Berechtigung, ein README für dieses Asset hinzuzufügen",
+    "You don't have permission to edit readme for this asset": "Du hast keine Berechtigung, das README für dieses Asset zu bearbeiten",
+    "Type '/' for commands": "Tippe '/' für Befehle",
+    "The error message in the case of state being 'error'": "Die Fehlermeldung im Falle eines 'Fehler'-Status",
+    "Hmmm… we don't know how you landed here, but nothing exists here at the moment!": "Hmmm… wir wissen nicht, wie du hier gelandet bist, aber hier existiert im Moment nichts!",
+    "We didn't find anything that matches your search criteria": "Wir haben nichts gefunden, das deinen Suchkriterien entspricht",
+    "Let's build your policy!": "Lass uns deine Richtlinie erstellen!"
 }

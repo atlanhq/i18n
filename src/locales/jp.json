@@ -7604,5 +7604,19 @@
     "Stage type": "ステージタイプ",
     "Stage URL": "ステージURL",
     "Stage region": "ステージリージョン",
-    "Stage integration": "ステージ統合"
+    "Stage integration": "ステージ統合",
+    "Can't find team link?": "チームリンクが見つかりませんか？",
+    "What's your primary role?": "あなたの主な役割は何ですか？",
+    "Add your slack workspace's member ID": "あなたのSlackワークスペースのメンバーIDを追加してください",
+    "Atlan will send a test payload on this url, you'll need to respond with 2xx status to validate": "AtlanはこのURLにテストペイロードを送信します。検証するには2xxステータスで応答する必要があります",
+    "This asset doesn't have any saved queries": "このアセットには保存されたクエリがありません",
+    "You don't have permission to add certificate to this asset": "このアセットに証明書を追加する権限がありません",
+    "You don't have permission to link terms to this asset": "このアセットに用語をリンクする権限がありません",
+    "You don't have permission to add readme for this asset": "このアセットのREADMEを追加する権限がありません",
+    "You don't have permission to edit readme for this asset": "このアセットのREADMEを編集する権限がありません",
+    "Type '/' for commands": "コマンドのために'/'を入力してください",
+    "The error message in the case of state being 'error'": "状態が'error'の場合のエラーメッセージ",
+    "Hmmm… we don't know how you landed here, but nothing exists here at the moment!": "うーん…どうやってここにたどり着いたのかわかりませんが、今のところここには何も存在しません！",
+    "We didn't find anything that matches your search criteria": "検索条件に一致するものは見つかりませんでした",
+    "Let's build your policy!": "ポリシーを作成しましょう！"
 }

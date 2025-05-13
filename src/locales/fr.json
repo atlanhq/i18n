@@ -7604,5 +7604,19 @@
     "Stage type": "Type d'étape",
     "Stage URL": "URL de l'étape",
     "Stage region": "Région de l'étape",
-    "Stage integration": "Intégration de l'étape"
+    "Stage integration": "Intégration de l'étape",
+    "Can't find team link?": "Impossible de trouver le lien de l'équipe ?",
+    "What's your primary role?": "Quel est votre rôle principal ?",
+    "Add your slack workspace's member ID": "Ajoutez l'ID membre de votre espace de travail slack",
+    "Atlan will send a test payload on this url, you'll need to respond with 2xx status to validate": "Atlan enverra une charge utile de test sur cette url, vous devrez répondre avec un statut 2xx pour valider",
+    "This asset doesn't have any saved queries": "Cet actif n'a pas de requêtes enregistrées",
+    "You don't have permission to add certificate to this asset": "Vous n'avez pas la permission d'ajouter un certificat à cet actif",
+    "You don't have permission to link terms to this asset": "Vous n'avez pas la permission de lier des termes à cet actif",
+    "You don't have permission to add readme for this asset": "Vous n'avez pas la permission d'ajouter un readme pour cet actif",
+    "You don't have permission to edit readme for this asset": "Vous n'avez pas la permission de modifier le readme pour cet actif",
+    "Type '/' for commands": "Tapez '/' pour les commandes",
+    "The error message in the case of state being 'error'": "Le message d'erreur dans le cas où l'état est 'erreur'",
+    "Hmmm… we don't know how you landed here, but nothing exists here at the moment!": "Hmmm… nous ne savons pas comment vous êtes arrivé ici, mais rien n'existe ici pour le moment !",
+    "We didn't find anything that matches your search criteria": "Nous n'avons rien trouvé qui corresponde à vos critères de recherche",
+    "Let's build your policy!": "Construisons votre politique !"
 }

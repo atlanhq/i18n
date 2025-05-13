@@ -7604,5 +7604,19 @@
     "Stage type": "Tipo de estágio",
     "Stage URL": "URL do estágio",
     "Stage region": "Região do estágio",
-    "Stage integration": "Integração do estágio"
+    "Stage integration": "Integração do estágio",
+    "Can't find team link?": "Não consegue encontrar o link da equipe?",
+    "What's your primary role?": "Qual é o seu papel principal?",
+    "Add your slack workspace's member ID": "Adicione o ID do membro do seu workspace do slack",
+    "Atlan will send a test payload on this url, you'll need to respond with 2xx status to validate": "Atlan enviará um payload de teste para esta url, você precisará responder com status 2xx para validar",
+    "This asset doesn't have any saved queries": "Este ativo não tem nenhuma consulta salva",
+    "You don't have permission to add certificate to this asset": "Você não tem permissão para adicionar certificado a este ativo",
+    "You don't have permission to link terms to this asset": "Você não tem permissão para vincular termos a este ativo",
+    "You don't have permission to add readme for this asset": "Você não tem permissão para adicionar readme para este ativo",
+    "You don't have permission to edit readme for this asset": "Você não tem permissão para editar readme para este ativo",
+    "Type '/' for commands": "Digite '/' para comandos",
+    "The error message in the case of state being 'error'": "A mensagem de erro no caso de o estado ser 'erro'",
+    "Hmmm… we don't know how you landed here, but nothing exists here at the moment!": "Hmmm… não sabemos como você chegou aqui, mas nada existe aqui no momento!",
+    "We didn't find anything that matches your search criteria": "Não encontramos nada que corresponda aos seus critérios de pesquisa",
+    "Let's build your policy!": "Vamos construir sua política!"
 }

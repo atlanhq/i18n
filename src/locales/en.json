@@ -7604,5 +7604,19 @@
     "Stage type": "Stage type",
     "Stage URL": "Stage URL",
     "Stage region": "Stage region",
-    "Stage integration": "Stage integration"
+    "Stage integration": "Stage integration",
+    "Can't find team link?": "Can't find team link?",
+    "What's your primary role?": "What's your primary role?",
+    "Add your slack workspace's member ID": "Add your slack workspace's member ID",
+    "Atlan will send a test payload on this url, you'll need to respond with 2xx status to validate": "Atlan will send a test payload on this url, you'll need to respond with 2xx status to validate",
+    "This asset doesn't have any saved queries": "This asset doesn't have any saved queries",
+    "You don't have permission to add certificate to this asset": "You don't have permission to add certificate to this asset",
+    "You don't have permission to link terms to this asset": "You don't have permission to link terms to this asset",
+    "You don't have permission to add readme for this asset": "You don't have permission to add readme for this asset",
+    "You don't have permission to edit readme for this asset": "You don't have permission to edit readme for this asset",
+    "Type '/' for commands": "Type '/' for commands",
+    "The error message in the case of state being 'error'": "The error message in the case of state being 'error'",
+    "Hmmm… we don't know how you landed here, but nothing exists here at the moment!": "Hmmm… we don't know how you landed here, but nothing exists here at the moment!",
+    "We didn't find anything that matches your search criteria": "We didn't find anything that matches your search criteria",
+    "Let's build your policy!": "Let's build your policy!"
 }

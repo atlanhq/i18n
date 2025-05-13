@@ -30,9 +30,9 @@ jobs:
 
             # Now checkout the i18n repo
             - name: Check if branch exists in i18n repo
+              id: check-branch-exists
               uses: GuillaumeFalourd/branch-exists@v1.1
               with:
-                  repository: ${{ github.repository }}
                   branch: ${{ env.BRANCH_NAME }}
 
             - name: Create & checkout branch in i18n repo

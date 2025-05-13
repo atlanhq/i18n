@@ -71,7 +71,7 @@ jobs:
             - name: Run translation script
               run: node scripts/translationScript.mjs
               env:
-                  OPENAPI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+                  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
                   BASE_DIRECTORY: ${{ github.workspace }}
 
             - name: Run prettier

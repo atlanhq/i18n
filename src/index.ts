@@ -1,19 +1,19 @@
 import { createI18n } from 'vue-i18n'
 
 // Export all locales individually for direct access
-export { default as en } from './locales/en/default.json'
-export { default as fr } from './locales/fr/default.json'
-export { default as jp } from './locales/jp/default.json'
-export { default as pt } from './locales/pt/default.json'
-export { default as de } from './locales/de/default.json'
+export { default as en } from './locales/default/en.json'
+export { default as fr } from './locales/default/fr.json'
+export { default as jp } from './locales/default/jp.json'
+export { default as pt } from './locales/default/pt.json'
+export { default as de } from './locales/default/de.json'
 
 // Export the messages object for vue-i18n initialization
 export const messages = {
-    en: require('./locales/en/default.json'),
-    fr: require('./locales/fr/default.json'),
-    pt: require('./locales/pt/default.json'),
-    jp: require('./locales/jp/default.json'),
-    de: require('./locales/de/default.json'),
+    en: require('./locales/default/en.json'),
+    fr: require('./locales/default/fr.json'),
+    pt: require('./locales/default/pt.json'),
+    jp: require('./locales/default/jp.json'),
+    de: require('./locales/default/de.json'),
 } as const
 
 export type LocaleKey = keyof typeof messages

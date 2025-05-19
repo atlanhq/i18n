@@ -5,6 +5,7 @@ import { glob } from 'glob'
 
 // Fix: Correct the environment variable name
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY
+const BASE_DIRECTORY = process.env.BASE_DIRECTORY
 
 const OPENAI_API_URL = 'https://api.openai.com/v1/chat/completions'
 
@@ -364,7 +365,7 @@ async function synchronizeLocaleFiles(allLocales) {
 
         // Write the ordered locale file
         fs.writeFileSync(
-            `./src/locales/${language}.json`,
+            `${BASE_DIRECTORY}/src/locales/${language}.json`,
             JSON.stringify(orderedLocale, null, 4)
         )
 
@@ -391,8 +392,8 @@ async function synchronizeLocaleFiles(allLocales) {
 
     console.log('Creating I18N report with vue-i18n-extract...')
     const report = await VueI18NExtract.createI18NReport({
-        vueFiles: './src/**/*.?(js|vue|ts)',
-        languageFiles: './src/locales/*.json',
+        vueFiles: `./frontend/src/**/*.?(js|vue|ts)`,
+        languageFiles: `${BASE_DIRECTORY}/src/locales/default/*.json`,
         remove: true,
     })
 
@@ -401,7 +402,7 @@ async function synchronizeLocaleFiles(allLocales) {
     // `vue-i18n-extract` mishandles single quotes within `t` function calls, and double escapes them. As a result
     // they aren't matched to an existing string within the language file, so we manually remove those backslashes
     // and re-filter out entries.
-    const allLocales = await loadLocales('./src/locales/*.json')
+    const allLocales = await loadLocales(`${BASE_DIRECTORY}/src/locales/default/*.json`)
 
     // First process missing keys from code
     console.log('Processing missing keys from report...')
@@ -430,7 +431,7 @@ async function synchronizeLocaleFiles(allLocales) {
 
         // Write updated en.json
         fs.writeFileSync(
-            './src/locales/en.json',
+            `${BASE_DIRECTORY}/src/locales/en.json`,
             JSON.stringify(allLocales['en'], null, 4)
         )
     }
@@ -474,7 +475,7 @@ async function synchronizeLocaleFiles(allLocales) {
 
             // Write updated locale file
             fs.writeFileSync(
-                `./src/locales/${language}.json`,
+                `${BASE_DIRECTORY}/src/locales/${language}.json`,
                 JSON.stringify(updatedLocale, null, 4)
             )
 

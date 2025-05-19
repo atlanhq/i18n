@@ -21,8 +21,8 @@ permissions:
   pull-requests: write
 
 jobs:
-  release:
-    name: Release
+  analyze-and-propose:
+    name: Analyze and Propose Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -43,18 +43,33 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Setup release configuration
+      - name: Determine version type
+        id: version_type
         run: |
           if [[ "${{ github.event_name }}" == "workflow_dispatch" && "${{ github.event.inputs.version_type }}" != "auto" ]]; then
             # Manual version bump requested
             echo "Creating ${{ github.event.inputs.version_type }} release"
-            version_type="${{ github.event.inputs.version_type }}"
+            echo "bump=${{ github.event.inputs.version_type }}" >> $GITHUB_OUTPUT
           else
             # Automatic version determination based on commits
             echo "Determining version automatically"
-            version_type="auto"
+            echo "bump=auto" >> $GITHUB_OUTPUT
           fi
+
+      - name: Create branch for version bump
+        id: create_branch
+        run: |
+          # Generate a unique branch name
+          BRANCH_NAME="release-$(date +%Y%m%d%H%M%S)"
+          echo "branch_name=$BRANCH_NAME" >> $GITHUB_OUTPUT
           
+          # Create and checkout branch
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b $BRANCH_NAME
+
+      - name: Setup semantic-release config
+        run: |
           # Create semantic-release config
           cat > .releaserc.json << EOF
           {
@@ -70,28 +85,71 @@ jobs:
                 ]
               }],
               "@semantic-release/release-notes-generator",
-              "@semantic-release/npm",
+              ["@semantic-release/npm", {
+                "npmPublish": false
+              }],
               ["@semantic-release/git", {
                 "assets": ["package.json"],
                 "message": "chore(release): \${nextRelease.version} [skip ci]\n\n\${nextRelease.notes}"
-              }],
-              "@semantic-release/github"
-            ]
+              }]
+            ],
+            "dryRun": true,
+            "ci": false
           }
           EOF
+
+      - name: Analyze version
+        id: analyze
+        run: |
+          # Run semantic-release in dry-run mode to get next version
+          NEXT_VERSION=$(npx semantic-release --dry-run | grep -oP "The next release version is \K[0-9]+\.[0-9]+\.[0-9]+" || echo "")
           
-          if [[ "$version_type" != "auto" ]]; then
-            # Force specific version bump
-            npm version $version_type --no-git-tag-version
-            git config --global user.name "github-actions[bot]"
-            git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            git add package.json
-            git commit -m "chore: bump version ($version_type)"
-            git push
+          if [ -z "$NEXT_VERSION" ]; then
+            echo "No new version to release"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          echo "next_version=$NEXT_VERSION" >> $GITHUB_OUTPUT
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+          
+          # If manually specified version type, use npm version to bump
+          if [[ "${{ steps.version_type.outputs.bump }}" != "auto" ]]; then
+            npm version ${{ steps.version_type.outputs.bump }} --no-git-tag-version
+            NEXT_VERSION=$(node -p "require('./package.json').version")
+            echo "next_version=$NEXT_VERSION" >> $GITHUB_OUTPUT
           fi
 
-      - name: Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release 
+      - name: Update package.json and commit
+        if: steps.analyze.outputs.has_changes == 'true'
+        run: |
+          if [[ "${{ steps.version_type.outputs.bump }}" == "auto" ]]; then
+            npm version ${{ steps.analyze.outputs.next_version }} --no-git-tag-version --allow-same-version
+          fi
+          
+          git add package.json
+          git commit -m "chore(release): bump version to ${{ steps.analyze.outputs.next_version }}"
+          git push origin ${{ steps.create_branch.outputs.branch_name }}
+
+      - name: Create Pull Request
+        if: steps.analyze.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          title: "chore(release): bump version to ${{ steps.analyze.outputs.next_version }}"
+          body: |
+            ## Version Bump: ${{ steps.analyze.outputs.next_version }}
+            
+            This PR was automatically created by the release workflow.
+            
+            Changes included in this release:
+            
+            - Version bump to ${{ steps.analyze.outputs.next_version }}
+            
+            Once merged, the package will be available with the new version.
+          branch: ${{ steps.create_branch.outputs.branch_name }}
+          base: main
+          delete-branch: true
+          labels: |
+            automated-pr
+            release 

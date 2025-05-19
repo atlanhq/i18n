@@ -43,6 +43,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Install semantic-release packages
+        run: |
+          pnpm add -D semantic-release @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/npm @semantic-release/git
+
       - name: Determine version type
         id: version_type
         run: |
@@ -102,14 +106,38 @@ jobs:
         id: analyze
         run: |
           # Run semantic-release in dry-run mode to get next version
-          NEXT_VERSION=$(npx semantic-release --dry-run | grep -oP "The next release version is \K[0-9]+\.[0-9]+\.[0-9]+" || echo "")
+          SEMANTIC_OUTPUT=$(npx semantic-release --dry-run)
+          echo "Semantic Release Output: $SEMANTIC_OUTPUT"
+          
+          # Try different regex patterns to extract version
+          NEXT_VERSION=$(echo "$SEMANTIC_OUTPUT" | grep -oP "The next release version is \K[0-9]+\.[0-9]+\.[0-9]+" || echo "")
           
           if [ -z "$NEXT_VERSION" ]; then
-            echo "No new version to release"
+            # Try alternative patterns
+            NEXT_VERSION=$(echo "$SEMANTIC_OUTPUT" | grep -oP "determined version \K[0-9]+\.[0-9]+\.[0-9]+" || echo "")
+          fi
+          
+          if [ -z "$NEXT_VERSION" ]; then
+            # Try another alternative pattern
+            NEXT_VERSION=$(echo "$SEMANTIC_OUTPUT" | grep -oP "Release version \K[0-9]+\.[0-9]+\.[0-9]+" || echo "")
+          fi
+          
+          if [ -z "$NEXT_VERSION" ]; then
+            # Check if there are no changes to release
+            if echo "$SEMANTIC_OUTPUT" | grep -q "There are no relevant changes, so no new version is released"; then
+              echo "No changes to release"
+              echo "has_changes=false" >> $GITHUB_OUTPUT
+              exit 0
+            fi
+            
+            # Fallback to current version + patch
+            CURRENT_VERSION=$(node -p "require('./package.json').version")
+            echo "Could not determine next version from semantic-release output, using current version: $CURRENT_VERSION"
             echo "has_changes=false" >> $GITHUB_OUTPUT
             exit 0
           fi
           
+          echo "Next version: $NEXT_VERSION"
           echo "next_version=$NEXT_VERSION" >> $GITHUB_OUTPUT
           echo "has_changes=true" >> $GITHUB_OUTPUT
           
@@ -117,6 +145,7 @@ jobs:
           if [[ "${{ steps.version_type.outputs.bump }}" != "auto" ]]; then
             npm version ${{ steps.version_type.outputs.bump }} --no-git-tag-version
             NEXT_VERSION=$(node -p "require('./package.json').version")
+            echo "Manual version bump to: $NEXT_VERSION"
             echo "next_version=$NEXT_VERSION" >> $GITHUB_OUTPUT
           fi
 

@@ -431,7 +431,7 @@ async function synchronizeLocaleFiles(allLocales) {
 
         // Write updated en.json
         fs.writeFileSync(
-            `${BASE_DIRECTORY}/src/locales/en.json`,
+            `${BASE_DIRECTORY}/src/locales/default/en.json`,
             JSON.stringify(allLocales['en'], null, 4)
         )
     }
@@ -475,7 +475,7 @@ async function synchronizeLocaleFiles(allLocales) {
 
             // Write updated locale file
             fs.writeFileSync(
-                `${BASE_DIRECTORY}/src/locales/${language}.json`,
+                `${BASE_DIRECTORY}/src/locales/default/${language}.json`,
                 JSON.stringify(updatedLocale, null, 4)
             )
 

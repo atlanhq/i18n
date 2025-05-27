@@ -24,6 +24,30 @@ By participating in this project, you are expected to uphold our Code of Conduct
    - Translate all strings
    - Update the README.md to include the new language
 
+### Quick Translation Updates (GitHub Web Editor)
+
+To update translations, simply:
+
+1. **Find the translation file** you want to edit in the GitHub repository
+   - Navigate to `src/locales/[language-code]/` (e.g., `src/locales/en/` for English)
+
+2. **Click the pencil icon** (✏️) on any translation file
+   - This opens GitHub's web editor directly in your browser
+
+3. **Make your changes** in the web editor
+   - Edit the translation text as needed
+   - Use the preview tab to check your formatting
+
+4. **Add a commit message** describing your changes
+   - Example: "fix: correct German translation for login button"
+   - Keep it clear and concise
+
+5. **Click 'Propose changes'** - GitHub handles the rest!
+   - This automatically creates a pull request
+   - No need to fork or set up anything locally
+
+This method is perfect for quick fixes, typos, or small translation improvements!
+
 ### Development Process
 
 1. **Fork the Repository**

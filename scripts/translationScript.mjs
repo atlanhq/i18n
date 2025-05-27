@@ -365,7 +365,7 @@ async function synchronizeLocaleFiles(allLocales) {
 
         // Write the ordered locale file
         fs.writeFileSync(
-            `${BASE_DIRECTORY}/src/locales/${language}.json`,
+            `${BASE_DIRECTORY}/src/locales/default/${language}.json`,
             JSON.stringify(orderedLocale, null, 4)
         )
 

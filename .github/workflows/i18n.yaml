@@ -32,8 +32,13 @@ jobs:
               with:
                   branch: ${{ env.BRANCH_NAME }}
 
+            - name: Fail if branch already exists
+              if: steps.check-branch-exists.outputs.exists == 'true'
+              run: |
+                echo "::error::The branch '${{ env.BRANCH_NAME }}' already exists. Please delete or merge the existing branch before running this workflow again."
+                exit 1
+
             - name: Create & checkout branch in i18n repo
-              if: steps.check-branch-exists.outputs.exists == 'false'
               run: git checkout -b $BRANCH_NAME
 
             - name: Configure git
@@ -82,7 +87,6 @@ jobs:
                   git push origin $BRANCH_NAME
 
             - name: Create PR if needed
-              if: steps.check-branch-exists.outputs.exists == 'false'
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |

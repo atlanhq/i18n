@@ -1,17 +1,17 @@
-# @ atlanhq/i18n
+# @atlanhq/i18n
 
 This package contains internationalization resources for Atlan frontend applications.
 
 ## Installation
 
 ```bash
-npm install @ atlanhq/i18n
+npm install @atlanhq/i18n
 ```
 
 ## Usage
 
 ```typescript
-import i18n, { en, fr, jp, pt, de } from '@ atlanhq/i18n';
+import i18n, { en, fr, jp, pt, de } from '@atlanhq/i18n';
 
 // Use individual locales
 console.log(en.some_key);
@@ -33,17 +33,19 @@ console.log(i18n['en'].some_key);
 ```
 .
 ├── src/              # Source code
-│   ├── index.ts      # Main entry point
-│   └── locales/      # Locale directories
-│       ├── en/       # English translations
-│       ├── fr/       # French translations
-│       ├── jp/       # Japanese translations
-│       └── pt/       # Portuguese translations
-│       └── de/       # German translations
+│   ├── index.ts      # Main entry point and Vue i18n setup
+│   └── locales/      # Locale files
+│       └── default/  # Default locale directory
+│           ├── en.json   # English translations
+│           ├── fr.json   # French translations
+│           ├── jp.json   # Japanese translations
+│           ├── pt.json   # Portuguese translations
+│           └── de.json   # German translations
 ├── scripts/          # Utility scripts
 │   └── translationScript.mjs  # Translation automation script
-└── .github/          # GitHub configurations
-    └── workflows/    # CI/CD workflows
+├── .github/          # GitHub configurations
+│   └── workflows/    # CI/CD workflows
+└── CONTRIBUTING.md   # Contribution guidelines
 ```
 
 ## Development
@@ -65,15 +67,26 @@ console.log(i18n['en'].some_key);
 
 ### Adding/Updating Translations
 
-1. Update the translation files in `src/locales/<locale>/`
+#### Quick Updates (No Setup Required)
+For simple translation fixes, you can contribute directly through GitHub:
+
+1. Navigate to the translation file in `src/locales/default/[language-code].json`
+2. Click the pencil icon (✏️) to edit
+3. Make your changes in GitHub's web editor
+4. Add a commit message describing your changes
+5. Click 'Propose changes' - GitHub handles the rest!
+
+#### Local Development
+For more complex changes:
+
+1. Update the translation files in `src/locales/default/<locale>.json`
 2. Run the translation script:
    ```bash
    npm run translate
    ```
 
-## Contributing
-
-We welcome contributions from the community! Whether you're fixing bugs, improving translations, or proposing new features, your contributions are welcome.
+### Quick Translation Updates
+You can contribute translations directly through GitHub's web interface - no local setup required! See the [Quick Updates](#quick-updates-no-setup-required) section above.
 
 ### Ways to Contribute
 
@@ -81,46 +94,12 @@ We welcome contributions from the community! Whether you're fixing bugs, improvi
 2. **Report Issues**: Report bugs or suggest improvements through GitHub issues
 3. **Submit PRs**: Submit pull requests for bug fixes or improvements
 
-Please see our [Contributing Guidelines](CONTRIBUTING.md) for more details on:
+Please see our [Contributing Guidelines](CONTRIBUTING.md) for detailed information about:
+- Quick translation updates via GitHub web editor
 - Setting up your development environment
 - Our coding standards
 - The pull request process
 - Translation guidelines
-
-## Publishing
-
-This package uses semantic versioning. To publish a new version:
-
-1. Update version in `package.json`
-2. Create and push a new tag:
-   ```bash
-   git tag v1.0.0
-   git push origin v1.0.0
-   ```
-3. The GitHub Action will automatically publish to NPM
-
-## License
-
-MIT
-
-## 📁 Repository Structure
-
-```
-.
-├── locales/           # Directory containing all locale files
-│   ├── en/           # English (source) translations
-│   ├── fr/           # French translations
-│   └── ...           # Other language directories
-├── scripts/          # Utility scripts for translation management
-├── config/           # Configuration files
-└── docs/            # Additional documentation
-```
-
-## 🚀 Getting Started
-
-1. Clone the repository
-2. Install dependencies (if any)
-3. Follow the setup instructions in the documentation
 
 ## 🔄 Workflow
 
@@ -141,26 +120,8 @@ We welcome contributions from our community! If you'd like to suggest improvemen
 
 Please read our [Contributing Guidelines](./docs/CONTRIBUTING.md) for more details.
 
-## 📜 License
+## License
 
-[Add appropriate license information]
-
-## 🔗 Related Resources
-
-- [Link to documentation]
-- [Link to related tools]
-- [Other relevant links]
-
-## ⚙️ Configuration
-
-Configuration details and setup instructions can be found in the [documentation](./docs/CONFIGURATION.md).
-
-## 🛠️ Scripts
-
-Details about available scripts and their usage can be found in the [scripts documentation](./docs/SCRIPTS.md).
-
-## 📞 Support
-
-[Add support information]
+MIT
 
 --- 

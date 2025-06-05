@@ -28,6 +28,7 @@ export const createI18nInstance = (options?: {
     legacy?: boolean
     globalInjection?: boolean
     messages?: Record<LocaleKey, Record<string, string>>
+    formatFallbackMessages?: boolean
 }) => {
     return createI18n({
         locale: options?.locale || fallbackLocale,
@@ -35,6 +36,7 @@ export const createI18nInstance = (options?: {
         messages: options?.messages || messages,
         legacy: options?.legacy ?? false,
         globalInjection: options?.globalInjection ?? true,
+        formatFallbackMessages: options?.formatFallbackMessages ?? false,
     })
 }
 

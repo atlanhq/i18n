@@ -7711,5 +7711,8 @@
     "External policy": "External policy",
     "Document Preview": "Document Preview",
     "PDF document preview for policy import": "PDF document preview for policy import",
-    "<private {type}>": "<private {type}>"
+    "<private {type}>": "<private {type}>",
+    "{count} approver ({strategy})": "{count} approver ({strategy})",
+    "{count} approvers ({strategy})": "{count} approvers ({strategy})",
+    "{prefix} be able to query data in Insights and preview sample data from this {assetType} {isParentAsset} in Atlan.":"{prefix} be able to query data in Insights and preview sample data from this {assetType} {isParentAsset} in Atlan."
 }

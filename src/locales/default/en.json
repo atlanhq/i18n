@@ -7714,5 +7714,11 @@
     "<private {type}>": "<private {type}>",
     "{count} approver ({strategy})": "{count} approver ({strategy})",
     "{count} approvers ({strategy})": "{count} approvers ({strategy})",
-    "{prefix} be able to query data in Insights and preview sample data from this {assetType} {isParentAsset} in Atlan.":"{prefix} be able to query data in Insights and preview sample data from this {assetType} {isParentAsset} in Atlan."
+    "{prefix} be able to query data in Insights and preview sample data from this {assetType} {isParentAsset} in Atlan.":"{prefix} be able to query data in Insights and preview sample data from this {assetType} {isParentAsset} in Atlan.",
+    "{prefix} Jira ticket will be created to grant access to this {assetType} {isParentAsset} in the source system.":"{prefix} Jira ticket will be created to grant access to this {assetType} {isParentAsset} in the source system.",
+    "{count} actions selected": "{count} actions selected",
+    "Expires in {expirePeriod} days":"Expires in {expirePeriod} days",
+    "Approval details were sent to the {ordinal} external system.":"Approval details were sent to the {ordinal} external system.",
+    "Once access to this {assetType} is {action}, you will also {accessType} access to its related underlying assets, such as tables, views within it.":"Once access to this {assetType} is {action}, you will also {accessType} access to its related underlying assets, such as tables, views within it.",
+    "Data access for table {name}":"Data access for table {name}"
 }

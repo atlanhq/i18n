@@ -7748,5 +7748,6 @@
     "Tag propagates only to downstream assets.": "Tag propagiert nur auf nachgelagerte Assets.",
     "Tag will propagate to all linked assets and their child assets and downstream assets via lineage.": "Tag wird auf alle verknüpften Assets und deren untergeordnete Assets sowie nachgelagerte Assets über die Linie propagiert.",
     "Tag will propagate to all linked assets and their child assets.": "Tag wird auf alle verknüpften Assets und deren untergeordnete Assets propagiert.",
-    "Tag will propagate to all linked assets and their downstream assets via lineage.": "Tag wird auf alle verknüpften Assets und deren nachgelagerten Assets über die Linie propagiert."
+    "Tag will propagate to all linked assets and their downstream assets via lineage.": "Tag wird auf alle verknüpften Assets und deren nachgelagerten Assets über die Linie propagiert.",
+    "Convert \"{name}\" to domain": "Konvertiere \"{name}\" in die Domain"
 }

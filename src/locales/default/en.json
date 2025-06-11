@@ -7748,5 +7748,6 @@
     "Tag propagates only to downstream assets.": "Tag propagates only to downstream assets.",
     "Tag will propagate to all linked assets and their child assets and downstream assets via lineage.": "Tag will propagate to all linked assets and their child assets and downstream assets via lineage.",
     "Tag will propagate to all linked assets and their child assets.": "Tag will propagate to all linked assets and their child assets.",
-    "Tag will propagate to all linked assets and their downstream assets via lineage.": "Tag will propagate to all linked assets and their downstream assets via lineage."
+    "Tag will propagate to all linked assets and their downstream assets via lineage.": "Tag will propagate to all linked assets and their downstream assets via lineage.",
+    "Convert \"{name}\" to domain": "Convert \"{name}\" to domain"
 }

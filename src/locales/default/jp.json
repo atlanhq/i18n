@@ -7748,5 +7748,6 @@
     "Tag propagates only to downstream assets.": "タグは下流資産にのみ伝播します。",
     "Tag will propagate to all linked assets and their child assets and downstream assets via lineage.": "タグはすべてのリンクされた資産とその子資産、および系譜を介して下流資産に伝播します。",
     "Tag will propagate to all linked assets and their child assets.": "タグはすべてのリンクされた資産とその子資産に伝播します。",
-    "Tag will propagate to all linked assets and their downstream assets via lineage.": "タグはすべてのリンクされた資産とその下流資産に系譜を介して伝播します。"
+    "Tag will propagate to all linked assets and their downstream assets via lineage.": "タグはすべてのリンクされた資産とその下流資産に系譜を介して伝播します。",
+    "Convert \"{name}\" to domain": "「{name}」をドメインに変換する"
 }

@@ -7748,5 +7748,6 @@
     "Tag propagates only to downstream assets.": "L'étiquette se propage uniquement aux actifs en aval.",
     "Tag will propagate to all linked assets and their child assets and downstream assets via lineage.": "L'étiquette se propagera à tous les actifs liés et à leurs actifs enfants et actifs en aval via la lignée.",
     "Tag will propagate to all linked assets and their child assets.": "L'étiquette se propagera à tous les actifs liés et à leurs actifs enfants.",
-    "Tag will propagate to all linked assets and their downstream assets via lineage.": "L'étiquette se propagera à tous les actifs liés et à leurs actifs en aval via la lignée."
+    "Tag will propagate to all linked assets and their downstream assets via lineage.": "L'étiquette se propagera à tous les actifs liés et à leurs actifs en aval via la lignée.",
+    "Convert \"{name}\" to domain": "Convertir \"{name}\" en domaine"
 }

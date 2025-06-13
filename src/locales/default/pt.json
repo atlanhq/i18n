@@ -7748,5 +7748,6 @@
     "Tag propagates only to downstream assets.": "A tag propaga apenas para ativos a montante.",
     "Tag will propagate to all linked assets and their child assets and downstream assets via lineage.": "A tag irá propagar para todos os ativos vinculados e seus ativos filhos e ativos a montante via linhagem.",
     "Tag will propagate to all linked assets and their child assets.": "A tag irá propagar para todos os ativos vinculados e seus ativos filhos.",
-    "Tag will propagate to all linked assets and their downstream assets via lineage.": "A tag irá propagar para todos os ativos vinculados e seus ativos a montante via linhagem."
+    "Tag will propagate to all linked assets and their downstream assets via lineage.": "A tag irá propagar para todos os ativos vinculados e seus ativos a montante via linhagem.",
+    "Convert \"{name}\" to domain": "Converter \"{name}\" para domínio"
 }

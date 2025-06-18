@@ -69,6 +69,7 @@ jobs:
                 repository: ${{ env.FRONTEND_REPO }}
                 token: ${{ secrets.ORG_PAT_GITHUB }}
                 path: frontend
+                ref: develop
 
             - name: Run translation script
               run: node scripts/translationScript.mjs

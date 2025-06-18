@@ -1751,7 +1751,6 @@
     "Ctrl": "Ctrl",
     "New workflow": "新規ワークフロー",
     "New query": "新規クエリ",
-    "Atlan documentation": "Atlanドキュメント",
     "Features": "機能",
     "Debug mode to surface metrics like relevance score for debugging and performance improvements of Atlan.": "Atlanのデバッグとパフォーマンス改善のために関連性スコアなどのメトリクスを表示するデバッグモード。",
     "Debug mode": "デバッグモード",
@@ -3601,7 +3600,6 @@
     "Search {asset}s": "{asset}s を検索",
     "Add via browse": "ブラウズから追加",
     "Add via rule": "ルールから追加",
-    "Edit via browser": "ブラウザから編集",
     "Edit via rule": "ルールから編集",
     "Switch selection method": "選択方法を切り替える",
     "If you change the selection method, all selected assets so far will be lost. Are you sure you want to change?": "選択方法を変更すると、これまでに選択したすべてのアセットが失われます。変更してもよろしいですか？",
@@ -4772,10 +4770,7 @@
     "Errored": "エラー",
     "Pipeline lineage": "パイプライン系譜",
     "dbt metadata filtering based on jobs will be deprecated on September 5, 2024. As a result, all connections if not updated, will be automatically reading from the environment to which the job belongs.\n\nAtlan recommends updating the connection configuration for an improved experience.": "ジョブに基づくdbtメタデータフィルタリングは2024年9月5日に廃止されます。その結果、更新されていないすべての接続は、ジョブが属する環境から自動的に読み取られます。\n\nAtlanは、改善された体験のために接続設定の更新を推奨します。",
-    "Edit certificate": "証明書を編集",
     "Add certificate": "証明書を追加",
-    "Edit announcement": "発表を編集",
-    "Open Atlan sidebar": "Atlanサイドバーを開く",
     "Add to domain": "ドメインに追加",
     "Organize your asset into a domain for easy discovery and governance.": "資産をドメインに整理して、簡単に発見し、ガバナンスを行います。",
     "Add asset to domain": "資産をドメインに追加",
@@ -7765,5 +7760,6 @@
     "All Data Quality alerts post to this {platform} channel: #{channel}": "すべてのデータ品質アラートはこの{platform}チャネルに投稿されます: #{channel}",
     "Revoke access request was completed.": "アクセスリクエストの取り消しが完了しました。",
     "Your request was rejected.": "あなたのリクエストは拒否されました。",
-    "Users will be able to see all Data Quality rule failure alerts in this channel": "ユーザーはこのチャネルで全てのデータ品質ルール失敗アラートを見ることができます。"
+    "Users will be able to see all Data Quality rule failure alerts in this channel": "ユーザーはこのチャネルで全てのデータ品質ルール失敗アラートを見ることができます。",
+    "Edit via browse": "ブラウズで編集"
 }

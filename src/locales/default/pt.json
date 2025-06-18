@@ -1751,7 +1751,6 @@
     "Ctrl": "Ctrl",
     "New workflow": "Novo fluxo de trabalho",
     "New query": "Nova consulta",
-    "Atlan documentation": "Documentação do Atlan",
     "Features": "Recursos",
     "Debug mode to surface metrics like relevance score for debugging and performance improvements of Atlan.": "Modo de depuração para exibir métricas como pontuação de relevância para depuração e melhorias de desempenho do Atlan.",
     "Debug mode": "Modo de depuração",
@@ -3601,7 +3600,6 @@
     "Search {asset}s": "Pesquisar {ativo}s",
     "Add via browse": "Adicionar via navegação",
     "Add via rule": "Adicionar via regra",
-    "Edit via browser": "Editar pelo navegador",
     "Edit via rule": "Editar via regra",
     "Switch selection method": "Alternar método de seleção",
     "If you change the selection method, all selected assets so far will be lost. Are you sure you want to change?": "Se você mudar o método de seleção, todos os ativos selecionados até agora serão perdidos. Você tem certeza de que deseja mudar?",
@@ -4772,10 +4770,7 @@
     "Errored": "Errored",
     "Pipeline lineage": "Linhas de origem do pipeline",
     "dbt metadata filtering based on jobs will be deprecated on September 5, 2024. As a result, all connections if not updated, will be automatically reading from the environment to which the job belongs.\n\nAtlan recommends updating the connection configuration for an improved experience.": "A filtragem de metadados do dbt com base em trabalhos será descontinuada em 5 de setembro de 2024. Como resultado, todas as conexões, se não forem atualizadas, passarão a ler automaticamente do ambiente ao qual o trabalho pertence.\n\nA Atlan recomenda atualizar a configuração da conexão para uma experiência aprimorada.",
-    "Edit certificate": "Editar certificado",
     "Add certificate": "Adicionar certificado",
-    "Edit announcement": "Editar anúncio",
-    "Open Atlan sidebar": "Abrir a barra lateral do Atlan",
     "Add to domain": "Adicionar ao domínio",
     "Organize your asset into a domain for easy discovery and governance.": "Organize seu ativo em um domínio para fácil descoberta e governança.",
     "Add asset to domain": "Adicionar ativo ao domínio",
@@ -7765,5 +7760,6 @@
     "All Data Quality alerts post to this {platform} channel: #{channel}": "Todos os alertas de Qualidade de Dados postam neste canal {platform}: #{channel}",
     "Revoke access request was completed.": "O pedido de revogação de acesso foi concluído.",
     "Your request was rejected.": "Seu pedido foi rejeitado.",
-    "Users will be able to see all Data Quality rule failure alerts in this channel": "Os usuários poderão ver todos os alertas de falha de regra de Qualidade de Dados neste canal"
+    "Users will be able to see all Data Quality rule failure alerts in this channel": "Os usuários poderão ver todos os alertas de falha de regra de Qualidade de Dados neste canal",
+    "Edit via browse": "Editar via navegação"
 }

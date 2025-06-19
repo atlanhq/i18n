@@ -7761,5 +7761,6 @@
     "Revoke access request was completed.": "Zugriffsanforderung wurde abgeschlossen.",
     "Your request was rejected.": "Ihre Anfrage wurde abgelehnt.",
     "Users will be able to see all Data Quality rule failure alerts in this channel": "Benutzer können alle Warnungen zu Datenqualitätsregelverletzungen in diesem Kanal sehen.",
-    "Edit via browse": "Über Browse bearbeiten"
+    "Edit via browse": "Über Browse bearbeiten",
+    "@": []
 }

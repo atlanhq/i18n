@@ -7761,5 +7761,6 @@
     "Revoke access request was completed.": "Revoke access request was completed.",
     "Your request was rejected.": "Your request was rejected.",
     "Users will be able to see all Data Quality rule failure alerts in this channel": "Users will be able to see all Data Quality rule failure alerts in this channel",
-    "Edit via browse": "Edit via browse"
+    "Edit via browse": "Edit via browse",
+    "@": "@"
 }

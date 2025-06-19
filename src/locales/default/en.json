@@ -1751,7 +1751,6 @@
     "Ctrl": "Ctrl",
     "New workflow": "New workflow",
     "New query": "New query",
-    "Atlan documentation": "Atlan documentation",
     "Features": "Features",
     "Debug mode to surface metrics like relevance score for debugging and performance improvements of Atlan.": "Debug mode to surface metrics like relevance score for debugging and performance improvements of Atlan.",
     "Debug mode": "Debug mode",
@@ -3601,7 +3600,6 @@
     "Search {asset}s": "Search {asset}s",
     "Add via browse": "Add via browse",
     "Add via rule": "Add via rule",
-    "Edit via browser": "Edit via browser",
     "Edit via rule": "Edit via rule",
     "Switch selection method": "Switch selection method",
     "If you change the selection method, all selected assets so far will be lost. Are you sure you want to change?": "If you change the selection method, all selected assets so far will be lost. Are you sure you want to change?",
@@ -4772,10 +4770,7 @@
     "Errored": "Errored",
     "Pipeline lineage": "Pipeline lineage",
     "dbt metadata filtering based on jobs will be deprecated on September 5, 2024. As a result, all connections if not updated, will be automatically reading from the environment to which the job belongs.\n\nAtlan recommends updating the connection configuration for an improved experience.": "dbt metadata filtering based on jobs will be deprecated on September 5, 2024. As a result, all connections if not updated, will be automatically reading from the environment to which the job belongs.\n\nAtlan recommends updating the connection configuration for an improved experience.",
-    "Edit certificate": "Edit certificate",
     "Add certificate": "Add certificate",
-    "Edit announcement": "Edit announcement",
-    "Open Atlan sidebar": "Open Atlan sidebar",
     "Add to domain": "Add to domain",
     "Organize your asset into a domain for easy discovery and governance.": "Organize your asset into a domain for easy discovery and governance.",
     "Add asset to domain": "Add asset to domain",
@@ -7765,5 +7760,6 @@
     "All Data Quality alerts post to this {platform} channel: #{channel}": "All Data Quality alerts post to this {platform} channel: #{channel}",
     "Revoke access request was completed.": "Revoke access request was completed.",
     "Your request was rejected.": "Your request was rejected.",
-    "Users will be able to see all Data Quality rule failure alerts in this channel": "Users will be able to see all Data Quality rule failure alerts in this channel"
+    "Users will be able to see all Data Quality rule failure alerts in this channel": "Users will be able to see all Data Quality rule failure alerts in this channel",
+    "Edit via browse": "Edit via browse"
 }

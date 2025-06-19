@@ -7761,5 +7761,6 @@
     "Revoke access request was completed.": "La demande d'accès a été complétée.",
     "Your request was rejected.": "Votre demande a été rejetée.",
     "Users will be able to see all Data Quality rule failure alerts in this channel": "Les utilisateurs pourront voir toutes les alertes d'échec des règles de qualité des données dans ce canal",
-    "Edit via browse": "Modifier via navigation"
+    "Edit via browse": "Modifier via navigation",
+    "@": "@"
 }

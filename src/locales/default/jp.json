@@ -7761,5 +7761,6 @@
     "Revoke access request was completed.": "アクセスリクエストの取り消しが完了しました。",
     "Your request was rejected.": "あなたのリクエストは拒否されました。",
     "Users will be able to see all Data Quality rule failure alerts in this channel": "ユーザーはこのチャネルで全てのデータ品質ルール失敗アラートを見ることができます。",
-    "Edit via browse": "ブラウズで編集"
+    "Edit via browse": "ブラウズで編集",
+    "@": "@"
 }

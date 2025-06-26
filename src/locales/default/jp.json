@@ -7825,5 +7825,6 @@
     "Click to proceed with login": "ログインを続行するにはクリック",
     "Menu group navigation": "メニューグループナビゲーション",
     "Starting": "開始",
-    "Canceled": "キャンセル"
+    "Canceled": "キャンセル",
+    "Completed in {completionPeriod} days": "完了まで{completionPeriod}日"
 }

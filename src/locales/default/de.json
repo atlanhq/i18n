@@ -7825,5 +7825,6 @@
     "Click to proceed with login": "Klicken Sie hier, um mit dem Login fortzufahren",
     "Menu group navigation": "Menügruppennavigation",
     "Starting": "Starten",
-    "Canceled": "Abgebrochen"
+    "Canceled": "Abgebrochen",
+    "Completed in {completionPeriod} days": "Abgeschlossen in {completionPeriod} Tagen"
 }

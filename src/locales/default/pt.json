@@ -7825,5 +7825,6 @@
     "Click to proceed with login": "Clique para prosseguir com o login",
     "Menu group navigation": "Navegação do grupo de menu",
     "Starting": "Iniciando",
-    "Canceled": "Cancelado"
+    "Canceled": "Cancelado",
+    "Completed in {completionPeriod} days": "Concluído em {completionPeriod} dias"
 }

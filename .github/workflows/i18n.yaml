@@ -36,7 +36,7 @@ jobs:
               if: steps.check-branch-exists.outputs.exists == 'true'
               run: |
                 echo "::error::The branch '${{ env.BRANCH_NAME }}' already exists. Please delete or merge the existing branch before running this workflow again."
-                exit 1
+                exit 0
 
             - name: Create & checkout branch in i18n repo
               run: git checkout -b $BRANCH_NAME

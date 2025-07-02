@@ -3,6 +3,9 @@ name: Extract and Translate i18n Strings
 on:
     schedule:
         - cron: '0 1 * * *'
+    push:
+      branches:
+        - i18n-marketplace-packages
     workflow_dispatch:
 
 permissions:
@@ -57,25 +60,40 @@ jobs:
                   node-version: 22
                   cache: 'pnpm'
 
-            - name: Install i18n packages
-              run: pnpm install
-              env:
-                ORG_PAT_GITHUB: ${{ secrets.ORG_PAT_GITHUB }}
+#            - name: Install i18n packages
+#              run: pnpm install
+#              env:
+#                ORG_PAT_GITHUB: ${{ secrets.ORG_PAT_GITHUB }}
+#
+#            # First checkout the frontend repo to scan for new strings
+#            - name: Checkout frontend repository
+#              uses: actions/checkout@v4
+#              with:
+#                repository: ${{ env.FRONTEND_REPO }}
+#                token: ${{ secrets.ORG_PAT_GITHUB }}
+#                path: frontend
+#                ref: develop
+#
+#            - name: Run translation script
+#              run: node scripts/translationScript.mjs
+#              env:
+#                  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+#                  BASE_DIRECTORY: ${{ github.workspace }}
 
-            # First checkout the frontend repo to scan for new strings
-            - name: Checkout frontend repository
-              uses: actions/checkout@v4
+            - name: Download artifact
+              uses: actions/download-artifact@v4
               with:
-                repository: ${{ env.FRONTEND_REPO }}
-                token: ${{ secrets.ORG_PAT_GITHUB }}
-                path: frontend
-                ref: develop
+                name: 'translatable-strings'
+                repository: 'marketplace-packages'
+                github-token: ${{ secrets.ORG_PAT_GITHUB }}
+                path: artifacts
 
-            - name: Run translation script
-              run: node scripts/translationScript.mjs
+            - name: Run artifact translation script
+              run: node scripts/translateArtifact.mjs
               env:
-                  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-                  BASE_DIRECTORY: ${{ github.workspace }}
+                OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+                BASE_DIRECTORY: ${{ github.workspace }}
+                ARTIFACT_PATH: ./artifacts/translatable-strings.json
 
             - name: Run prettier
               run: pnpm prettier --write src/locales/**/*.json

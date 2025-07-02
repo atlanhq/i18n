@@ -84,7 +84,7 @@ jobs:
               uses: actions/download-artifact@v4
               with:
                 name: 'translatable-strings'
-                repository: 'marketplace-packages'
+                repository: 'atlanhq/marketplace-packages'
                 github-token: ${{ secrets.ORG_PAT_GITHUB }}
                 path: artifacts
 

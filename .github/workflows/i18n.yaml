@@ -87,6 +87,7 @@ jobs:
                 repository: 'atlanhq/marketplace-packages'
                 github-token: ${{ secrets.ORG_PAT_GITHUB }}
                 path: artifacts
+                run-id: '16022328966'
 
             - name: Run artifact translation script
               run: node scripts/translateArtifact.mjs

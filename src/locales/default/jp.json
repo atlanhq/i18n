@@ -7966,5 +7966,7 @@
     "Rule last run status": "ルールの最終実行ステータス",
     "Shows the latest run status for all data quality rules applied to the asset.": "資産に適用されたすべてのデータ品質ルールの最新の実行ステータスを表示します。",
     "Popular tables": "人気のテーブル",
-    "Top tables based on queries and users in the last 30 days. Use the dropdown to filter count and switch between With rules and Without rules.": "過去30日間のクエリとユーザーに基づくトップテーブル。ドロップダウンを使用してカウントをフィルタリングし、ルールありとルールなしの間で切り替えます。"
+    "Top tables based on queries and users in the last 30 days. Use the dropdown to filter count and switch between With rules and Without rules.": "過去30日間のクエリとユーザーに基づくトップテーブル。ドロップダウンを使用してカウントをフィルタリングし、ルールありとルールなしの間で切り替えます。",
+    "Invites sent": "招待状が送信されました",
+    "Invites sent ({0} of {1})": "招待状が送信されました ({0} / {1})"
 }

@@ -7966,5 +7966,7 @@
     "Rule last run status": "Letzter Ausführungsstatus der Regel",
     "Shows the latest run status for all data quality rules applied to the asset.": "Zeigt den neuesten Ausführungsstatus für alle angewendeten Datenqualitätsregeln auf dem Asset an.",
     "Popular tables": "Beliebte Tabellen",
-    "Top tables based on queries and users in the last 30 days. Use the dropdown to filter count and switch between With rules and Without rules.": "Top-Tabellen basierend auf Abfragen und Benutzern in den letzten 30 Tagen. Verwenden Sie das Dropdown-Menü, um die Anzahl zu filtern und zwischen Mit Regeln und Ohne Regeln zu wechseln."
+    "Top tables based on queries and users in the last 30 days. Use the dropdown to filter count and switch between With rules and Without rules.": "Top-Tabellen basierend auf Abfragen und Benutzern in den letzten 30 Tagen. Verwenden Sie das Dropdown-Menü, um die Anzahl zu filtern und zwischen Mit Regeln und Ohne Regeln zu wechseln.",
+    "Invites sent": "Einladungen gesendet",
+    "Invites sent ({0} of {1})": "Einladungen gesendet ({0} von {1})"
 }

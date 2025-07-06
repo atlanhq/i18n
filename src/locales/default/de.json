@@ -7910,13 +7910,10 @@
     "Invalid asset provided for update": "Ungültiges Asset für die Aktualisierung angegeben",
     "Unable to copy profile link: Invalid entity GUID": "Profil-Link konnte nicht kopiert werden: Ungültige Entitäts-GUID",
     "Failed to copy profile link": "Fehler beim Kopieren des Profil-Links",
-    "How to create new terms and categories?": "Wie erstellt man neue Begriffe und Kategorien?",
     "Add a new row to create new terms or categories.": "Fügen Sie eine neue Zeile hinzu, um neue Begriffe oder Kategorien zu erstellen.",
     "Type '@' in categories/subcategories column to create a new category on the fly.": "Geben Sie '@' in die Spalte Kategorien/Subkategorien ein, um eine neue Kategorie im Handumdrehen zu erstellen.",
-    "How to add terms in desired categories?": "Wie fügt man Begriffe in gewünschte Kategorien ein?",
     "Copy the category name from the tree list or profile and paste it into your sheet.": "Kopieren Sie den Kategorienamen aus der Baumansicht oder dem Profil und fügen Sie ihn in Ihr Blatt ein.",
     "Pick from the dropdown, or use '@' to add more sub-categories.": "Wählen Sie aus dem Dropdown-Menü oder verwenden Sie '@', um weitere Unterkategorien hinzuzufügen.",
-    "Important tips": "Wichtige Tipps",
     "Leave the first row and column order unchanged—Atlan needs them.": "Lassen Sie die Reihenfolge der ersten Zeile und Spalte unverändert – Atlan benötigt sie.",
     "Separate multiple values with commas.": "Trennen Sie mehrere Werte mit Kommas.",
     "Categories you create in the sheet won't instantly show up in the dropdowns.": "Kategorien, die Sie im Blatt erstellen, werden nicht sofort in den Dropdowns angezeigt.",
@@ -8074,5 +8071,7 @@
     "Status | Statuses": "Status | Statussen",
     "Load {count} more": "Lade {count} mehr",
     "Products and Assets": "Produkte und Assets",
-    "Subdomain": "Subdomain"
+    "Subdomain": "Subdomain",
+    "Close modal": "Modal schließen",
+    "Download sample template for {glossaryName}": "Beispielvorlage für {glossaryName} herunterladen"
 }

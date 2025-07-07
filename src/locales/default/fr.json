@@ -8201,7 +8201,7 @@
     "Tree": "Arbre",
     "Raw": "Brut",
     "]": "]",
-    "{word}": "{{word}}",
+    "count-with-braces": "{{count}}",
     "[{word}]": "[{word}]",
     "Created at": "Créé à",
     "Properties": "Propriétés",

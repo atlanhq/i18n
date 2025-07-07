@@ -7910,13 +7910,10 @@
     "Invalid asset provided for update": "Ativo inválido fornecido para atualização",
     "Unable to copy profile link: Invalid entity GUID": "Não foi possível copiar o link do perfil: GUID de entidade inválido",
     "Failed to copy profile link": "Falha ao copiar o link do perfil",
-    "How to create new terms and categories?": "Como criar novos termos e categorias?",
     "Add a new row to create new terms or categories.": "Adicione uma nova linha para criar novos termos ou categorias.",
     "Type '@' in categories/subcategories column to create a new category on the fly.": "Digite '@' na coluna de categorias/subcategorias para criar uma nova categoria instantaneamente.",
-    "How to add terms in desired categories?": "Como adicionar termos nas categorias desejadas?",
     "Copy the category name from the tree list or profile and paste it into your sheet.": "Copie o nome da categoria da lista de árvore ou do perfil e cole-o na sua planilha.",
     "Pick from the dropdown, or use '@' to add more sub-categories.": "Escolha no menu suspenso ou use '@' para adicionar mais subcategorias.",
-    "Important tips": "Dicas importantes",
     "Leave the first row and column order unchanged—Atlan needs them.": "Deixe a primeira linha e a ordem das colunas inalteradas—Atlan precisa delas.",
     "Separate multiple values with commas.": "Separe múltiplos valores com vírgulas.",
     "Categories you create in the sheet won't instantly show up in the dropdowns.": "As categorias que você criar na planilha não aparecerão instantaneamente nos menus suspensos.",
@@ -8074,5 +8071,7 @@
     "Status | Statuses": "Status | Statuses",
     "Load {count} more": "Carregar {count} mais",
     "Products and Assets": "Produtos e Ativos",
-    "Subdomain": "Subdomínio"
+    "Subdomain": "Subdomínio",
+    "Close modal": "Fechar modal",
+    "Download sample template for {glossaryName}": "Baixar modelo de amostra para {glossaryName}"
 }

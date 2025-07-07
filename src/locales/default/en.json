@@ -7910,13 +7910,10 @@
     "Invalid asset provided for update": "Invalid asset provided for update",
     "Unable to copy profile link: Invalid entity GUID": "Unable to copy profile link: Invalid entity GUID",
     "Failed to copy profile link": "Failed to copy profile link",
-    "How to create new terms and categories?": "How to create new terms and categories?",
     "Add a new row to create new terms or categories.": "Add a new row to create new terms or categories.",
     "Type '@' in categories/subcategories column to create a new category on the fly.": "Type '@' in categories/subcategories column to create a new category on the fly.",
-    "How to add terms in desired categories?": "How to add terms in desired categories?",
     "Copy the category name from the tree list or profile and paste it into your sheet.": "Copy the category name from the tree list or profile and paste it into your sheet.",
     "Pick from the dropdown, or use '@' to add more sub-categories.": "Pick from the dropdown, or use '@' to add more sub-categories.",
-    "Important tips": "Important tips",
     "Leave the first row and column order unchanged—Atlan needs them.": "Leave the first row and column order unchanged—Atlan needs them.",
     "Separate multiple values with commas.": "Separate multiple values with commas.",
     "Categories you create in the sheet won't instantly show up in the dropdowns.": "Categories you create in the sheet won't instantly show up in the dropdowns.",
@@ -8074,5 +8071,7 @@
     "Status | Statuses": "Status | Statuses",
     "Load {count} more": "Load {count} more",
     "Products and Assets": "Products and Assets",
-    "Subdomain": "Subdomain"
+    "Subdomain": "Subdomain",
+    "Close modal": "Close modal",
+    "Download sample template for {glossaryName}": "Download sample template for {glossaryName}"
 }

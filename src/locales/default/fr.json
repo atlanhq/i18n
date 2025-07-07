@@ -7910,13 +7910,10 @@
     "Invalid asset provided for update": "Actif invalide fourni pour la mise à jour",
     "Unable to copy profile link: Invalid entity GUID": "Impossible de copier le lien de profil : GUID d'entité invalide",
     "Failed to copy profile link": "Échec de la copie du lien de profil",
-    "How to create new terms and categories?": "Comment créer de nouveaux termes et catégories ?",
     "Add a new row to create new terms or categories.": "Ajoutez une nouvelle ligne pour créer de nouveaux termes ou catégories.",
     "Type '@' in categories/subcategories column to create a new category on the fly.": "Tapez '@' dans la colonne des catégories/sous-catégories pour créer une nouvelle catégorie à la volée.",
-    "How to add terms in desired categories?": "Comment ajouter des termes dans les catégories souhaitées ?",
     "Copy the category name from the tree list or profile and paste it into your sheet.": "Copiez le nom de la catégorie à partir de la liste d'arbre ou du profil et collez-le dans votre feuille.",
     "Pick from the dropdown, or use '@' to add more sub-categories.": "Choisissez dans le menu déroulant, ou utilisez '@' pour ajouter plus de sous-catégories.",
-    "Important tips": "Conseils importants",
     "Leave the first row and column order unchanged—Atlan needs them.": "Laissez la première ligne et l'ordre des colonnes inchangés—Atlan en a besoin.",
     "Separate multiple values with commas.": "Séparez plusieurs valeurs par des virgules.",
     "Categories you create in the sheet won't instantly show up in the dropdowns.": "Les catégories que vous créez dans la feuille ne s'afficheront pas instantanément dans les menus déroulants.",
@@ -8074,5 +8071,7 @@
     "Status | Statuses": "Statut | Statuts",
     "Load {count} more": "Charger {count} de plus",
     "Products and Assets": "Produits et actifs",
-    "Subdomain": "Sous-domaine"
+    "Subdomain": "Sous-domaine",
+    "Close modal": "Fermer le modal",
+    "Download sample template for {glossaryName}": "Télécharger le modèle d'échantillon pour {glossaryName}"
 }

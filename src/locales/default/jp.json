@@ -7910,13 +7910,10 @@
     "Invalid asset provided for update": "更新のために提供された資産が無効です",
     "Unable to copy profile link: Invalid entity GUID": "プロファイルリンクをコピーできませんでした：無効なエンティティGUID",
     "Failed to copy profile link": "プロファイルリンクのコピーに失敗しました",
-    "How to create new terms and categories?": "新しい用語とカテゴリを作成するにはどうすればよいですか？",
     "Add a new row to create new terms or categories.": "新しい用語またはカテゴリを作成するには、新しい行を追加します。",
     "Type '@' in categories/subcategories column to create a new category on the fly.": "カテゴリ/サブカテゴリ列に「@」を入力して、即座に新しいカテゴリを作成します。",
-    "How to add terms in desired categories?": "希望するカテゴリに用語を追加するにはどうすればよいですか？",
     "Copy the category name from the tree list or profile and paste it into your sheet.": "ツリーリストまたはプロファイルからカテゴリ名をコピーして、シートに貼り付けます。",
     "Pick from the dropdown, or use '@' to add more sub-categories.": "ドロップダウンから選択するか、「@」を使用してさらにサブカテゴリを追加します。",
-    "Important tips": "重要なヒント",
     "Leave the first row and column order unchanged—Atlan needs them.": "最初の行と列の順序を変更しないでください—Atlanが必要とします。",
     "Separate multiple values with commas.": "複数の値をカンマで区切ります。",
     "Categories you create in the sheet won't instantly show up in the dropdowns.": "シートで作成したカテゴリは、すぐにはドロップダウンに表示されません。",
@@ -8074,5 +8071,7 @@
     "Status | Statuses": "ステータス | ステータス",
     "Load {count} more": "{count}件をさらに読み込む",
     "Products and Assets": "製品と資産",
-    "Subdomain": "サブドメイン"
+    "Subdomain": "サブドメイン",
+    "Close modal": "モーダルを閉じる",
+    "Download sample template for {glossaryName}": "{glossaryName}のサンプルテンプレートをダウンロード"
 }

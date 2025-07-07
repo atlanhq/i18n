@@ -8174,7 +8174,7 @@
     "CLASSIFICATION": "分類",
     "Propagated": "伝播された",
     "Propagated by": "によって伝播された",
-    "test@atlan.com": "test@atlan.com",
+    "test{'@'}atlan.com": "test{'@'}atlan.com",
     "No results found for \"{searchText}\"": "\"{searchText}\"の結果は見つかりませんでした",
     "Load More...": "さらに読み込む...",
     "Create Credential": "資格情報を作成",

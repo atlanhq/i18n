@@ -8174,7 +8174,7 @@
     "CLASSIFICATION": "CLASSIFICATION",
     "Propagated": "Propagé",
     "Propagated by": "Propagé par",
-    "test@atlan.com": "test@atlan.com",
+    "test{'@'}atlan.com": "test{'@'}atlan.com",
     "No results found for \"{searchText}\"": "Aucun résultat trouvé pour \"{searchText}\"",
     "Load More...": "Charger plus...",
     "Create Credential": "Créer un identifiant",

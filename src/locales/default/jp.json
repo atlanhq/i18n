@@ -8098,7 +8098,6 @@
     "You are": "あなたは",
     "not a part of any group.": "どのグループにも属していません。",
     "connection": "接続",
-    "@": "@",
     "Start a visual query": "ビジュアルクエリを開始",
     "Searching across all your assets...": "すべての資産を検索中...",
     "Not helpful": "役に立たない",
@@ -8945,5 +8944,8 @@
     "Set up and manage access for all data and metadata": "すべてのデータとメタデータのアクセスを設定および管理する",
     "Manage users and groups, API tokens, integrations, and more": "ユーザーとグループ、APIトークン、統合などを管理する",
     "Support": "サポート",
-    "Track usage and cost, discover popular assets and find suggestions for cleanup based on last 30 days' data.": "使用状況とコストを追跡し、人気のある資産を発見し、過去30日間のデータに基づいてクリーンアップの提案を見つける。"
+    "Track usage and cost, discover popular assets and find suggestions for cleanup based on last 30 days' data.": "使用状況とコストを追跡し、人気のある資産を発見し、過去30日間のデータに基づいてクリーンアップの提案を見つける。",
+    "@{alias}": "@{alias}",
+    "Type '{symbol}' in categories/subcategories column to create a new category on the fly.": "カテゴリ/サブカテゴリ列に '{symbol}' を入力して、新しいカテゴリを即座に作成します。",
+    "Pick from the dropdown, or use '{symbol}' to add more sub-categories.": "ドロップダウンから選択するか、'{symbol}' を使用してさらにサブカテゴリを追加します。"
 }

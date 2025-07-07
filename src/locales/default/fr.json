@@ -8947,5 +8947,12 @@
     "Track usage and cost, discover popular assets and find suggestions for cleanup based on last 30 days' data.": "Suivez l'utilisation et le coût, découvrez des actifs populaires et trouvez des suggestions de nettoyage basées sur les données des 30 derniers jours.",
     "@{alias}": "@{alias}",
     "Type '{symbol}' in categories/subcategories column to create a new category on the fly.": "Tapez '{symbol}' dans la colonne catégories/sous-catégories pour créer une nouvelle catégorie à la volée.",
-    "Pick from the dropdown, or use '{symbol}' to add more sub-categories.": "Choisissez dans le menu déroulant, ou utilisez '{symbol}' pour ajouter plus de sous-catégories."
+    "Pick from the dropdown, or use '{symbol}' to add more sub-categories.": "Choisissez dans le menu déroulant, ou utilisez '{symbol}' pour ajouter plus de sous-catégories.",
+    "{prefix} be able to {action} from this {assetType} {isParentAsset} in Atlan.": "{prefix} pouvoir {action} de cet {assetType} {isParentAsset} dans Atlan.",
+    "query data in Insights and preview sample data": "interroger des données dans Insights et prévisualiser des données d'échantillon",
+    "preview sample data": "prévisualiser des données d'échantillon",
+    "Allow requesters to request data access for previewing sample data within Atlan only": "Permettre aux demandeurs de demander l'accès aux données pour prévisualiser des données d'échantillon uniquement dans Atlan",
+    "Allow requesters to access for previewing sample data within Atlan.": "Permettre aux demandeurs d'accéder à la prévisualisation des données d'échantillon dans Atlan.",
+    "Once all actions are complete, you'll get access for querying data in Insights and previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "Une fois toutes les actions terminées, vous aurez accès à l'interrogation des données dans Insights et à la prévisualisation des données d'échantillon dans Atlan. Après l'approbation de votre demande, vérifiez le système source pour confirmer l'accès.",
+    "Once all actions are complete, you'll get access for previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "Une fois toutes les actions terminées, vous aurez accès à la prévisualisation des données d'échantillon dans Atlan. Après l'approbation de votre demande, vérifiez le système source pour confirmer l'accès."
 }

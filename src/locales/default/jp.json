@@ -8947,5 +8947,12 @@
     "Track usage and cost, discover popular assets and find suggestions for cleanup based on last 30 days' data.": "使用状況とコストを追跡し、人気のある資産を発見し、過去30日間のデータに基づいてクリーンアップの提案を見つける。",
     "@{alias}": "@{alias}",
     "Type '{symbol}' in categories/subcategories column to create a new category on the fly.": "カテゴリ/サブカテゴリ列に '{symbol}' を入力して、新しいカテゴリを即座に作成します。",
-    "Pick from the dropdown, or use '{symbol}' to add more sub-categories.": "ドロップダウンから選択するか、'{symbol}' を使用してさらにサブカテゴリを追加します。"
+    "Pick from the dropdown, or use '{symbol}' to add more sub-categories.": "ドロップダウンから選択するか、'{symbol}' を使用してさらにサブカテゴリを追加します。",
+    "{prefix} be able to {action} from this {assetType} {isParentAsset} in Atlan.": "{prefix} この {assetType} {isParentAsset} から {action} できるようになります。",
+    "query data in Insights and preview sample data": "Insights でデータをクエリし、サンプルデータをプレビューする",
+    "preview sample data": "サンプルデータをプレビューする",
+    "Allow requesters to request data access for previewing sample data within Atlan only": "リクエスターが Atlan 内でサンプルデータをプレビューするためのデータアクセスをリクエストできるようにする",
+    "Allow requesters to access for previewing sample data within Atlan.": "リクエスターが Atlan 内でサンプルデータをプレビューするためのアクセスを取得できるようにする。",
+    "Once all actions are complete, you'll get access for querying data in Insights and previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "すべてのアクションが完了すると、Insights でデータをクエリし、Atlan 内でサンプルデータをプレビューするためのアクセスが得られます。リクエストが承認されたら、アクセスを確認するためにソースシステムをチェックしてください。",
+    "Once all actions are complete, you'll get access for previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "すべてのアクションが完了すると、Atlan 内でサンプルデータをプレビューするためのアクセスが得られます。リクエストが承認されたら、アクセスを確認するためにソースシステムをチェックしてください。"
 }

@@ -8942,7 +8942,7 @@
     "Manage users and groups, API tokens, integrations, and more": "Verwalten Sie Benutzer und Gruppen, API-Token, Integrationen und mehr",
     "Support": "Unterstützung",
     "Track usage and cost, discover popular assets and find suggestions for cleanup based on last 30 days' data.": "Verfolgen Sie die Nutzung und Kosten, entdecken Sie beliebte Assets und finden Sie Vorschläge zur Bereinigung basierend auf den Daten der letzten 30 Tage.",
-    "@{alias}": "@{alias}",
+    "{'@'}{alias}": "{'@'}{alias}",
     "Type '{symbol}' in categories/subcategories column to create a new category on the fly.": "Geben Sie '{symbol}' in die Spalte Kategorien/Unterkategorien ein, um eine neue Kategorie im Handumdrehen zu erstellen.",
     "Pick from the dropdown, or use '{symbol}' to add more sub-categories.": "Wählen Sie aus dem Dropdown-Menü oder verwenden Sie '{symbol}', um weitere Unterkategorien hinzuzufügen.",
     "{prefix} be able to {action} from this {assetType} {isParentAsset} in Atlan.": "{prefix} in der Lage sein, {action} von diesem {assetType} {isParentAsset} in Atlan.",

@@ -8201,7 +8201,7 @@
     "Tree": "Tree",
     "Raw": "Raw",
     "]": "]",
-    "{{word}}": "{{word}}",
+    "{word}": "{{word}}",
     "[{word}]": "[{word}]",
     "Created at": "Created at",
     "Properties": "Properties",

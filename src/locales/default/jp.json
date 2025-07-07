@@ -8201,7 +8201,7 @@
     "Tree": "ツリー",
     "Raw": "生の",
     "]": "]",
-    "{{word}}": "{{word}}",
+    "{word}": "{{word}}",
     "[{word}]": "[{word}]",
     "Created at": "作成日時",
     "Properties": "プロパティ",

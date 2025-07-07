@@ -8098,7 +8098,6 @@
     "You are": "Sie sind",
     "not a part of any group.": "kein Teil einer Gruppe.",
     "connection": "Verbindung",
-    "@": "@",
     "Start a visual query": "Starten Sie eine visuelle Abfrage",
     "Searching across all your assets...": "Durchsuche alle Ihre Assets...",
     "Not helpful": "Nicht hilfreich",
@@ -8945,5 +8944,8 @@
     "Set up and manage access for all data and metadata": "Richten Sie den Zugriff auf alle Daten und Metadaten ein und verwalten Sie ihn",
     "Manage users and groups, API tokens, integrations, and more": "Verwalten Sie Benutzer und Gruppen, API-Token, Integrationen und mehr",
     "Support": "Unterstützung",
-    "Track usage and cost, discover popular assets and find suggestions for cleanup based on last 30 days' data.": "Verfolgen Sie die Nutzung und Kosten, entdecken Sie beliebte Assets und finden Sie Vorschläge zur Bereinigung basierend auf den Daten der letzten 30 Tage."
+    "Track usage and cost, discover popular assets and find suggestions for cleanup based on last 30 days' data.": "Verfolgen Sie die Nutzung und Kosten, entdecken Sie beliebte Assets und finden Sie Vorschläge zur Bereinigung basierend auf den Daten der letzten 30 Tage.",
+    "@{alias}": "@{alias}",
+    "Type '{symbol}' in categories/subcategories column to create a new category on the fly.": "Geben Sie '{symbol}' in die Spalte Kategorien/Unterkategorien ein, um eine neue Kategorie im Handumdrehen zu erstellen.",
+    "Pick from the dropdown, or use '{symbol}' to add more sub-categories.": "Wählen Sie aus dem Dropdown-Menü oder verwenden Sie '{symbol}', um weitere Unterkategorien hinzuzufügen."
 }

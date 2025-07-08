@@ -8200,7 +8200,6 @@
     "Couldn't parse column data: Invalid JSON format": "Konnte die Spaltendaten nicht analysieren: Ungültiges JSON-Format",
     "Tree": "Baum",
     "Raw": "Roh",
-    "]": "]",
     "[{word}]": "[{word}]",
     "Created at": "Erstellt am",
     "Properties": "Eigenschaften",
@@ -8951,5 +8950,6 @@
     "Allow requesters to request data access for previewing sample data within Atlan only": "Ermöglichen Sie Anforderern, den Datenzugriff zum Anzeigen von Beispieldaten nur innerhalb von Atlan anzufordern.",
     "Allow requesters to access for previewing sample data within Atlan.": "Ermöglichen Sie Anforderern den Zugriff zum Anzeigen von Beispieldaten innerhalb von Atlan.",
     "Once all actions are complete, you'll get access for querying data in Insights and previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "Sobald alle Aktionen abgeschlossen sind, erhalten Sie Zugriff auf die Abfrage von Daten in Insights und das Anzeigen von Beispieldaten innerhalb von Atlan. Nachdem Ihre Anfrage genehmigt wurde, überprüfen Sie das Quellsystem, um den Zugriff zu bestätigen.",
-    "Once all actions are complete, you'll get access for previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "Sobald alle Aktionen abgeschlossen sind, erhalten Sie Zugriff auf das Anzeigen von Beispieldaten innerhalb von Atlan. Nachdem Ihre Anfrage genehmigt wurde, überprüfen Sie das Quellsystem, um den Zugriff zu bestätigen."
+    "Once all actions are complete, you'll get access for previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "Sobald alle Aktionen abgeschlossen sind, erhalten Sie Zugriff auf das Anzeigen von Beispieldaten innerhalb von Atlan. Nachdem Ihre Anfrage genehmigt wurde, überprüfen Sie das Quellsystem, um den Zugriff zu bestätigen.",
+    "@{alias}": "@{alias}"
 }

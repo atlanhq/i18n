@@ -8200,7 +8200,6 @@
     "Couldn't parse column data: Invalid JSON format": "Impossible d'analyser les données de la colonne : format JSON invalide",
     "Tree": "Arbre",
     "Raw": "Brut",
-    "]": "]",
     "[{word}]": "[{word}]",
     "Created at": "Créé à",
     "Properties": "Propriétés",
@@ -8951,5 +8950,6 @@
     "Allow requesters to request data access for previewing sample data within Atlan only": "Permettre aux demandeurs de demander l'accès aux données pour prévisualiser des données d'échantillon uniquement dans Atlan",
     "Allow requesters to access for previewing sample data within Atlan.": "Permettre aux demandeurs d'accéder à la prévisualisation des données d'échantillon dans Atlan.",
     "Once all actions are complete, you'll get access for querying data in Insights and previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "Une fois toutes les actions terminées, vous aurez accès à l'interrogation des données dans Insights et à la prévisualisation des données d'échantillon dans Atlan. Après l'approbation de votre demande, vérifiez le système source pour confirmer l'accès.",
-    "Once all actions are complete, you'll get access for previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "Une fois toutes les actions terminées, vous aurez accès à la prévisualisation des données d'échantillon dans Atlan. Après l'approbation de votre demande, vérifiez le système source pour confirmer l'accès."
+    "Once all actions are complete, you'll get access for previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "Une fois toutes les actions terminées, vous aurez accès à la prévisualisation des données d'échantillon dans Atlan. Après l'approbation de votre demande, vérifiez le système source pour confirmer l'accès.",
+    "@{alias}": "@{alias}"
 }

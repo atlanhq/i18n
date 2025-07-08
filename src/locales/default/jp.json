@@ -8200,7 +8200,6 @@
     "Couldn't parse column data: Invalid JSON format": "列データを解析できませんでした：無効なJSON形式",
     "Tree": "ツリー",
     "Raw": "生の",
-    "]": "]",
     "[{word}]": "[{word}]",
     "Created at": "作成日時",
     "Properties": "プロパティ",
@@ -8951,5 +8950,6 @@
     "Allow requesters to request data access for previewing sample data within Atlan only": "リクエスターが Atlan 内でサンプルデータをプレビューするためのデータアクセスをリクエストできるようにする",
     "Allow requesters to access for previewing sample data within Atlan.": "リクエスターが Atlan 内でサンプルデータをプレビューするためのアクセスを取得できるようにする。",
     "Once all actions are complete, you'll get access for querying data in Insights and previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "すべてのアクションが完了すると、Insights でデータをクエリし、Atlan 内でサンプルデータをプレビューするためのアクセスが得られます。リクエストが承認されたら、アクセスを確認するためにソースシステムをチェックしてください。",
-    "Once all actions are complete, you'll get access for previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "すべてのアクションが完了すると、Atlan 内でサンプルデータをプレビューするためのアクセスが得られます。リクエストが承認されたら、アクセスを確認するためにソースシステムをチェックしてください。"
+    "Once all actions are complete, you'll get access for previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "すべてのアクションが完了すると、Atlan 内でサンプルデータをプレビューするためのアクセスが得られます。リクエストが承認されたら、アクセスを確認するためにソースシステムをチェックしてください。",
+    "@{alias}": "@{alias}"
 }

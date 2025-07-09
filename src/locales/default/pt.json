@@ -3664,8 +3664,6 @@
     "Belongs to": "Pertence a",
     "Glossary, terms & categories": "Glossário, termos e categorias",
     "Domain | Domains": "Domínio | Domínios",
-    "Schema qualified Name": "Nome qualificado do esquema",
-    "Database qualified Name": "Nome qualificado do banco de dados",
     "Name of the asset": "Nome do ativo",
     "Last updated at": "Última atualização em",
     "Last updated timestamp of the asset on Atlan": "Última data de atualização do ativo no Atlan",
@@ -8949,5 +8947,12 @@
     "Allow requesters to request data access for previewing sample data within Atlan only": "Permitir que os solicitantes solicitem acesso a dados para visualizar dados de amostra apenas dentro do Atlan",
     "Allow requesters to access for previewing sample data within Atlan.": "Permitir que os solicitantes acessem para visualizar dados de amostra dentro do Atlan.",
     "Once all actions are complete, you'll get access for querying data in Insights and previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "Uma vez que todas as ações estejam completas, você terá acesso para consultar dados no Insights e visualizar dados de amostra dentro do Atlan. Após a aprovação do seu pedido, verifique o sistema de origem para confirmar o acesso.",
-    "Once all actions are complete, you'll get access for previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "Uma vez que todas as ações estejam completas, você terá acesso para visualizar dados de amostra dentro do Atlan. Após a aprovação do seu pedido, verifique o sistema de origem para confirmar o acesso."
+    "Once all actions are complete, you'll get access for previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "Uma vez que todas as ações estejam completas, você terá acesso para visualizar dados de amostra dentro do Atlan. Após a aprovação do seu pedido, verifique o sistema de origem para confirmar o acesso.",
+    "You don’t have permission to add new rules.": "Você não tem permissão para adicionar novas regras.",
+    "Search rule type...": "Pesquisar tipo de regra...",
+    "Schema qualified name": "Nome qualificado do esquema",
+    "Database qualified name": "Nome qualificado do banco de dados",
+    "Schema name": "Nome do esquema",
+    "Database name": "Nome do banco de dados",
+    "Project name": "Nome do projeto"
 }

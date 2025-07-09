@@ -3664,8 +3664,6 @@
     "Belongs to": "に属します",
     "Glossary, terms & categories": "用語集、用語 & カテゴリ",
     "Domain | Domains": "ドメイン | ドメイン",
-    "Schema qualified Name": "スキーマ資格名",
-    "Database qualified Name": "データベース資格名",
     "Name of the asset": "アセットの名前",
     "Last updated at": "最終更新日時",
     "Last updated timestamp of the asset on Atlan": "Atlan上のアセットの最終更新タイムスタンプ",
@@ -8949,5 +8947,12 @@
     "Allow requesters to request data access for previewing sample data within Atlan only": "リクエスターが Atlan 内でサンプルデータをプレビューするためのデータアクセスをリクエストできるようにする",
     "Allow requesters to access for previewing sample data within Atlan.": "リクエスターが Atlan 内でサンプルデータをプレビューするためのアクセスを取得できるようにする。",
     "Once all actions are complete, you'll get access for querying data in Insights and previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "すべてのアクションが完了すると、Insights でデータをクエリし、Atlan 内でサンプルデータをプレビューするためのアクセスが得られます。リクエストが承認されたら、アクセスを確認するためにソースシステムをチェックしてください。",
-    "Once all actions are complete, you'll get access for previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "すべてのアクションが完了すると、Atlan 内でサンプルデータをプレビューするためのアクセスが得られます。リクエストが承認されたら、アクセスを確認するためにソースシステムをチェックしてください。"
+    "Once all actions are complete, you'll get access for previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "すべてのアクションが完了すると、Atlan 内でサンプルデータをプレビューするためのアクセスが得られます。リクエストが承認されたら、アクセスを確認するためにソースシステムをチェックしてください。",
+    "You don’t have permission to add new rules.": "新しいルールを追加する権限がありません。",
+    "Search rule type...": "ルールタイプを検索...",
+    "Schema qualified name": "スキーマ修飾名",
+    "Database qualified name": "データベース修飾名",
+    "Schema name": "スキーマ名",
+    "Database name": "データベース名",
+    "Project name": "プロジェクト名"
 }

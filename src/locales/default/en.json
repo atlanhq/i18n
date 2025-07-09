@@ -3664,8 +3664,6 @@
     "Belongs to": "Belongs to",
     "Glossary, terms & categories": "Glossary, terms & categories",
     "Domain | Domains": "Domain | Domains",
-    "Schema qualified Name": "Schema qualified Name",
-    "Database qualified Name": "Database qualified Name",
     "Name of the asset": "Name of the asset",
     "Last updated at": "Last updated at",
     "Last updated timestamp of the asset on Atlan": "Last updated timestamp of the asset on Atlan",
@@ -8949,5 +8947,12 @@
     "Allow requesters to request data access for previewing sample data within Atlan only": "Allow requesters to request data access for previewing sample data within Atlan only",
     "Allow requesters to access for previewing sample data within Atlan.": "Allow requesters to access for previewing sample data within Atlan.",
     "Once all actions are complete, you'll get access for querying data in Insights and previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "Once all actions are complete, you'll get access for querying data in Insights and previewing sample data within Atlan. After your request is approved, check source system to confirm access.",
-    "Once all actions are complete, you'll get access for previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "Once all actions are complete, you'll get access for previewing sample data within Atlan. After your request is approved, check source system to confirm access."
+    "Once all actions are complete, you'll get access for previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "Once all actions are complete, you'll get access for previewing sample data within Atlan. After your request is approved, check source system to confirm access.",
+    "You don’t have permission to add new rules.": "You don’t have permission to add new rules.",
+    "Search rule type...": "Search rule type...",
+    "Schema qualified name": "Schema qualified name",
+    "Database qualified name": "Database qualified name",
+    "Schema name": "Schema name",
+    "Database name": "Database name",
+    "Project name": "Project name"
 }

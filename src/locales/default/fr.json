@@ -3664,8 +3664,6 @@
     "Belongs to": "Appartient à",
     "Glossary, terms & categories": "Glossaire, termes et catégories",
     "Domain | Domains": "Domaine | Domaines",
-    "Schema qualified Name": "Nom qualifié de schéma",
-    "Database qualified Name": "Nom qualifié de base de données",
     "Name of the asset": "Nom de l'actif",
     "Last updated at": "Dernière mise à jour à",
     "Last updated timestamp of the asset on Atlan": "Horodatage de la dernière mise à jour de l'actif sur Atlan",
@@ -8949,5 +8947,12 @@
     "Allow requesters to request data access for previewing sample data within Atlan only": "Permettre aux demandeurs de demander l'accès aux données pour prévisualiser des données d'échantillon uniquement dans Atlan",
     "Allow requesters to access for previewing sample data within Atlan.": "Permettre aux demandeurs d'accéder à la prévisualisation des données d'échantillon dans Atlan.",
     "Once all actions are complete, you'll get access for querying data in Insights and previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "Une fois toutes les actions terminées, vous aurez accès à l'interrogation des données dans Insights et à la prévisualisation des données d'échantillon dans Atlan. Après l'approbation de votre demande, vérifiez le système source pour confirmer l'accès.",
-    "Once all actions are complete, you'll get access for previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "Une fois toutes les actions terminées, vous aurez accès à la prévisualisation des données d'échantillon dans Atlan. Après l'approbation de votre demande, vérifiez le système source pour confirmer l'accès."
+    "Once all actions are complete, you'll get access for previewing sample data within Atlan. After your request is approved, check source system to confirm access.": "Une fois toutes les actions terminées, vous aurez accès à la prévisualisation des données d'échantillon dans Atlan. Après l'approbation de votre demande, vérifiez le système source pour confirmer l'accès.",
+    "You don’t have permission to add new rules.": "Vous n'avez pas la permission d'ajouter de nouvelles règles.",
+    "Search rule type...": "Rechercher le type de règle...",
+    "Schema qualified name": "Nom qualifié du schéma",
+    "Database qualified name": "Nom qualifié de la base de données",
+    "Schema name": "Nom du schéma",
+    "Database name": "Nom de la base de données",
+    "Project name": "Nom du projet"
 }

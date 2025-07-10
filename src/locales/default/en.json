@@ -7911,8 +7911,6 @@
     "Separate multiple values with commas.": "Separate multiple values with commas.",
     "Categories you create in the sheet won't instantly show up in the dropdowns.": "Categories you create in the sheet won't instantly show up in the dropdowns.",
     "Me": "Me",
-    "Flow Project": "Flow Project",
-    "Flow Folder": "Flow Folder",
     "Parent Folder": "Parent Folder",
     "Control Operation": "Control Operation",
     "Flow Control Operation": "Flow Control Operation",
@@ -8954,5 +8952,6 @@
     "Database qualified name": "Database qualified name",
     "Schema name": "Schema name",
     "Database name": "Database name",
-    "Project name": "Project name"
+    "Project name": "Project name",
+    "Expression copied!": "Expression copied!"
 }

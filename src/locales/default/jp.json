@@ -7911,8 +7911,6 @@
     "Separate multiple values with commas.": "複数の値をカンマで区切ります。",
     "Categories you create in the sheet won't instantly show up in the dropdowns.": "シートで作成したカテゴリは、すぐにはドロップダウンに表示されません。",
     "Me": "私",
-    "Flow Project": "フロープロジェクト",
-    "Flow Folder": "フローフォルダ",
     "Parent Folder": "親フォルダ",
     "Control Operation": "制御操作",
     "Flow Control Operation": "フロー制御操作",
@@ -8954,5 +8952,6 @@
     "Database qualified name": "データベース修飾名",
     "Schema name": "スキーマ名",
     "Database name": "データベース名",
-    "Project name": "プロジェクト名"
+    "Project name": "プロジェクト名",
+    "Expression copied!": "式がコピーされました！"
 }

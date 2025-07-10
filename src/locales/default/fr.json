@@ -7911,8 +7911,6 @@
     "Separate multiple values with commas.": "Séparez plusieurs valeurs par des virgules.",
     "Categories you create in the sheet won't instantly show up in the dropdowns.": "Les catégories que vous créez dans la feuille ne s'afficheront pas instantanément dans les menus déroulants.",
     "Me": "Moi",
-    "Flow Project": "Projet Flow",
-    "Flow Folder": "Dossier Flow",
     "Parent Folder": "Dossier parent",
     "Control Operation": "Opération de contrôle",
     "Flow Control Operation": "Opération de contrôle de flux",
@@ -8954,5 +8952,6 @@
     "Database qualified name": "Nom qualifié de la base de données",
     "Schema name": "Nom du schéma",
     "Database name": "Nom de la base de données",
-    "Project name": "Nom du projet"
+    "Project name": "Nom du projet",
+    "Expression copied!": "Expression copiée!"
 }

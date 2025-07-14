@@ -5048,7 +5048,6 @@
     "Has domains": "A des domaines",
     "All assets which are owned by a domain": "Tous les actifs qui appartiennent à un domaine",
     "/{label}": "/{label}",
-    "Revoke data access": "Révoquer l'accès aux données",
     "Duplicate qualified name": "Nom qualifié dupliqué",
     "{count} tag is configured to propagate. This will affect more assets than those selected and may increase runtime. | {count} tags are configured to propagate. This will affect more assets than those selected and may increase runtime.": "{count} tag est configuré pour se propager. Cela affectera plus d'actifs que ceux sélectionnés et peut augmenter le temps d'exécution. | {count} tags sont configurés pour se propager. Cela affectera plus d'actifs que ceux sélectionnés et peut augmenter le temps d'exécution.",
     "This will affect more assets than those selected and may increase runtime.": "Cela affectera plus d'actifs que ceux sélectionnés et peut augmenter le temps d'exécution.",
@@ -9143,5 +9142,7 @@
     "Select readme template": "Sélectionnez le modèle de readme",
     "Business names": "Noms d'entreprise",
     "Synthetic data": "Données synthétiques",
-    "Select Run Type": "Sélectionnez le type d'exécution"
+    "Select Run Type": "Sélectionnez le type d'exécution",
+    "Choose persona": "Choisir persona",
+    "Manage data access": "Gérer l'accès aux données"
 }

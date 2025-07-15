@@ -5048,7 +5048,6 @@
     "Has domains": "Has domains",
     "All assets which are owned by a domain": "All assets which are owned by a domain",
     "/{label}": "/{label}",
-    "Revoke data access": "Revoke data access",
     "Duplicate qualified name": "Duplicate qualified name",
     "{count} tag is configured to propagate. This will affect more assets than those selected and may increase runtime. | {count} tags are configured to propagate. This will affect more assets than those selected and may increase runtime.": "{count} tag is configured to propagate. This will affect more assets than those selected and may increase runtime. | {count} tags are configured to propagate. This will affect more assets than those selected and may increase runtime.",
     "This will affect more assets than those selected and may increase runtime.": "This will affect more assets than those selected and may increase runtime.",
@@ -9143,5 +9142,7 @@
     "Select readme template": "Select readme template",
     "Business names": "Business names",
     "Synthetic data": "Synthetic data",
-    "Select Run Type": "Select Run Type"
+    "Select Run Type": "Select Run Type",
+    "Choose persona": "Choose persona",
+    "Manage data access": "Manage data access"
 }

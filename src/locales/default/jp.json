@@ -5048,7 +5048,6 @@
     "Has domains": "ドメインがあります",
     "All assets which are owned by a domain": "ドメインに所有されているすべての資産",
     "/{label}": "/{label}",
-    "Revoke data access": "データアクセスを取り消す",
     "Duplicate qualified name": "重複した適格名",
     "{count} tag is configured to propagate. This will affect more assets than those selected and may increase runtime. | {count} tags are configured to propagate. This will affect more assets than those selected and may increase runtime.": "{count} タグは伝播するように設定されています。これにより、選択されたものよりも多くのアセットに影響を与え、実行時間が増加する可能性があります。 | {count} タグは伝播するように設定されています。これにより、選択されたものよりも多くのアセットに影響を与え、実行時間が増加する可能性があります。",
     "This will affect more assets than those selected and may increase runtime.": "これにより、選択されたものよりも多くのアセットに影響を与え、実行時間が増加する可能性があります。",
@@ -9143,5 +9142,7 @@
     "Select readme template": "READMEテンプレートを選択",
     "Business names": "ビジネス名",
     "Synthetic data": "合成データ",
-    "Select Run Type": "実行タイプを選択"
+    "Select Run Type": "実行タイプを選択",
+    "Choose persona": "ペルソナを選択",
+    "Manage data access": "データアクセスを管理"
 }

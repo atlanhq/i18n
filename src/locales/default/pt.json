@@ -9144,5 +9144,7 @@
     "Synthetic data": "Dados sintéticos",
     "Select Run Type": "Selecione Tipo de Execução",
     "Choose persona": "Escolher persona",
-    "Manage data access": "Gerenciar acesso aos dados"
+    "Manage data access": "Gerenciar acesso aos dados",
+    "Request was auto approved": "Solicitação foi aprovada automaticamente",
+    "Collected the details from the requester using the form": "Coletou os detalhes do solicitante usando o formulário"
 }

@@ -9144,5 +9144,7 @@
     "Synthetic data": "合成データ",
     "Select Run Type": "実行タイプを選択",
     "Choose persona": "ペルソナを選択",
-    "Manage data access": "データアクセスを管理"
+    "Manage data access": "データアクセスを管理",
+    "Request was auto approved": "リクエストは自動承認されました",
+    "Collected the details from the requester using the form": "フォームを使用してリクエスターから詳細を収集しました"
 }

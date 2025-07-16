@@ -9197,5 +9197,7 @@
     "Get rule suggestions from Atlan AI based on your column’s metadata": "Get rule suggestions from Atlan AI based on your column’s metadata",
     "AI Model Version": "AI Model Version",
     "This feature is new and may change in functionality or availability in the future. Please {link} with any questions!": "This feature is new and may change in functionality or availability in the future. Please {link} with any questions!",
-    "Please try again.": "Please try again."
+    "Please try again.": "Please try again.",
+    "Discover and track processes": "Discover and track processes",
+    "Asset profile visitors": "Asset profile visitors"
 }

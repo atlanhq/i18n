@@ -9197,5 +9197,6 @@
     "Get rule suggestions from Atlan AI based on your column’s metadata": "あなたの列のメタデータに基づいてAtlan AIからルール提案を取得します",
     "AI Model Version": "AIモデルバージョン",
     "This feature is new and may change in functionality or availability in the future. Please {link} with any questions!": "この機能は新しく、将来的に機能や利用可能性が変更される可能性があります。質問がある場合は、{link}してください！",
-    "Please try again.": "もう一度お試しください。"
+    "Please try again.": "もう一度お試しください。",
+    "{portsCount} out of {columnCount} {label} have lineage": "{portsCount} の {columnCount} {label} のうち系譜があります"
 }

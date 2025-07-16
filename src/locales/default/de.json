@@ -9197,5 +9197,6 @@
     "Get rule suggestions from Atlan AI based on your column’s metadata": "Holen Sie sich Regelvorschläge von Atlan AI basierend auf den Metadaten Ihrer Spalte",
     "AI Model Version": "AI-Modellversion",
     "This feature is new and may change in functionality or availability in the future. Please {link} with any questions!": "Dieses Feature ist neu und kann in Zukunft in Funktionalität oder Verfügbarkeit geändert werden. Bitte {link} bei Fragen!",
-    "Please try again.": "Bitte versuchen Sie es erneut."
+    "Please try again.": "Bitte versuchen Sie es erneut.",
+    "{portsCount} out of {columnCount} {label} have lineage": "{portsCount} von {columnCount} {label} haben eine Herkunft"
 }

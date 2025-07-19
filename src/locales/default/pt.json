@@ -9242,5 +9242,7 @@
     "Failed to read file": "Falha ao ler o arquivo",
     "File must contain an array of rules": "O arquivo deve conter um array de regras",
     "{fileName} file uploaded successfully": "{fileName} arquivo enviado com sucesso",
-    "Failed to parse file: {error}": "Falha ao analisar o arquivo: {error}"
+    "Failed to parse file: {error}": "Falha ao analisar o arquivo: {error}",
+    "Hide sidebar": "Ocultar barra lateral",
+    "Failed to fetch Permissions.": "Falha ao buscar permissões."
 }

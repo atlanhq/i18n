@@ -9242,5 +9242,7 @@
     "Failed to read file": "Datei konnte nicht gelesen werden",
     "File must contain an array of rules": "Die Datei muss ein Array von Regeln enthalten",
     "{fileName} file uploaded successfully": "{fileName} Datei erfolgreich hochgeladen",
-    "Failed to parse file: {error}": "Datei konnte nicht analysiert werden: {error}"
+    "Failed to parse file: {error}": "Datei konnte nicht analysiert werden: {error}",
+    "Hide sidebar": "Seitenleiste ausblenden",
+    "Failed to fetch Permissions.": "Fehler beim Abrufen der Berechtigungen."
 }

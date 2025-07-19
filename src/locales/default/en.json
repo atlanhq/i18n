@@ -9242,5 +9242,7 @@
     "Failed to read file": "Failed to read file",
     "File must contain an array of rules": "File must contain an array of rules",
     "{fileName} file uploaded successfully": "{fileName} file uploaded successfully",
-    "Failed to parse file: {error}": "Failed to parse file: {error}"
+    "Failed to parse file: {error}": "Failed to parse file: {error}",
+    "Hide sidebar": "Hide sidebar",
+    "Failed to fetch Permissions.": "Failed to fetch Permissions."
 }

@@ -9242,5 +9242,7 @@
     "Failed to read file": "ファイルの読み込みに失敗しました",
     "File must contain an array of rules": "ファイルにはルールの配列が含まれている必要があります",
     "{fileName} file uploaded successfully": "{fileName} ファイルが正常にアップロードされました",
-    "Failed to parse file: {error}": "ファイルの解析に失敗しました: {error}"
+    "Failed to parse file: {error}": "ファイルの解析に失敗しました: {error}",
+    "Hide sidebar": "サイドバーを隠す",
+    "Failed to fetch Permissions.": "権限の取得に失敗しました。"
 }

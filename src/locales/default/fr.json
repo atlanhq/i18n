@@ -9242,5 +9242,7 @@
     "Failed to read file": "Échec de la lecture du fichier",
     "File must contain an array of rules": "Le fichier doit contenir un tableau de règles",
     "{fileName} file uploaded successfully": "{fileName} fichier téléchargé avec succès",
-    "Failed to parse file: {error}": "Échec de l'analyse du fichier : {error}"
+    "Failed to parse file: {error}": "Échec de l'analyse du fichier : {error}",
+    "Hide sidebar": "Masquer la barre latérale",
+    "Failed to fetch Permissions.": "Échec de la récupération des autorisations."
 }

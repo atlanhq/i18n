@@ -9244,5 +9244,16 @@
     "{fileName} file uploaded successfully": "{fileName} ファイルが正常にアップロードされました",
     "Failed to parse file: {error}": "ファイルの解析に失敗しました: {error}",
     "Hide sidebar": "サイドバーを隠す",
-    "Failed to fetch Permissions.": "権限の取得に失敗しました。"
+    "Failed to fetch Permissions.": "権限の取得に失敗しました。",
+    "Orchestrator": "オーケストレーター",
+    "Miner": "マイナー",
+    "Crawlers": "クローラー",
+    "Enrichers": "エンリッチャー",
+    "Utility": "ユーティリティ",
+    "Workflow & Run": "ワークフローと実行",
+    "Last 24H": "過去24時間",
+    "Runs created since/{0}": "/{0}以降に作成された実行",
+    "Last 2D": "過去2日",
+    "Last 7D": "過去7日",
+    "Last 30D": "過去30日"
 }

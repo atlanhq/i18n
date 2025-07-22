@@ -9244,5 +9244,16 @@
     "{fileName} file uploaded successfully": "{fileName} arquivo enviado com sucesso",
     "Failed to parse file: {error}": "Falha ao analisar o arquivo: {error}",
     "Hide sidebar": "Ocultar barra lateral",
-    "Failed to fetch Permissions.": "Falha ao buscar permissões."
+    "Failed to fetch Permissions.": "Falha ao buscar permissões.",
+    "Orchestrator": "Orquestrador",
+    "Miner": "Minerador",
+    "Crawlers": "Rastreador",
+    "Enrichers": "Enriquecedores",
+    "Utility": "Utilitário",
+    "Workflow & Run": "Fluxo de Trabalho & Execução",
+    "Last 24H": "Últimas 24H",
+    "Runs created since/{0}": "Execuções criadas desde/{0}",
+    "Last 2D": "Últimos 2D",
+    "Last 7D": "Últimos 7D",
+    "Last 30D": "Últimos 30D"
 }

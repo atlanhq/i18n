@@ -9244,5 +9244,16 @@
     "{fileName} file uploaded successfully": "{fileName} file uploaded successfully",
     "Failed to parse file: {error}": "Failed to parse file: {error}",
     "Hide sidebar": "Hide sidebar",
-    "Failed to fetch Permissions.": "Failed to fetch Permissions."
+    "Failed to fetch Permissions.": "Failed to fetch Permissions.",
+    "Orchestrator": "Orchestrator",
+    "Miner": "Miner",
+    "Crawlers": "Crawlers",
+    "Enrichers": "Enrichers",
+    "Utility": "Utility",
+    "Workflow & Run": "Workflow & Run",
+    "Last 24H": "Last 24H",
+    "Runs created since/{0}": "Runs created since/{0}",
+    "Last 2D": "Last 2D",
+    "Last 7D": "Last 7D",
+    "Last 30D": "Last 30D"
 }

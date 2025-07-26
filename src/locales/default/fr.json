@@ -6073,7 +6073,6 @@
     "Schema Name": "Nom du schéma",
     "Table Type": "Type de table",
     "Source Created At": "Source créée à",
-    "No {assetType}s found": "Aucun {assetType} trouvé",
     "Dataverse Entity": "Entité Dataverse",
     "Entity Assets": "Actifs d'entité",
     "Is Custom?": "Est personnalisé ?",
@@ -9469,5 +9468,15 @@
     "Enable Databricks Data Quality": "Activer la qualité des données Databricks",
     "Enable Data Quality for Databricks connections.": "Activer la qualité des données pour les connexions Databricks.",
     "Grant necessary permissions in Databricks to allow users to create and manage rules on Databricks assets.": "Accorder les autorisations nécessaires dans Databricks pour permettre aux utilisateurs de créer et de gérer des règles sur les actifs Databricks.",
-    "Get score for each product based on the principles of 'data as a product'.": "Obtenir le score pour chaque produit basé sur les principes de 'données en tant que produit'."
+    "Get score for each product based on the principles of 'data as a product'.": "Obtenir le score pour chaque produit basé sur les principes de 'données en tant que produit'.",
+    "Asset is output port and recommended for consumption in {count} {assetType}:": "L'actif est un port de sortie et recommandé pour la consommation dans {count} {assetType}:",
+    "{count} {assetType}": "{count} {assetType}",
+    "You don’t have access to edit Readme for this asset": "Vous n'avez pas accès pour modifier le Readme de cet actif",
+    "Search {count} {assetType}": "Rechercher {count} {assetType}",
+    "No {assetType} found": "Aucun {assetType} trouvé",
+    "visual": "visuel",
+    "visuals": "visuels",
+    "visualization": "visualisation",
+    "visualizations": "visualisations",
+    "{assetType} preview": "aperçu de {assetType}"
 }

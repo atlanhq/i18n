@@ -6073,7 +6073,6 @@
     "Schema Name": "Schema Name",
     "Table Type": "Table Type",
     "Source Created At": "Source Created At",
-    "No {assetType}s found": "No {assetType}s found",
     "Dataverse Entity": "Dataverse Entity",
     "Entity Assets": "Entity Assets",
     "Is Custom?": "Is Custom?",
@@ -9469,5 +9468,15 @@
     "Enable Databricks Data Quality": "Enable Databricks Data Quality",
     "Enable Data Quality for Databricks connections.": "Enable Data Quality for Databricks connections.",
     "Grant necessary permissions in Databricks to allow users to create and manage rules on Databricks assets.": "Grant necessary permissions in Databricks to allow users to create and manage rules on Databricks assets.",
-    "Get score for each product based on the principles of 'data as a product'.": "Get score for each product based on the principles of 'data as a product'."
+    "Get score for each product based on the principles of 'data as a product'.": "Get score for each product based on the principles of 'data as a product'.",
+    "Asset is output port and recommended for consumption in {count} {assetType}:": "Asset is output port and recommended for consumption in {count} {assetType}:",
+    "{count} {assetType}": "{count} {assetType}",
+    "You don’t have access to edit Readme for this asset": "You don’t have access to edit Readme for this asset",
+    "Search {count} {assetType}": "Search {count} {assetType}",
+    "No {assetType} found": "No {assetType} found",
+    "visual": "visual",
+    "visuals": "visuals",
+    "visualization": "visualization",
+    "visualizations": "visualizations",
+    "{assetType} preview": "{assetType} preview"
 }

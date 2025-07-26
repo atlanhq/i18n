@@ -6073,7 +6073,6 @@
     "Schema Name": "スキーマ名",
     "Table Type": "テーブルタイプ",
     "Source Created At": "ソース作成日時",
-    "No {assetType}s found": "{assetType} が見つかりません",
     "Dataverse Entity": "Dataverse エンティティ",
     "Entity Assets": "エンティティアセット",
     "Is Custom?": "カスタムですか？",
@@ -9469,5 +9468,15 @@
     "Enable Databricks Data Quality": "Databricks接続のデータ品質を有効にする。",
     "Enable Data Quality for Databricks connections.": "Databricksアセットに対してルールを作成および管理できるようにするために必要な権限をDatabricksで付与します。",
     "Grant necessary permissions in Databricks to allow users to create and manage rules on Databricks assets.": "‘データを製品として’の原則に基づいて各製品のスコアを取得する。",
-    "Get score for each product based on the principles of 'data as a product'.": "Get score for each product based on the principles of 'data as a product'."
+    "Get score for each product based on the principles of 'data as a product'.": "Get score for each product based on the principles of 'data as a product'.",
+    "Asset is output port and recommended for consumption in {count} {assetType}:": "アセットは出力ポートであり、{count} {assetType}の消費に推奨されます：",
+    "{count} {assetType}": "{count} {assetType}",
+    "You don’t have access to edit Readme for this asset": "このアセットのReadmeを編集するアクセス権がありません",
+    "Search {count} {assetType}": "{count} {assetType}を検索",
+    "No {assetType} found": "{assetType}が見つかりません",
+    "visual": "ビジュアル",
+    "visuals": "ビジュアル",
+    "visualization": "視覚化",
+    "visualizations": "視覚化",
+    "{assetType} preview": "{assetType}のプレビュー"
 }

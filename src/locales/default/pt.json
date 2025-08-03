@@ -7692,7 +7692,7 @@
     "Tag will propagate to all linked assets and their child assets and downstream assets via lineage.": "A tag irá propagar para todos os ativos vinculados e seus ativos filhos e ativos a montante via linhagem.",
     "Tag will propagate to all linked assets and their child assets.": "A tag irá propagar para todos os ativos vinculados e seus ativos filhos.",
     "Tag will propagate to all linked assets and their downstream assets via lineage.": "A tag irá propagar para todos os ativos vinculados e seus ativos a montante via linhagem.",
-    "Convert \"{name}\" to domain": "Converter \"{name}\" para domínio",
+    "Convert {name} to a domain": "Converter {name} em um domínio",
     "Copied to clipboard": "Copiado para a área de transferência",
     "Note: Only available for Null Count, Blank Count, Null percentage and Blank percentage": "Nota: Disponível apenas para Contagem Nula, Contagem em Branco, porcentagem Nula e porcentagem em Branco",
     "Hide SQL": "Ocultar SQL",

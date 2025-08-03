@@ -7692,7 +7692,7 @@
     "Tag will propagate to all linked assets and their child assets and downstream assets via lineage.": "L'étiquette se propagera à tous les actifs liés et à leurs actifs enfants et actifs en aval via la lineage.",
     "Tag will propagate to all linked assets and their child assets.": "L'étiquette se propagera à tous les actifs liés et à leurs actifs enfants.",
     "Tag will propagate to all linked assets and their downstream assets via lineage.": "L'étiquette se propagera à tous les actifs liés et à leurs actifs en aval via la lineage.",
-    "Convert \"{name}\" to domain": "Convertir \"{name}\" en domaine",
+    "Convert {name} to a domain": "Convertir {name} en domaine",
     "Copied to clipboard": "Copié dans le presse-papiers",
     "Note: Only available for Null Count, Blank Count, Null percentage and Blank percentage": "Remarque : Disponible uniquement pour le compte nul, le compte vide, le pourcentage nul et le pourcentage vide",
     "Hide SQL": "Masquer SQL",

@@ -7692,7 +7692,7 @@
     "Tag will propagate to all linked assets and their child assets and downstream assets via lineage.": "Tag will propagate to all linked assets and their child assets and downstream assets via lineage.",
     "Tag will propagate to all linked assets and their child assets.": "Tag will propagate to all linked assets and their child assets.",
     "Tag will propagate to all linked assets and their downstream assets via lineage.": "Tag will propagate to all linked assets and their downstream assets via lineage.",
-    "Convert \"{name}\" to domain": "Convert \"{name}\" to domain",
+    "Convert {name} to a domain": "Convert {name} to a domain",
     "Copied to clipboard": "Copied to clipboard",
     "Note: Only available for Null Count, Blank Count, Null percentage and Blank percentage": "Note: Only available for Null Count, Blank Count, Null percentage and Blank percentage",
     "Hide SQL": "Hide SQL",

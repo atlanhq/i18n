@@ -4320,7 +4320,7 @@
     "Convert to domain": "Convert to domain",
     "Convert “{name}“ to domain": "Convert “{name}“ to domain",
     "Owners of ’{name}’ subdomain and everything inside it will still remain the same. This action is irreversible, are you sure you want to convert?": "Owners of ’{name}’ subdomain and everything inside it will still remain the same. This action is irreversible, are you sure you want to convert?",
-    "Owners of ’{dragNodeName}’ and everything inside it will change to owners of ’{dropNodeName}’. Are you sure you want to move?": "Owners of ’{dragNodeName}’ and everything inside it will change to owners of ’{dropNodeName}’. Are you sure you want to move?",
+    "Moving {dragNodeName} will transfer ownership of all its contents to {dropNodeName}. Are you sure you want to move it?": "Moving {dragNodeName} will transfer ownership of all its contents to {dropNodeName}. Are you sure you want to move it?", want to move?",
     "“{dragNodeName}“ is already a child “{dropNodeName}“ domain": "“{dragNodeName}“ is already a child “{dropNodeName}“ domain",
     "You don’t have subdomain move permission for {name} domain": "You don’t have subdomain move permission for {name} domain",
     "You don’t have product move permission for {name} domain": "You don’t have product move permission for {name} domain",

@@ -9266,7 +9266,7 @@
     "This form is linked to few governance workflows. To {action}, first remove any dependencies. Until then, users can still submit responses.": "Dieses Formular ist mit einigen Governance-Workflows verknüpft. Um {action} durchzuführen, entfernen Sie zuerst alle Abhängigkeiten. Bis dahin können die Benutzer weiterhin Antworten einreichen.",
     "Mark as draft": "Als Entwurf markieren",
     "Move \"{dragNodeName}\" to \"{dropNodeName}\"": "\"{dragNodeName}\" nach \"{dropNodeName}\" verschieben",
-    "Owners of \"{dragNodeName}\" and everything inside it will change to owners of \"{dropNodeName}\". Are you sure you want to move?": "Die Eigentümer von \"{dragNodeName}\" und allem darin werden zu Eigentümern von \"{dropNodeName}\". Sind Sie sicher, dass Sie verschieben möchten?",
+    "Moving {dragNodeName} will transfer ownership of all its contents to {dropNodeName}. Are you sure you want to move it?": "Das Verschieben von {dragNodeName} überträgt das Eigentum an allen Inhalten auf {dropNodeName}. Sind Sie sicher, dass Sie es verschieben möchten?",
     "Owners of \"{name}\" subdomain and everything inside it will still remain the same. This action is irreversible, are you sure you want to convert?": "Die Eigentümer von \"{name}\" Subdomain und allem darin bleiben gleich. Diese Aktion ist irreversibel, sind Sie sicher, dass Sie konvertieren möchten?",
     "Text Field": "Textfeld",
     "Dropdown Field": "Dropdown-Feld",

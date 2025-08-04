@@ -124,4 +124,7 @@ Please read our [Contributing Guidelines](./docs/CONTRIBUTING.md) for more detai
 
 MIT
 
---- 
+---
+
+<!-- Test comment for dummy PR - can be removed -->
+*This is a test change for PR validation purposes.* 

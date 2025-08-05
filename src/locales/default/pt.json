@@ -9722,9 +9722,12 @@
     "Recent users": "Usuários recentes",
     "Total views": "Total de visualizações",
     "Search {count} {asset} assets": "Pesquisar {count} ativos {asset}",
-    "Schema | Schemas": "Esquema | Esquemas",
     "weekly": "semanal",
     "monthly": "mensal",
     "manually": "manualmente",
-    "Runs {schedule}": "Executa {schedule}"
+    "Runs {schedule}": "Executa {schedule}",
+    "Total": "Total",
+    "certificates updated on": "certificados atualizados em",
+    "Assets created": "Ativos criados",
+    "Assets tagged by propagation": "Ativos marcados por propagação"
 }

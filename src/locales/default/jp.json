@@ -9722,9 +9722,12 @@
     "Recent users": "最近のユーザー",
     "Total views": "合計ビュー",
     "Search {count} {asset} assets": "{count} {asset} アセットを検索",
-    "Schema | Schemas": "スキーマ | スキーマ",
     "weekly": "週次",
     "monthly": "月次",
     "manually": "手動",
-    "Runs {schedule}": "{schedule} に従って実行"
+    "Runs {schedule}": "{schedule} に従って実行",
+    "Total": "合計",
+    "certificates updated on": "更新された証明書",
+    "Assets created": "作成された資産",
+    "Assets tagged by propagation": "伝播によってタグ付けされた資産"
 }

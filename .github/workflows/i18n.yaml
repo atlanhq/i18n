@@ -12,7 +12,7 @@ on:
             i18n-branch:
                 description: 'Select the i18n branch'
                 required: true
-                default: 'main'
+                default: 'automated-i18n'
 
 permissions:
     id-token: write

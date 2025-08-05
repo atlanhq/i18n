@@ -9137,7 +9137,6 @@
     "Open version profile": "Open version profile",
     "{number} versions": "{number} versions",
     "Source metadata": "Source metadata",
-    "version": "version",
     "COLUMN": "COLUMN",
     "METRICS": "METRICS",
     "rule suggestions": "rule suggestions",
@@ -9704,5 +9703,11 @@
     "1h": "1h",
     "1d": "1d",
     "Last 24 Hours": "Last 24 Hours",
-    "Last {days} days": "Last {days} days"
+    "Last {days} days": "Last {days} days",
+    "TAGS": "TAGS",
+    "TERMS": "TERMS",
+    "MISSING": "MISSING",
+    "DISTINCT": "DISTINCT",
+    "Search {count} {fieldType}": "Search {count} {fieldType}",
+    "Export {fieldType}": "Export {fieldType}"
 }

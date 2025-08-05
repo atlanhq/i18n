@@ -4,6 +4,11 @@ on:
     schedule:
         - cron: '0 1 * * *'
     workflow_dispatch:
+        inputs:
+            frontend-branch:
+                description: 'Select the frontend branch'
+                required: true
+                default: 'develop'
 
 permissions:
     id-token: write
@@ -11,9 +16,10 @@ permissions:
     pull-requests: write
 
 env:
-    BRANCH_NAME: 'automated-i18n'
+    BRANCH_NAME: ${{ github.event.client_payload.frontend-branch || github.event.inputs.frontend-branch || 'automated-i18n' }}
     BASE_BRANCH: 'main'
     FRONTEND_REPO: 'atlanhq/atlan-frontend'
+    FRONTEND_BRANCH: ${{ github.event.client_payload.frontend-branch || github.event.inputs.frontend-branch || 'develop' }}
 
 jobs:
     extract-and-translate:
@@ -33,13 +39,13 @@ jobs:
                   branch: ${{ env.BRANCH_NAME }}
 
             - name: Fail if branch already exists
-              if: steps.check-branch-exists.outputs.exists == 'true'
+              if: ${{ steps.check-branch-exists.outputs.exists == 'true' && env.BRANCH_NAME == 'automated-i18n' }}
               run: |
                 echo "::error::The branch '${{ env.BRANCH_NAME }}' already exists. Please delete or merge the existing branch before running this workflow again."
-                exit 0
+                exit 1
 
             - name: Create & checkout branch in i18n repo
-              run: git checkout -b $BRANCH_NAME
+              run: git checkout $BASE_BRANCH && git checkout -b $BRANCH_NAME
 
             - name: Configure git
               run: |
@@ -69,7 +75,7 @@ jobs:
                 repository: ${{ env.FRONTEND_REPO }}
                 token: ${{ secrets.ORG_PAT_GITHUB }}
                 path: frontend
-                ref: develop
+                ref: ${{ env.FRONTEND_BRANCH }}
 
             - name: Run translation script
               run: node scripts/translationScript.mjs
@@ -85,9 +91,10 @@ jobs:
                   rm -rf frontend
                   git add .
                   git commit -m "chore: update i18n strings" -m "Automated extraction of new i18n strings from frontend"
-                  git push origin $BRANCH_NAME
+                  git push origin +$BRANCH_NAME
 
             - name: Create PR if needed
+              if: env.BRANCH_NAME == 'automated-i18n'
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |

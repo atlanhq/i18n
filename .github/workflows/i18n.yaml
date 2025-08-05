@@ -6,9 +6,13 @@ on:
     workflow_dispatch:
         inputs:
             frontend-branch:
-                description: 'Please select the frontend branch'
+                description: 'Select the frontend branch'
                 required: true
                 default: 'develop'
+            i18n-branch:
+                description: 'Select the i18n branch'
+                required: true
+                default: 'main'
 
 permissions:
     id-token: write
@@ -16,7 +20,7 @@ permissions:
     pull-requests: write
 
 env:
-    BRANCH_NAME: 'automated-i18n'
+    BRANCH_NAME: ${{ github.event.client_payload.i18n-branch || github.event.inputs.i18n-branch || 'automated-i18n' }}
     BASE_BRANCH: 'main'
     FRONTEND_REPO: 'atlanhq/atlan-frontend'
     FRONTEND_BRANCH: ${{ github.event.client_payload.frontend-branch || github.event.inputs.frontend-branch || 'develop' }}
@@ -39,10 +43,10 @@ jobs:
                   branch: ${{ env.BRANCH_NAME }}
 
             - name: Fail if branch already exists
-              if: steps.check-branch-exists.outputs.exists == 'true'
+              if: ${{ steps.check-branch-exists.outputs.exists == 'true' && env.BRANCH_NAME == 'automated-i18n' }}
               run: |
                 echo "::error::The branch '${{ env.BRANCH_NAME }}' already exists. Please delete or merge the existing branch before running this workflow again."
-                exit 0
+                exit 1
 
             - name: Create & checkout branch in i18n repo
               run: git checkout -b $BRANCH_NAME

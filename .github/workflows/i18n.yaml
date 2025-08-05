@@ -4,6 +4,11 @@ on:
     schedule:
         - cron: '0 1 * * *'
     workflow_dispatch:
+        inputs:
+            frontend-branch:
+                description: 'Please select the frontend branch'
+                required: true
+                default: 'develop'
 
 permissions:
     id-token: write
@@ -14,6 +19,7 @@ env:
     BRANCH_NAME: 'automated-i18n'
     BASE_BRANCH: 'main'
     FRONTEND_REPO: 'atlanhq/atlan-frontend'
+    FRONTEND_BRANCH: ${{ github.event.client_payload.frontend-branch || github.event.inputs.frontend-branch || 'develop' }}
 
 jobs:
     extract-and-translate:
@@ -69,7 +75,7 @@ jobs:
                 repository: ${{ env.FRONTEND_REPO }}
                 token: ${{ secrets.ORG_PAT_GITHUB }}
                 path: frontend
-                ref: develop
+                ref: ${{ env.FRONTEND_BRANCH }}
 
             - name: Run translation script
               run: node scripts/translationScript.mjs

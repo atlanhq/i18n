@@ -9137,7 +9137,6 @@
     "Open version profile": "バージョンプロファイルを開く",
     "{number} versions": "{number} バージョン",
     "Source metadata": "ソースメタデータ",
-    "version": "バージョン",
     "COLUMN": "列",
     "METRICS": "メトリクス",
     "rule suggestions": "ルール提案",
@@ -9704,5 +9703,11 @@
     "1h": "1時間",
     "1d": "1日",
     "Last 24 Hours": "過去 24 時間",
-    "Last {days} days": "過去 {days} 日"
+    "Last {days} days": "過去 {days} 日",
+    "TAGS": "タグ",
+    "TERMS": "用語",
+    "MISSING": "欠落",
+    "DISTINCT": "異なる",
+    "Search {count} {fieldType}": "{count} {fieldType}を検索",
+    "Export {fieldType}": "{fieldType}をエクスポート"
 }

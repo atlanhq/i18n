@@ -9137,7 +9137,6 @@
     "Open version profile": "Ouvrir le profil de version",
     "{number} versions": "{number} versions",
     "Source metadata": "Métadonnées source",
-    "version": "version",
     "COLUMN": "COLONNE",
     "METRICS": "MÉTRIQUES",
     "rule suggestions": "suggestions de règles",
@@ -9704,5 +9703,11 @@
     "1h": "1h",
     "1d": "1j",
     "Last 24 Hours": "Dernières 24 heures",
-    "Last {days} days": "Derniers {days} jours"
+    "Last {days} days": "Derniers {days} jours",
+    "TAGS": "ÉTIQUETTES",
+    "TERMS": "TERMES",
+    "MISSING": "MANQUANT",
+    "DISTINCT": "DISTINCT",
+    "Search {count} {fieldType}": "Rechercher {count} {fieldType}",
+    "Export {fieldType}": "Exporter {fieldType}"
 }

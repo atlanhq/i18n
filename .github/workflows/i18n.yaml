@@ -49,7 +49,7 @@ jobs:
                 exit 1
 
             - name: Create & checkout branch in i18n repo
-              run: git checkout -b $BRANCH_NAME
+              run: git checkout $BASE_BRANCH && git checkout -b $BRANCH_NAME
 
             - name: Configure git
               run: |

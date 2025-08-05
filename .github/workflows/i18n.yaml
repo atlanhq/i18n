@@ -95,7 +95,7 @@ jobs:
                   rm -rf frontend
                   git add .
                   git commit -m "chore: update i18n strings" -m "Automated extraction of new i18n strings from frontend"
-                  git push origin $BRANCH_NAME
+                  git push origin +$BRANCH_NAME
 
             - name: Create PR if needed
               if: env.BRANCH_NAME == 'automated-i18n'

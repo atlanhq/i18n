@@ -9748,5 +9748,7 @@
     "Edit credential": "Editar credencial",
     "Enter new name": "Digite um novo nome",
     "Enter new description": "Digite uma nova descrição",
-    "{count} persona | {count} personas": "{count} persona | {count} personas"
+    "{count} persona | {count} personas": "{count} persona | {count} personas",
+    "Tenant registered successfully.": "Inquilino registrado com sucesso.",
+    "Unable to register tenant. Please try again.": "Não foi possível registrar o inquilino. Por favor, tente novamente."
 }

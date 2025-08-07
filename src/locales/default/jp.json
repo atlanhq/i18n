@@ -9748,5 +9748,7 @@
     "Edit credential": "資格情報を編集",
     "Enter new name": "新しい名前を入力",
     "Enter new description": "新しい説明を入力",
-    "{count} persona | {count} personas": "{count}ペルソナ | {count}ペルソナ"
+    "{count} persona | {count} personas": "{count}ペルソナ | {count}ペルソナ",
+    "Tenant registered successfully.": "テナントが正常に登録されました。",
+    "Unable to register tenant. Please try again.": "テナントを登録できませんでした。もう一度お試しください。"
 }

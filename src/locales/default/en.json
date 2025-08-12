@@ -276,7 +276,7 @@
     "<namespace>.servicebus.windows.net:9093": "<namespace>.servicebus.windows.net:9093",
     "<private {type}>": "<private {type}>",
     "<redash-instance>.<domain>.com": "<redash-instance>.<domain>.com",
-    "<service_account_name>@<project_id>.iam.gserviceaccount.com": "<service_account_name>@<project_id>.iam.gserviceaccount.com",
+    "<service_account_name>{'@'}<project_id>.iam.gserviceaccount.com": "<service_account_name>{'@'}<project_id>.iam.gserviceaccount.com",
     "<tenant-id>.<region>.qlikcloud.com": "<tenant-id>.<region>.qlikcloud.com",
     "<tenant>.<region>.<provider>.confluent.cloud": "<tenant>.<region>.<provider>.confluent.cloud",
     "<tenant>.<region>.<provider>.confluent.cloud:9092": "<tenant>.<region>.<provider>.confluent.cloud:9092",

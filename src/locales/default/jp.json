@@ -12915,7 +12915,6 @@
     "{workflow} refreshed": "{workflow} が更新されました",
     "{x} out of {y} assets": "{y}の資産のうち{x}件",
     "{years} years": "{years} 年",
-    "{}": "{}",
     "~": "~",
     "©": "モダンデータワークスペース",
     "“{dragNodeName}“ is already a child “{dropNodeName}“ domain": "「{dragNodeName}」はすでに「{dropNodeName}」ドメインの子です",

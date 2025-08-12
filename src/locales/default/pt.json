@@ -12915,7 +12915,6 @@
     "{workflow} refreshed": "{workflow} atualizado",
     "{x} out of {y} assets": "{x} de {y} ativos",
     "{years} years": "{years} anos",
-    "{}": "{}",
     "~": "~",
     "©": "©",
     "“{dragNodeName}“ is already a child “{dropNodeName}“ domain": "“{dragNodeName}” já é um domínio filho de “{dropNodeName}”",

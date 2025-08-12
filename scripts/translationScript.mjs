@@ -394,7 +394,6 @@ async function synchronizeLocaleFiles(allLocales) {
     const report = await VueI18NExtract.createI18NReport({
         vueFiles: `./frontend/src/**/*.?(js|vue|ts)`,
         languageFiles: `${BASE_DIRECTORY}/src/locales/default/*.json`,
-        remove: true,
     })
 
     console.log('Report created. Processing missing keys...')

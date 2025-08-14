@@ -12968,5 +12968,16 @@
     "Enabling tag value concatenation may alter tag values after reverse sync. Use with caution and refer to the {link}.": "Habilitar a concatenação de valores de tag pode alterar os valores de tag após a sincronização reversa. Use com cautela e consulte o {link}.",
     "Advanced configuration": "Configuração avançada",
     "Advanced configuration for reverse sync": "Configuração avançada para sincronização reversa",
-    "Qlik Column": "Coluna Qlik"
+    "Qlik Column": "Coluna Qlik",
+    "View {type}": "Ver {type}",
+    "Access management ({count})": "Gerenciamento de acesso ({count})",
+    "Policy approval ({count})": "Aprovação de política ({count})",
+    "Change management ({count})": "Gerenciamento de mudanças ({count})",
+    "New entity creation ({count})": "Criação de nova entidade ({count})",
+    "All workflows": "Todos os fluxos de trabalho",
+    "Created by {count} users": "Criado por {count} usuários",
+    "Showing Workflow types": "Mostrando tipos de fluxo de trabalho",
+    "Access management": "Gerenciamento de acesso",
+    "Change management": "Gerenciamento de mudanças",
+    "New entity creation": "Criação de nova entidade"
 }

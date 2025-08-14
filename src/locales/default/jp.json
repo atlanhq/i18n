@@ -12968,5 +12968,16 @@
     "Enabling tag value concatenation may alter tag values after reverse sync. Use with caution and refer to the {link}.": "タグ値の連結を有効にすると、逆同期後にタグ値が変更される可能性があります。注意して使用し、{link}を参照してください。",
     "Advanced configuration": "高度な設定",
     "Advanced configuration for reverse sync": "逆同期のための高度な設定",
-    "Qlik Column": "Qlikカラム"
+    "Qlik Column": "Qlikカラム",
+    "View {type}": "{type}を表示",
+    "Access management ({count})": "アクセス管理 ({count})",
+    "Policy approval ({count})": "ポリシー承認 ({count})",
+    "Change management ({count})": "変更管理 ({count})",
+    "New entity creation ({count})": "新しいエンティティの作成 ({count})",
+    "All workflows": "すべてのワークフロー",
+    "Created by {count} users": "{count}人のユーザーによって作成されました",
+    "Showing Workflow types": "ワークフロータイプを表示",
+    "Access management": "アクセス管理",
+    "Change management": "変更管理",
+    "New entity creation": "新しいエンティティの作成"
 }

@@ -12979,5 +12979,15 @@
     "Showing Workflow types": "ワークフロータイプを表示",
     "Access management": "アクセス管理",
     "Change management": "変更管理",
-    "New entity creation": "新しいエンティティの作成"
+    "New entity creation": "新しいエンティティの作成",
+    "This asset is partially catalogued in Atlan. It is discoverable and visible in lineage, but enrichment is not supported.": "この資産はAtlanに部分的にカタログ化されています。発見可能で系譜に表示されますが、強化はサポートされていません。",
+    "glossary terms": "用語集の用語",
+    "description": "説明",
+    "senstivity tag": "感度タグ",
+    "certificate markers": "証明書マーカー",
+    "senstivity tags": "感度タグ",
+    "lineage": "系譜",
+    "A playbook with similar name already exists. Do you want to continue?": "同じ名前のプレイブックはすでに存在します。続行しますか？",
+    "Title cannot exceed 40 characters!": "タイトルは40文字を超えてはいけません！",
+    "Title must contain at least one letter or number!": "タイトルには少なくとも1つの文字または数字を含める必要があります！"
 }

@@ -12979,5 +12979,15 @@
     "Showing Workflow types": "Affichage des types de flux de travail",
     "Access management": "Gestion des accès",
     "Change management": "Gestion des changements",
-    "New entity creation": "Création de nouvelle entité"
+    "New entity creation": "Création de nouvelle entité",
+    "This asset is partially catalogued in Atlan. It is discoverable and visible in lineage, but enrichment is not supported.": "Cet actif est partiellement catalogué dans Atlan. Il est découvrable et visible dans la lignée, mais l'enrichissement n'est pas pris en charge.",
+    "glossary terms": "termes du glossaire",
+    "description": "description",
+    "senstivity tag": "étiquette de sensibilité",
+    "certificate markers": "marqueurs de certificat",
+    "senstivity tags": "étiquettes de sensibilité",
+    "lineage": "lignée",
+    "A playbook with similar name already exists. Do you want to continue?": "Un playbook avec un nom similaire existe déjà. Voulez-vous continuer ?",
+    "Title cannot exceed 40 characters!": "Le titre ne peut pas dépasser 40 caractères !",
+    "Title must contain at least one letter or number!": "Le titre doit contenir au moins une lettre ou un chiffre !"
 }

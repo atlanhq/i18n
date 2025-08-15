@@ -12989,5 +12989,10 @@
     "lineage": "系譜",
     "A playbook with similar name already exists. Do you want to continue?": "同じ名前のプレイブックはすでに存在します。続行しますか？",
     "Title cannot exceed 40 characters!": "タイトルは40文字を超えてはいけません！",
-    "Title must contain at least one letter or number!": "タイトルには少なくとも1つの文字または数字を含める必要があります！"
+    "Title must contain at least one letter or number!": "タイトルには少なくとも1つの文字または数字を含める必要があります！",
+    "Convert {name} to a domain": "{name}をドメインに変換",
+    "Converting {name} to a domain won't change any ownership. Are you sure you want to convert it?": "{name}をドメインに変換しても所有権は変わりません。変換してもよろしいですか？",
+    "Moving {name} will transfer ownership of all its contents to the above selected domain or subdomain.": "{name}を移動すると、そのすべてのコンテンツの所有権が上記の選択したドメインまたはサブドメインに移転します。",
+    "Move {dragNodeName} to {dropNodeName}": "{dragNodeName}を{dropNodeName}に移動",
+    "Moving {dragNodeName} will transfer ownership of all its contents to {dropNodeName}. Are you sure you want to move it?": "{dragNodeName}を移動すると、そのすべてのコンテンツの所有権が{dropNodeName}に移転します。移動してもよろしいですか？"
 }

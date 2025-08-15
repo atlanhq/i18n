@@ -12989,5 +12989,10 @@
     "lineage": "lineage",
     "A playbook with similar name already exists. Do you want to continue?": "A playbook with similar name already exists. Do you want to continue?",
     "Title cannot exceed 40 characters!": "Title cannot exceed 40 characters!",
-    "Title must contain at least one letter or number!": "Title must contain at least one letter or number!"
+    "Title must contain at least one letter or number!": "Title must contain at least one letter or number!",
+    "Convert {name} to a domain": "Convert {name} to a domain",
+    "Converting {name} to a domain won't change any ownership. Are you sure you want to convert it?": "Converting {name} to a domain won't change any ownership. Are you sure you want to convert it?",
+    "Moving {name} will transfer ownership of all its contents to the above selected domain or subdomain.": "Moving {name} will transfer ownership of all its contents to the above selected domain or subdomain.",
+    "Move {dragNodeName} to {dropNodeName}": "Move {dragNodeName} to {dropNodeName}",
+    "Moving {dragNodeName} will transfer ownership of all its contents to {dropNodeName}. Are you sure you want to move it?": "Moving {dragNodeName} will transfer ownership of all its contents to {dropNodeName}. Are you sure you want to move it?"
 }

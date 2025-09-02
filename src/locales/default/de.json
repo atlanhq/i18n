@@ -12989,5 +12989,10 @@
     "lineage": "Herkunft",
     "A playbook with similar name already exists. Do you want to continue?": "Ein Playbook mit einem ähnlichen Namen existiert bereits. Möchten Sie fortfahren?",
     "Title cannot exceed 40 characters!": "Der Titel darf 40 Zeichen nicht überschreiten!",
-    "Title must contain at least one letter or number!": "Der Titel muss mindestens einen Buchstaben oder eine Zahl enthalten!"
+    "Title must contain at least one letter or number!": "Der Titel muss mindestens einen Buchstaben oder eine Zahl enthalten!",
+    "Convert {name} to a domain": "Konvertiere {name} in eine Domain",
+    "Converting {name} to a domain won't change any ownership. Are you sure you want to convert it?": "Die Konvertierung von {name} in eine Domain ändert keinen Besitz. Bist du sicher, dass du es konvertieren möchtest?",
+    "Moving {name} will transfer ownership of all its contents to the above selected domain or subdomain.": "Das Verschieben von {name} überträgt das Eigentum an allen Inhalten an die oben ausgewählte Domain oder Subdomain.",
+    "Move {dragNodeName} to {dropNodeName}": "Bewege {dragNodeName} zu {dropNodeName}",
+    "Moving {dragNodeName} will transfer ownership of all its contents to {dropNodeName}. Are you sure you want to move it?": "Das Verschieben von {dragNodeName} überträgt das Eigentum an allen Inhalten an {dropNodeName}. Bist du sicher, dass du es verschieben möchtest?"
 }

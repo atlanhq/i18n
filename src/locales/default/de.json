@@ -13217,5 +13217,7 @@
     "Object Lock Mode": "Objekt-Sperrmodus",
     "Object Lock Legal Hold Enabled": "Objekt-Sperre rechtlicher Halt aktiviert",
     "Coming Soon": "Demnächst",
-    "This connector will soon be upgraded to the new experience. Please {link} with any questions!": "Dieser Connector wird bald auf die neue Erfahrung aktualisiert. Bitte {link} bei Fragen!"
+    "This connector will soon be upgraded to the new experience. Please {link} with any questions!": "Dieser Connector wird bald auf die neue Erfahrung aktualisiert. Bitte {link} bei Fragen!",
+    "Top Users": "Top-Nutzer",
+    "Recent Users": "Kürzliche Nutzer"
 }

@@ -13217,5 +13217,7 @@
     "Object Lock Mode": "Object Lock Mode",
     "Object Lock Legal Hold Enabled": "Object Lock Legal Hold Enabled",
     "Coming Soon": "Coming Soon",
-    "This connector will soon be upgraded to the new experience. Please {link} with any questions!": "This connector will soon be upgraded to the new experience. Please {link} with any questions!"
+    "This connector will soon be upgraded to the new experience. Please {link} with any questions!": "This connector will soon be upgraded to the new experience. Please {link} with any questions!",
+    "Top Users": "Top Users",
+    "Recent Users": "Recent Users"
 }

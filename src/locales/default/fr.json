@@ -13217,5 +13217,7 @@
     "Object Lock Mode": "Mode de verrouillage d'objet",
     "Object Lock Legal Hold Enabled": "Verrouillage légal d'objet activé",
     "Coming Soon": "Bientôt disponible",
-    "This connector will soon be upgraded to the new experience. Please {link} with any questions!": "Ce connecteur sera bientôt mis à niveau vers la nouvelle expérience. Veuillez {link} pour toute question !"
+    "This connector will soon be upgraded to the new experience. Please {link} with any questions!": "Ce connecteur sera bientôt mis à niveau vers la nouvelle expérience. Veuillez {link} pour toute question !",
+    "Top Users": "Utilisateurs Principaux",
+    "Recent Users": "Utilisateurs Récents"
 }

@@ -13217,5 +13217,7 @@
     "Object Lock Mode": "オブジェクトロックモード",
     "Object Lock Legal Hold Enabled": "オブジェクトロック法的保持が有効",
     "Coming Soon": "近日公開",
-    "This connector will soon be upgraded to the new experience. Please {link} with any questions!": "このコネクタは新しい体験にアップグレードされます。質問がある場合は、{link}してください！"
+    "This connector will soon be upgraded to the new experience. Please {link} with any questions!": "このコネクタは新しい体験にアップグレードされます。質問がある場合は、{link}してください！",
+    "Top Users": "トップユーザー",
+    "Recent Users": "最近のユーザー"
 }

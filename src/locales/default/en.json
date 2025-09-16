@@ -11785,6 +11785,7 @@
     "asset": "asset",
     "asset scope": "asset scope",
     "asset | assets": "asset | assets",
+    "DP_asset | assets": "asset | assets",
     "asset-created": "asset-created",
     "asset-deleted": "asset-deleted",
     "asset-updated": "asset-updated",

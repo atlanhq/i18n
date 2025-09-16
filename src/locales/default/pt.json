@@ -11785,6 +11785,7 @@
     "asset": "ativo",
     "asset scope": "escopo de ativo",
     "asset | assets": "ativo | ativos",
+    "DP_asset | assets": "ativo | ativos",
     "asset-created": "ativo-criado",
     "asset-deleted": "ativo-deletado",
     "asset-updated": "ativo-atualizado",

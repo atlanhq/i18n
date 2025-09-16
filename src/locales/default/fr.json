@@ -11785,6 +11785,7 @@
     "asset": "actif",
     "asset scope": "portée d'actif",
     "asset | assets": "actif | actifs",
+    "DP_asset | assets": "actif | actifs",
     "asset-created": "actif-créé",
     "asset-deleted": "actif-supprimé",
     "asset-updated": "actif-mis à jour",

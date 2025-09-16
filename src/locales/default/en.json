@@ -13341,5 +13341,11 @@
     "Routine type": "Routine type",
     "Type of routine": "Type of routine",
     "Arguments": "Arguments",
-    "Playbook creation failed: {errorMessage}. Please try again.": "Playbook creation failed: {errorMessage}. Please try again."
+    "Playbook creation failed: {errorMessage}. Please try again.": "Playbook creation failed: {errorMessage}. Please try again.",
+    "Are you sure you want to delete notification": "Are you sure you want to delete notification",
+    "No notifications yet.": "No notifications yet.",
+    "Set up alerts to notify teams when data quality issues are detected.": "Set up alerts to notify teams when data quality issues are detected.",
+    "notifications": "notifications",
+    "Toggle selection for {connection}": "Toggle selection for {connection}",
+    "Toggle selection for {database}": "Toggle selection for {database}"
 }

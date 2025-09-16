@@ -1248,6 +1248,7 @@
     "Assets Update": "アセットの更新",
     "Assets Updated": "資産は次の事前設定されたメトリックで構成されます。プロファイリングはのみ利用可能です",
     "Assets and Products": "資産と製品",
+    "DP_Assets and Products": "資産と製品",
     "Assets are currently being linked to policy": "現在、ポリシーに資産がリンクされています",
     "Assets associated with a specific type of data quality rule": "特定のタイプのデータ品質ルールに関連付けられた資産",
     "Assets based on the last run time of their data quality rules": "データ品質ルールの最後の実行時間に基づく資産",

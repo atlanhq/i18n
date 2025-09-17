@@ -13341,5 +13341,11 @@
     "Routine type": "Tipo de rotina",
     "Type of routine": "Tipo de rotina",
     "Arguments": "Argumentos",
-    "Playbook creation failed: {errorMessage}. Please try again.": "Falha na criação do playbook: {errorMessage}. Por favor, tente novamente."
+    "Playbook creation failed: {errorMessage}. Please try again.": "Falha na criação do playbook: {errorMessage}. Por favor, tente novamente.",
+    "Are you sure you want to delete notification": "Você tem certeza de que deseja excluir a notificação",
+    "No notifications yet.": "Nenhuma notificação ainda.",
+    "Set up alerts to notify teams when data quality issues are detected.": "Configure alertas para notificar as equipes quando problemas de qualidade de dados forem detectados.",
+    "notifications": "notificações",
+    "Toggle selection for {connection}": "Alternar seleção para {connection}",
+    "Toggle selection for {database}": "Alternar seleção para {database}"
 }

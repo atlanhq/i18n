@@ -13341,5 +13341,11 @@
     "Routine type": "ルーチンタイプ",
     "Type of routine": "ルーチンの種類",
     "Arguments": "引数",
-    "Playbook creation failed: {errorMessage}. Please try again.": "プレイブックの作成に失敗しました: {errorMessage}。再試行してください。"
+    "Playbook creation failed: {errorMessage}. Please try again.": "プレイブックの作成に失敗しました: {errorMessage}。再試行してください。",
+    "Are you sure you want to delete notification": "本当に通知を削除しますか",
+    "No notifications yet.": "まだ通知はありません。",
+    "Set up alerts to notify teams when data quality issues are detected.": "データ品質の問題が検出されたときにチームに通知するアラートを設定します。",
+    "notifications": "通知",
+    "Toggle selection for {connection}": "{connection}の選択を切り替え",
+    "Toggle selection for {database}": "{database}の選択を切り替え"
 }

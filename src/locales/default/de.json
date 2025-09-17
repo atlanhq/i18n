@@ -13341,5 +13341,11 @@
     "Routine type": "Routinetyp",
     "Type of routine": "Art der Routine",
     "Arguments": "Argumente",
-    "Playbook creation failed: {errorMessage}. Please try again.": "Erstellung des Playbooks fehlgeschlagen: {errorMessage}. Bitte versuchen Sie es erneut."
+    "Playbook creation failed: {errorMessage}. Please try again.": "Erstellung des Playbooks fehlgeschlagen: {errorMessage}. Bitte versuchen Sie es erneut.",
+    "Are you sure you want to delete notification": "Sind Sie sicher, dass Sie die Benachrichtigung löschen möchten",
+    "No notifications yet.": "Noch keine Benachrichtigungen.",
+    "Set up alerts to notify teams when data quality issues are detected.": "Richten Sie Benachrichtigungen ein, um Teams zu benachrichtigen, wenn Datenqualitätsprobleme erkannt werden.",
+    "notifications": "Benachrichtigungen",
+    "Toggle selection for {connection}": "Auswahl umschalten für {connection}",
+    "Toggle selection for {database}": "Auswahl umschalten für {database}"
 }

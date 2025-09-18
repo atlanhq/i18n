@@ -13347,5 +13347,17 @@
     "Set up alerts to notify teams when data quality issues are detected.": "Set up alerts to notify teams when data quality issues are detected.",
     "notifications": "notifications",
     "Toggle selection for {connection}": "Toggle selection for {connection}",
-    "Toggle selection for {database}": "Toggle selection for {database}"
+    "Toggle selection for {database}": "Toggle selection for {database}",
+    "Please try again in a few moments.": "Please try again in a few moments.",
+    "If the problem persists, contact your administrator or support team.": "If the problem persists, contact your administrator or support team.",
+    "Search products...": "Search products...",
+    "Oops! something went wrong.": "Oops! something went wrong.",
+    "We’re having trouble loading this request due to temporary backend issues.": "We’re having trouble loading this request due to temporary backend issues.",
+    "Orchestrates {icon} job": "Orchestrates {icon} job",
+    "Orchestrates {icon} jobs": "Orchestrates {icon} jobs",
+    "Orchestrated by {icon} DAG": "Orchestrated by {icon} DAG",
+    "Orchestrated by {icon} DAGs": "Orchestrated by {icon} DAGs",
+    "Volume Path": "Volume Path",
+    "Databricks Volume Path": "Databricks Volume Path",
+    "New connector experience is available only from the latest data. Historical runs are not included in this view.": "New connector experience is available only from the latest data. Historical runs are not included in this view."
 }

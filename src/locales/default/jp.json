@@ -13347,5 +13347,17 @@
     "Set up alerts to notify teams when data quality issues are detected.": "データ品質の問題が検出されたときにチームに通知するアラートを設定します。",
     "notifications": "通知",
     "Toggle selection for {connection}": "{connection}の選択を切り替え",
-    "Toggle selection for {database}": "{database}の選択を切り替え"
+    "Toggle selection for {database}": "{database}の選択を切り替え",
+    "Please try again in a few moments.": "しばらくしてから再試行してください。",
+    "If the problem persists, contact your administrator or support team.": "問題が解決しない場合は、管理者またはサポートチームに連絡してください。",
+    "Search products...": "製品を検索...",
+    "Oops! something went wrong.": "おっと！何かがうまくいきませんでした。",
+    "We’re having trouble loading this request due to temporary backend issues.": "一時的なバックエンドの問題により、このリクエストの読み込みに問題が発生しています。",
+    "Orchestrates {icon} job": "{icon} ジョブを調整します",
+    "Orchestrates {icon} jobs": "{icon} ジョブを調整します",
+    "Orchestrated by {icon} DAG": "{icon} DAG によって調整されました",
+    "Orchestrated by {icon} DAGs": "{icon} DAG によって調整されました",
+    "Volume Path": "ボリュームパス",
+    "Databricks Volume Path": "Databricks ボリュームパス",
+    "New connector experience is available only from the latest data. Historical runs are not included in this view.": "新しいコネクタ体験は最新のデータからのみ利用可能です。履歴の実行はこのビューには含まれません。"
 }

@@ -13347,5 +13347,17 @@
     "Set up alerts to notify teams when data quality issues are detected.": "Richten Sie Benachrichtigungen ein, um Teams zu benachrichtigen, wenn Datenqualitätsprobleme erkannt werden.",
     "notifications": "Benachrichtigungen",
     "Toggle selection for {connection}": "Auswahl umschalten für {connection}",
-    "Toggle selection for {database}": "Auswahl umschalten für {database}"
+    "Toggle selection for {database}": "Auswahl umschalten für {database}",
+    "Please try again in a few moments.": "Bitte versuchen Sie es in wenigen Momenten erneut.",
+    "If the problem persists, contact your administrator or support team.": "Wenn das Problem weiterhin besteht, wenden Sie sich an Ihren Administrator oder Support-Team.",
+    "Search products...": "Produkte suchen...",
+    "Oops! something went wrong.": "Ups! Etwas ist schief gelaufen.",
+    "We’re having trouble loading this request due to temporary backend issues.": "Wir haben Schwierigkeiten, diese Anfrage aufgrund vorübergehender Backend-Probleme zu laden.",
+    "Orchestrates {icon} job": "Orchestriert {icon} Job",
+    "Orchestrates {icon} jobs": "Orchestriert {icon} Jobs",
+    "Orchestrated by {icon} DAG": "Orchestriert von {icon} DAG",
+    "Orchestrated by {icon} DAGs": "Orchestriert von {icon} DAGs",
+    "Volume Path": "Volume-Pfad",
+    "Databricks Volume Path": "Databricks-Volume-Pfad",
+    "New connector experience is available only from the latest data. Historical runs are not included in this view.": "Die neue Connector-Erfahrung ist nur für die neuesten Daten verfügbar. Historische Ausführungen sind in dieser Ansicht nicht enthalten."
 }

@@ -13359,5 +13359,22 @@
     "Orchestrated by {icon} DAGs": "{icon} DAG によって調整されました",
     "Volume Path": "ボリュームパス",
     "Databricks Volume Path": "Databricks ボリュームパス",
-    "New connector experience is available only from the latest data. Historical runs are not included in this view.": "新しいコネクタ体験は最新のデータからのみ利用可能です。履歴の実行はこのビューには含まれません。"
+    "New connector experience is available only from the latest data. Historical runs are not included in this view.": "新しいコネクタ体験は最新のデータからのみ利用可能です。履歴の実行はこのビューには含まれません。",
+    "Get AI-powered summaries for your assets": "資産のためのAI駆動の要約を取得",
+    "Atlan AI Summary": "Atlan AI要約",
+    "Tell me more about this {assetType}": "この{assetType}についてもっと教えて",
+    "Terms in this category": "このカテゴリの用語",
+    "Terms & categories in this glossary": "この用語集の用語とカテゴリ",
+    "Some error has occured": "エラーが発生しました",
+    "Atlan AI summary": "Atlan AI要約",
+    "Summary generated from existing metadata. Quality may vary, please double-check for accuracy.": "既存のメタデータから生成された要約。品質は異なる場合がありますので、正確性を再確認してください。",
+    "refresh": "更新",
+    "Error loading AI summary and questions, Click to ": "AI要約と質問の読み込み中にエラーが発生しました。クリックして",
+    "Ask Atlan:": "Atlanに聞く：",
+    "Ask a different question": "別の質問をする",
+    "Launching soon — Redesigned connector interface": "まもなく開始 — 再設計されたコネクタインターフェース",
+    "Learn what's new": "新しい情報を学ぶ",
+    "Get enhanced visibility into your workflows, intelligent error diagnostics, and actionable insights to resolve issues faster. {link}": "ワークフローへの強化された可視性、インテリジェントなエラー診断、および問題を迅速に解決するための実用的な洞察を得ることができます。{link}",
+    "This feature is in active development. Functionality and availability may change based on your feedback. {link}": "この機能はアクティブな開発中です。機能性と可用性はあなたのフィードバックに基づいて変更される可能性があります。{link}",
+    "This view shows redesigned connector interface only for new runs initiated. Historical runs are available in the classic view.": "このビューは、新しく開始された実行のための再設計されたコネクタインターフェースのみを表示します。過去の実行はクラシックビューで利用可能です。"
 }

@@ -13359,5 +13359,22 @@
     "Orchestrated by {icon} DAGs": "Orchestré par {icon} DAGs",
     "Volume Path": "Chemin de volume",
     "Databricks Volume Path": "Chemin de volume Databricks",
-    "New connector experience is available only from the latest data. Historical runs are not included in this view.": "La nouvelle expérience de connecteur n'est disponible qu'à partir des dernières données. Les exécutions historiques ne sont pas incluses dans cette vue."
+    "New connector experience is available only from the latest data. Historical runs are not included in this view.": "La nouvelle expérience de connecteur n'est disponible qu'à partir des dernières données. Les exécutions historiques ne sont pas incluses dans cette vue.",
+    "Get AI-powered summaries for your assets": "Obtenez des résumés alimentés par l'IA pour vos actifs",
+    "Atlan AI Summary": "Résumé Atlan IA",
+    "Tell me more about this {assetType}": "Dites-m'en plus sur ce {assetType}",
+    "Terms in this category": "Termes dans cette catégorie",
+    "Terms & categories in this glossary": "Termes et catégories dans ce glossaire",
+    "Some error has occured": "Une erreur s'est produite",
+    "Atlan AI summary": "Résumé Atlan IA",
+    "Summary generated from existing metadata. Quality may vary, please double-check for accuracy.": "Résumé généré à partir des métadonnées existantes. La qualité peut varier, veuillez vérifier l'exactitude.",
+    "refresh": "rafraîchir",
+    "Error loading AI summary and questions, Click to ": "Erreur de chargement du résumé IA et des questions, Cliquez pour ",
+    "Ask Atlan:": "Demandez à Atlan :",
+    "Ask a different question": "Posez une question différente",
+    "Launching soon — Redesigned connector interface": "Lancement prochain — Interface de connecteur redessinée",
+    "Learn what's new": "Découvrez les nouveautés",
+    "Get enhanced visibility into your workflows, intelligent error diagnostics, and actionable insights to resolve issues faster. {link}": "Obtenez une visibilité améliorée sur vos flux de travail, des diagnostics d'erreurs intelligents et des informations exploitables pour résoudre les problèmes plus rapidement. {link}",
+    "This feature is in active development. Functionality and availability may change based on your feedback. {link}": "Cette fonctionnalité est en développement actif. La fonctionnalité et la disponibilité peuvent changer en fonction de vos retours. {link}",
+    "This view shows redesigned connector interface only for new runs initiated. Historical runs are available in the classic view.": "Cette vue montre uniquement l'interface de connecteur redessinée pour les nouvelles exécutions initiées. Les exécutions historiques sont disponibles dans la vue classique."
 }

@@ -6,6 +6,7 @@ export { default as fr } from './locales/default/fr.json'
 export { default as jp } from './locales/default/jp.json'
 export { default as pt } from './locales/default/pt.json'
 export { default as de } from './locales/default/de.json'
+export { default as dprod } from './locales/default/dprod.json'
 
 // Export the messages object for vue-i18n initialization
 export const messages = {
@@ -14,6 +15,7 @@ export const messages = {
     pt: require('./locales/default/pt.json'),
     jp: require('./locales/default/jp.json'),
     de: require('./locales/default/de.json'),
+    dprod: require('./locales/default/dprod.json'),
 } as const
 
 export type LocaleKey = keyof typeof messages

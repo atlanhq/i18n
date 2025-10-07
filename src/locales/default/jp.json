@@ -13540,5 +13540,11 @@
     "An unexpected error occurred while trying to authorize the Teams integration. Please try again.": "Teams 統合の認証中に予期しないエラーが発生しました。再試行してください。",
     "{status} {'|'} {time} {'|'} ({duration})": "{status} {'|'} {time} {'|'} ({duration})",
     "{status} {'|'} {date}": "{status} {'|'} {date}",
-    "{status} {'|'} {date} {'|'} ({duration})": "{status} {'|'} {date} {'|'} ({duration})"
+    "{status} {'|'} {date} {'|'} ({duration})": "{status} {'|'} {date} {'|'} ({duration})",
+    "Table qualified name": "テーブルの資格名",
+    "View qualified name": "ビューの資格名",
+    "Updated (in source)": "更新済み（ソース内）",
+    "Updated timestamp of the asset in source": "ソース内の資産の更新タイムスタンプ",
+    "Scheduled maintenance is coming up on {date} from {start_time} to {end_time} ({timezone}). Some functions may not work normally during this period.": "メンテナンスが{date}の{start_time}から{end_time}まで({timezone})に予定されています。この期間中、一部の機能が正常に動作しない可能性があります。",
+    "Maintenance is in progress from {start_time} to {end_time} ({timezone}). Some functions may not work normally.": "メンテナンスは{start_time}から{end_time}まで({timezone})進行中です。一部の機能が正常に動作しない可能性があります。"
 }

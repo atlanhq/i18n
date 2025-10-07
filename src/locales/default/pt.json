@@ -13540,5 +13540,11 @@
     "An unexpected error occurred while trying to authorize the Teams integration. Please try again.": "Ocorreu um erro inesperado ao tentar autorizar a integração das Equipes. Por favor, tente novamente.",
     "{status} {'|'} {time} {'|'} ({duration})": "{status} {'|'} {time} {'|'} ({duration})",
     "{status} {'|'} {date}": "{status} {'|'} {date}",
-    "{status} {'|'} {date} {'|'} ({duration})": "{status} {'|'} {date} {'|'} ({duration})"
+    "{status} {'|'} {date} {'|'} ({duration})": "{status} {'|'} {date} {'|'} ({duration})",
+    "Table qualified name": "Nome qualificado da tabela",
+    "View qualified name": "Nome qualificado da visualização",
+    "Updated (in source)": "Atualizado (na fonte)",
+    "Updated timestamp of the asset in source": "Timestamp atualizado do ativo na fonte",
+    "Scheduled maintenance is coming up on {date} from {start_time} to {end_time} ({timezone}). Some functions may not work normally during this period.": "A manutenção programada está chegando em {date} de {start_time} a {end_time} ({timezone}). Algumas funções podem não funcionar normalmente durante este período.",
+    "Maintenance is in progress from {start_time} to {end_time} ({timezone}). Some functions may not work normally.": "A manutenção está em andamento de {start_time} a {end_time} ({timezone}). Algumas funções podem não funcionar normalmente."
 }

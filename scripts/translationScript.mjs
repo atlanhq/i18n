@@ -330,7 +330,7 @@ async function synchronizeLocaleFiles(allLocales) {
 
     // Process each non-English locale
     for (const language in allLocales) {
-        if (language === 'en') continue
+        if (language === 'en' || language === 'dprod') continue
 
         const localeFile = allLocales[language]
         const orderedLocale = {}
@@ -440,6 +440,7 @@ async function synchronizeLocaleFiles(allLocales) {
 
     // Now translate any missing keys in non-English locales
     for (const language in keysNeedingTranslation) {
+        if (language === 'dprod') continue
         if (OPENAI_API_KEY && keysNeedingTranslation[language].length > 0) {
             console.log(
                 `Translating ${keysNeedingTranslation[language].length} missing keys for ${language}...`

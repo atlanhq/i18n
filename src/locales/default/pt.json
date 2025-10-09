@@ -13568,5 +13568,7 @@
     "Contact your workspace admins to enable Teams integration:": "Entre em contato com os administradores do seu espaço de trabalho para habilitar a integração do Teams:",
     "View Admins": "Ver Administradores",
     "Atlan Teams - Failed": "Atlan Teams - Falhou",
-    "Atlan AI can help:": "Atlan AI pode ajudar:"
+    "Atlan AI can help:": "Atlan AI pode ajudar:",
+    "Warehouse required": "Armazém necessário",
+    "Please select a warehouse to continue": "Por favor, selecione um armazém para continuar"
 }

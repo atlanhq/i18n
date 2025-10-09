@@ -1239,7 +1239,6 @@
     "Asset usage (in Atlan)": "資産の使用状況（Atlan内）",
     "Asset views": "アセットビュー",
     "Asset | Assets": "アセット | アセット",
-    "DP_Asset | Assets": "アセット | アセット",
     "Assets": "アセット",
     "TM_Assets": "アセット",
     "DP_Assets": "アセット",
@@ -11786,6 +11785,7 @@
     "asset": "asset",
     "asset scope": "asset scope",
     "asset | assets": "アセット | アセット",
+    "DP_asset | assets": "資産 | 資産",
     "asset-created": "asset-created",
     "asset-deleted": "asset-deleted",
     "asset-updated": "asset-updated",
@@ -13568,5 +13568,7 @@
     "Contact your workspace admins to enable Teams integration:": "Teams統合を有効にするには、ワークスペースの管理者に連絡してください：",
     "View Admins": "管理者を表示",
     "Atlan Teams - Failed": "Atlan Teams - 失敗",
-    "Atlan AI can help:": "Atlan AIが支援できます："
+    "Atlan AI can help:": "Atlan AIが支援できます：",
+    "Warehouse required": "倉庫が必要です",
+    "Please select a warehouse to continue": "続行するには倉庫を選択してください"
 }

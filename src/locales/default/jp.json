@@ -13570,5 +13570,7 @@
     "Atlan Teams - Failed": "Atlan Teams - 失敗",
     "Atlan AI can help:": "Atlan AIが支援できます：",
     "Warehouse required": "倉庫が必要です",
-    "Please select a warehouse to continue": "続行するには倉庫を選択してください"
+    "Please select a warehouse to continue": "続行するには倉庫を選択してください",
+    "Timestamp for when this {asset} was first created in {source}.": "Timestamp for when this {asset} was first created in {source}.",
+    "Timestamp for the last update on this {asset} in {source}.": "Timestamp for the last update on this {asset} in {source}."
 }

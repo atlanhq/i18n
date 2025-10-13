@@ -13570,5 +13570,7 @@
     "Atlan Teams - Failed": "Atlan Teams - Fehlgeschlagen",
     "Atlan AI can help:": "Atlan AI kann helfen:",
     "Warehouse required": "Lager erforderlich",
-    "Please select a warehouse to continue": "Bitte wählen Sie ein Lager aus, um fortzufahren"
+    "Please select a warehouse to continue": "Bitte wählen Sie ein Lager aus, um fortzufahren",
+    "Timestamp for when this {asset} was first created in {source}.": "Timestamp for when this {asset} was first created in {source}.",
+    "Timestamp for the last update on this {asset} in {source}.": "Timestamp for the last update on this {asset} in {source}."
 }

@@ -1,0 +1,19 @@
+name: Dispatch i18n updates to atlan-frontend
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  notify-frontend:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Dispatch i18n-updated event to atlan-frontend
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: atlanhq/atlan-frontend
+          event-type: i18n-updated

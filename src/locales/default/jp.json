@@ -13570,5 +13570,11 @@
     "Atlan Teams - Failed": "Atlan Teams - 失敗",
     "Atlan AI can help:": "Atlan AIが支援できます：",
     "Warehouse required": "倉庫が必要です",
-    "Please select a warehouse to continue": "続行するには倉庫を選択してください"
+    "Please select a warehouse to continue": "続行するには倉庫を選択してください",
+    "Timestamp for when this {asset} was first created in {source}.": "この{source}で最初に作成された{asset}のタイムスタンプ。",
+    "Timestamp for the last update on this {asset} in {source}.": "この{source}での{asset}の最終更新のタイムスタンプ。",
+    "Dremio labels": "Dremioラベル",
+    "Dremio": "Dremio",
+    "Labels": "ラベル",
+    "Labels that help you organize your Dremio resources": "Dremioリソースを整理するのに役立つラベル"
 }

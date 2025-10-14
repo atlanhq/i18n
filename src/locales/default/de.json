@@ -13570,5 +13570,11 @@
     "Atlan Teams - Failed": "Atlan Teams - Fehlgeschlagen",
     "Atlan AI can help:": "Atlan AI kann helfen:",
     "Warehouse required": "Lager erforderlich",
-    "Please select a warehouse to continue": "Bitte wählen Sie ein Lager aus, um fortzufahren"
+    "Please select a warehouse to continue": "Bitte wählen Sie ein Lager aus, um fortzufahren",
+    "Timestamp for when this {asset} was first created in {source}.": "Zeitstempel, wann dieses {asset} erstmals in {source} erstellt wurde.",
+    "Timestamp for the last update on this {asset} in {source}.": "Zeitstempel für das letzte Update dieses {asset} in {source}.",
+    "Dremio labels": "Dremio-Labels",
+    "Dremio": "Dremio",
+    "Labels": "Labels",
+    "Labels that help you organize your Dremio resources": "Labels, die Ihnen helfen, Ihre Dremio-Ressourcen zu organisieren"
 }

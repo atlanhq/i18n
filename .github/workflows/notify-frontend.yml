@@ -12,7 +12,7 @@ jobs:
     
     steps:
       - name: Dispatch i18n-updated event to atlan-frontend
-        uses: peter-evans/repository-dispatch@v3
+        uses: peter-evans/repository-dispatch@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           repository: atlanhq/atlan-frontend

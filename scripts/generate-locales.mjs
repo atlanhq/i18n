@@ -74,7 +74,7 @@ function createEntryFiles(languageFiles) {
         throw new Error(`JSON file does not exist: ${jsonFile}`)
       }
       
-      const content = `export { default } from './${lang}.json'`
+      const content = `import ${lang} from './${lang}.json';\nexport default ${lang};`
       writeFileSync(entryFile, content)
     } catch (error) {
       logError(`Failed to create entry file for ${lang}: ${error.message}`)

@@ -16,10 +16,35 @@
             "import": "./dist/index.mjs"
         },
         "./locales/*": "./src/locales/*",
-        "./*": {
-            "types": "./dist/*/index.d.ts",
-            "require": "./dist/*/index.js",
-            "import": "./dist/*/index.mjs"
+        "./en": {
+            "types": "./dist/en/index.d.ts",
+            "require": "./dist/en/index.js",
+            "import": "./dist/en/index.mjs"
+        },
+        "./fr": {
+            "types": "./dist/fr/index.d.ts",
+            "require": "./dist/fr/index.js",
+            "import": "./dist/fr/index.mjs"
+        },
+        "./jp": {
+            "types": "./dist/jp/index.d.ts",
+            "require": "./dist/jp/index.js",
+            "import": "./dist/jp/index.mjs"
+        },
+        "./pt": {
+            "types": "./dist/pt/index.d.ts",
+            "require": "./dist/pt/index.js",
+            "import": "./dist/pt/index.mjs"
+        },
+        "./de": {
+            "types": "./dist/de/index.d.ts",
+            "require": "./dist/de/index.js",
+            "import": "./dist/de/index.mjs"
+        },
+        "./dprod": {
+            "types": "./dist/dprod/index.d.ts",
+            "require": "./dist/dprod/index.js",
+            "import": "./dist/dprod/index.mjs"
         }
     },
     "scripts": {

@@ -11,14 +11,19 @@
     ],
     "exports": {
         ".": {
+            "types": "./dist/index.d.ts",
             "require": "./dist/index.js",
-            "import": "./dist/index.mjs",
-            "types": "./dist/index.d.ts"
+            "import": "./dist/index.mjs"
         },
-        "./locales/*": "./src/locales/*"
+        "./locales/*": "./src/locales/*",
+        "./*": {
+            "types": "./dist/*/index.d.ts",
+            "require": "./dist/*/index.js",
+            "import": "./dist/*/index.mjs"
+        }
     },
     "scripts": {
-        "build": "tsup src/index.ts --format cjs,esm --dts",
+        "build": "tsup src/index.ts --format cjs,esm --dts --clean false && node scripts/generate-locales.mjs",
         "prepare": "pnpm build",
         "test": "jest",
         "lint": "eslint .",

@@ -13594,5 +13594,10 @@
     "Ask AI": "Ask AI",
     "Check Table": "Check Table",
     "SAP Table": "SAP Table",
-    "SAP View": "SAP View"
+    "SAP View": "SAP View",
+    "Workflow configuration": "Workflow configuration",
+    "Enhanced Audit logs now capture all workflow configuration changes.": "Enhanced Audit logs now capture all workflow configuration changes.",
+    "Future audit entries will show exactly what changed.": "Future audit entries will show exactly what changed.",
+    "Internal configuration changes detected": "Internal configuration changes detected",
+    "Link/unlink associated terms": "Link/unlink associated terms"
 }

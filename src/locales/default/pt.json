@@ -13594,5 +13594,10 @@
     "Ask AI": "Pergunte à IA",
     "Check Table": "Verificar Tabela",
     "SAP Table": "Tabela SAP",
-    "SAP View": "Visão SAP"
+    "SAP View": "Visão SAP",
+    "Workflow configuration": "Configuração do fluxo de trabalho",
+    "Enhanced Audit logs now capture all workflow configuration changes.": "Os logs de auditoria aprimorados agora capturam todas as alterações na configuração do fluxo de trabalho.",
+    "Future audit entries will show exactly what changed.": "As entradas de auditoria futuras mostrarão exatamente o que mudou.",
+    "Internal configuration changes detected": "Alterações de configuração internas detectadas",
+    "Link/unlink associated terms": "Vincular/desvincular termos associados"
 }

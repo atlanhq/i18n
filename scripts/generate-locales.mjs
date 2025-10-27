@@ -84,30 +84,35 @@ function createEntryFiles(languageFiles) {
 }
 
 /**
- * Wrap TypeScript declaration files in proper module declarations for correct module resolution
+ * Ensure TypeScript declaration files have proper module structure
  */
-function wrapDeclarationFilesInModuleDeclarations(languageFiles) {
+function ensureProperModuleStructure(languageFiles) {
   for (const lang of languageFiles) {
     const langDir = join(CONFIG.distDir, lang)
     const dtsFile = join(langDir, 'index.d.ts')
     const dtsMtsFile = join(langDir, 'index.d.mts')
     
     try {
-      // Fix .d.ts file
+      // Ensure .d.ts file has proper structure
       if (existsSync(dtsFile)) {
         const content = readFileSync(dtsFile, 'utf8')
-        const wrappedContent = `declare module '@atlanhq/i18n/${lang}' {\n${content}\n}`
-        writeFileSync(dtsFile, wrappedContent)
+        // If it doesn't start with 'declare module', wrap it
+        if (!content.startsWith('declare module')) {
+          const wrappedContent = `declare module '@atlanhq/i18n/${lang}' {\n${content}\n}`
+          writeFileSync(dtsFile, wrappedContent)
+        }
       }
       
-      // Fix .d.mts file
+      // Ensure .d.mts file has proper structure
       if (existsSync(dtsMtsFile)) {
         const content = readFileSync(dtsMtsFile, 'utf8')
-        const wrappedContent = `declare module '@atlanhq/i18n/${lang}' {\n${content}\n}`
-        writeFileSync(dtsMtsFile, wrappedContent)
+        if (!content.startsWith('declare module')) {
+          const wrappedContent = `declare module '@atlanhq/i18n/${lang}' {\n${content}\n}`
+          writeFileSync(dtsMtsFile, wrappedContent)
+        }
       }
     } catch (error) {
-      logWarn(`Could not fix declaration files for ${lang}: ${error.message}`)
+      logWarn(`Could not ensure proper module structure for ${lang}: ${error.message}`)
     }
   }
 }
@@ -239,8 +244,8 @@ async function main() {
       // Step 3: Build with tsup config
       await buildLanguageFiles(languageFiles)
 
-      // Step 4: Wrap TypeScript declaration files in module declarations
-      wrapDeclarationFilesInModuleDeclarations(languageFiles)
+      // Step 4: Ensure proper module structure in TypeScript declarations
+      ensureProperModuleStructure(languageFiles)
 
       // Step 5: Clean up temporary files
       cleanupEntryFiles(languageFiles)

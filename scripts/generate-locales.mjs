@@ -1,4 +1,4 @@
-import { readdirSync, writeFileSync, mkdirSync, unlinkSync, renameSync, existsSync, statSync } from 'fs'
+import { readdirSync, writeFileSync, mkdirSync, unlinkSync, renameSync, existsSync, statSync, readFileSync } from 'fs'
 import { join, resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { defineConfig } from 'tsup'
@@ -79,6 +79,35 @@ function createEntryFiles(languageFiles) {
     } catch (error) {
       logError(`Failed to create entry file for ${lang}: ${error.message}`)
       throw error
+    }
+  }
+}
+
+/**
+ * Wrap TypeScript declaration files in proper module declarations for correct module resolution
+ */
+function wrapDeclarationFilesInModuleDeclarations(languageFiles) {
+  for (const lang of languageFiles) {
+    const langDir = join(CONFIG.distDir, lang)
+    const dtsFile = join(langDir, 'index.d.ts')
+    const dtsMtsFile = join(langDir, 'index.d.mts')
+    
+    try {
+      // Fix .d.ts file
+      if (existsSync(dtsFile)) {
+        const content = readFileSync(dtsFile, 'utf8')
+        const wrappedContent = `declare module '@atlanhq/i18n/${lang}' {\n${content}\n}`
+        writeFileSync(dtsFile, wrappedContent)
+      }
+      
+      // Fix .d.mts file
+      if (existsSync(dtsMtsFile)) {
+        const content = readFileSync(dtsMtsFile, 'utf8')
+        const wrappedContent = `declare module '@atlanhq/i18n/${lang}' {\n${content}\n}`
+        writeFileSync(dtsMtsFile, wrappedContent)
+      }
+    } catch (error) {
+      logWarn(`Could not fix declaration files for ${lang}: ${error.message}`)
     }
   }
 }
@@ -207,11 +236,14 @@ async function main() {
     // Step 2: Create TypeScript entry files
     createEntryFiles(languageFiles)
     
-    // Step 3: Build with tsup config
-    await buildLanguageFiles(languageFiles)
-    
-    // Step 4: Clean up temporary files
-    cleanupEntryFiles(languageFiles)
+      // Step 3: Build with tsup config
+      await buildLanguageFiles(languageFiles)
+
+      // Step 4: Wrap TypeScript declaration files in module declarations
+      wrapDeclarationFilesInModuleDeclarations(languageFiles)
+
+      // Step 5: Clean up temporary files
+      cleanupEntryFiles(languageFiles)
     
     const duration = Date.now() - startTime
     console.log(`🎉 Successfully built ${languageFiles.length} languages in ${duration}ms`)

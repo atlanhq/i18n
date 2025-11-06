@@ -1,37 +1,51 @@
 import { createI18n } from 'vue-i18n'
 
-// Export all locales individually for direct access
-export { default as en } from './locales/default/en.json'
-export { default as fr } from './locales/default/fr.json'
-export { default as jp } from './locales/default/jp.json'
-export { default as pt } from './locales/default/pt.json'
-export { default as de } from './locales/default/de.json'
-export { default as dprod } from './locales/default/dprod.json'
 
-// Export the messages object for vue-i18n initialization
-export const messages = {
-    en: require('./locales/default/en.json'),
-    fr: require('./locales/default/fr.json'),
-    pt: require('./locales/default/pt.json'),
-    jp: require('./locales/default/jp.json'),
-    de: require('./locales/default/de.json'),
-    dprod: require('./locales/default/dprod.json'),
-} as const
-
-export type LocaleKey = keyof typeof messages
-
-// Export configuration constants
-export const fallbackLocale = 'en'
-
-// Export a helper to initialize vue-i18n with our configuration
-export const createI18nInstance = (options?: {
+// Type definitions
+export type LocaleKey = 'de' | 'dprod' | 'en' | 'fr' | 'jp' | 'pt'
+export interface Message {
+  [key: string]: string | Message
+}
+export type CreateI18nInstanceOptions = {
     locale?: LocaleKey
     fallbackLocale?: LocaleKey
     legacy?: boolean
     globalInjection?: boolean
-    messages?: Record<LocaleKey, Record<string, string>>
+    messages?: Record<LocaleKey, Message>
     formatFallbackMessages?: boolean
-}) => {
+}
+
+
+// Export all locales individually for direct access
+import enData from './locales/default/en.json'
+import frData from './locales/default/fr.json'
+import jpData from './locales/default/jp.json'
+import ptData from './locales/default/pt.json'
+import deData from './locales/default/de.json'
+import dprodData from './locales/default/dprod.json'
+
+export const en: Message = enData
+export const fr: Message = frData
+export const jp: Message = jpData
+export const pt: Message = ptData
+export const de: Message = deData
+export const dprod: Message = dprodData
+
+// Export the messages object for vue-i18n initialization
+export const messages: Record<LocaleKey, Message> = {
+    en,
+    fr,
+    pt,
+    jp,
+    de,
+    dprod,
+} as const
+
+// Export configuration constants
+export const fallbackLocale: LocaleKey = 'en'
+
+// Export a helper to initialize vue-i18n with our configuration
+export const createI18nInstance = (options?: CreateI18nInstanceOptions) => {
     return createI18n({
         locale: options?.locale || fallbackLocale,
         fallbackLocale: options?.fallbackLocale || fallbackLocale,

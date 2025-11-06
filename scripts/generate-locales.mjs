@@ -3,7 +3,7 @@ import { join, resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { defineConfig } from 'tsup'
 
-// Get absolute paths for better reliability
+// Get absolute paths
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 const projectRoot = resolve(__dirname, '..')
@@ -14,263 +14,195 @@ const CONFIG = {
   distDir: join(projectRoot, 'dist'),
 }
 
-function logWarn(message, ...args) {
-  console.warn(`⚠️ ${message}`, ...args)
-}
-
-function logError(message, ...args) {
-  console.error(`❌ ${message}`, ...args)
+// Utility functions
+const log = {
+  warn: (msg, ...args) => console.warn(`⚠️ ${msg}`, ...args),
+  error: (msg, ...args) => console.error(`❌ ${msg}`, ...args),
+  success: (msg, ...args) => console.log(`✅ ${msg}`, ...args)
 }
 
 
 /**
- * Validate that required directories exist
+ * Get all language files from the locales directory
  */
-function validateDirectories() {
-  if (!existsSync(CONFIG.localesDir)) {
+function getLanguageFiles() {
+  // Validate directory exists
+  if (!existsSync(CONFIG.localesDir) || !statSync(CONFIG.localesDir).isDirectory()) {
     throw new Error(`Locales directory does not exist: ${CONFIG.localesDir}`)
   }
   
-  if (!statSync(CONFIG.localesDir).isDirectory()) {
-    throw new Error(`Locales path is not a directory: ${CONFIG.localesDir}`)
+  const files = readdirSync(CONFIG.localesDir)
+    .filter(file => file.endsWith('.json'))
+    .map(file => file.replace('.json', ''))
+    .sort()
+  
+  if (files.length === 0) {
+    throw new Error(`No JSON language files found in ${CONFIG.localesDir}`)
   }
   
-  // Directory validation passed
+  console.log(`Found ${files.length} language files: ${files.join(', ')}`)
+  return files
 }
 
 /**
- * Get all language files from the locales directory with validation
- */
-function getLanguageFiles() {
-  try {
-    const files = readdirSync(CONFIG.localesDir)
-      .filter(file => file.endsWith('.json'))
-      .map(file => file.replace('.json', ''))
-      .sort() // Sort for consistent output
-    
-    if (files.length === 0) {
-      throw new Error(`No JSON language files found in ${CONFIG.localesDir}`)
-    }
-    
-    console.log(`Found ${files.length} language files: ${files.join(', ')}`)
-    return files
-  } catch (error) {
-    logError(`Failed to read locales directory: ${error.message}`)
-    throw error
-  }
-}
-
-/**
- * Create TypeScript entry files for each language with validation
+ * Create TypeScript entry files for each language
  */
 function createEntryFiles(languageFiles) {
-  for (const lang of languageFiles) {
-    try {
-      const entryFile = join(CONFIG.localesDir, `${lang}.ts`)
-      const jsonFile = join(CONFIG.localesDir, `${lang}.json`)
-      
-      // Validate that the JSON file exists
-      if (!existsSync(jsonFile)) {
-        throw new Error(`JSON file does not exist: ${jsonFile}`)
-      }
-      
-      const content = `import ${lang} from './${lang}.json';\nexport default ${lang};`
-      writeFileSync(entryFile, content)
-    } catch (error) {
-      logError(`Failed to create entry file for ${lang}: ${error.message}`)
-      throw error
-    }
-  }
-}
-
-/**
- * Ensure TypeScript declaration files have proper module structure
- */
-function ensureProperModuleStructure(languageFiles) {
-  for (const lang of languageFiles) {
-    const langDir = join(CONFIG.distDir, lang)
-    const dtsFile = join(langDir, 'index.d.ts')
-    const dtsMtsFile = join(langDir, 'index.d.mts')
+  languageFiles.forEach(lang => {
+    const entryFile = join(CONFIG.localesDir, `${lang}.ts`)
+    const jsonFile = join(CONFIG.localesDir, `${lang}.json`)
     
-    try {
-      // Ensure .d.ts file has proper structure
-      if (existsSync(dtsFile)) {
-        const content = readFileSync(dtsFile, 'utf8')
-        // If it doesn't start with 'declare module', wrap it
-        if (!content.startsWith('declare module')) {
-          const wrappedContent = `declare module '@atlanhq/i18n/${lang}' {\n${content}\n}`
-          writeFileSync(dtsFile, wrappedContent)
-        }
-      }
-      
-      // Ensure .d.mts file has proper structure
-      if (existsSync(dtsMtsFile)) {
-        const content = readFileSync(dtsMtsFile, 'utf8')
-        if (!content.startsWith('declare module')) {
-          const wrappedContent = `declare module '@atlanhq/i18n/${lang}' {\n${content}\n}`
-          writeFileSync(dtsMtsFile, wrappedContent)
-        }
-      }
-    } catch (error) {
-      logWarn(`Could not ensure proper module structure for ${lang}: ${error.message}`)
+    if (!existsSync(jsonFile)) {
+      throw new Error(`JSON file does not exist: ${jsonFile}`)
     }
-  }
+    
+    writeFileSync(entryFile, `import ${lang} from './${lang}.json';\nexport default ${lang};`)
+  })
 }
 
 /**
- * Build individual language files using tsup config with enhanced error handling
+ * Generate TypeScript declaration files for individual languages
+ */
+function generateLanguageDeclarations(languageFiles) {
+  const declarationTemplate = (lang) => `declare module '@atlanhq/i18n/${lang}' {
+  interface Message {
+    [key: string]: string | Message
+  }
+  const langData: Message
+  export default langData
+}`
+  
+  languageFiles.forEach(lang => {
+    const langDir = join(CONFIG.distDir, lang)
+    const content = declarationTemplate(lang)
+    
+    writeFileSync(join(langDir, 'index.d.ts'), content)
+    
+    log.success(`Generated TypeScript declarations for ${lang}`)
+  })
+}
+
+/**
+ * Copy main TypeScript declaration files from source
+ */
+function copyMainDeclarations() {
+  const sourceDtsFile = join(projectRoot, 'src/index.d.ts')
+  
+  if (!existsSync(sourceDtsFile)) {
+    throw new Error('Source declaration file not found: src/index.d.ts')
+  }
+  
+  const content = readFileSync(sourceDtsFile, 'utf8')
+  
+  writeFileSync(join(CONFIG.distDir, 'index.d.ts'), content)
+  writeFileSync(join(CONFIG.distDir, 'index.d.mts'), content)
+  
+  log.success('Copied main declarations from source')
+}
+
+/**
+ * Build individual language files using tsup
  */
 async function buildLanguageFiles(languageFiles) {
-  try {
-    // Import and use tsup programmatically
-    const { build } = await import('tsup')
+  const { build } = await import('tsup')
+  
+  for (const lang of languageFiles) {
+    const entryFile = join(CONFIG.localesDir, `${lang}.ts`)
+    const langDir = join(CONFIG.distDir, lang)
     
-    // Build each language individually to get proper folder structure
-    for (const lang of languageFiles) {
-      const entryFile = join(CONFIG.localesDir, `${lang}.ts`)
-      const langDir = join(CONFIG.distDir, lang)
-      
-      // Validate entry file exists
-      if (!existsSync(entryFile)) {
-        throw new Error(`Entry file does not exist: ${entryFile}`)
-      }
-      
-      // Ensure language directory exists
-      mkdirSync(langDir, { recursive: true })
-      
-      // Create tsup config for this language
-      const tsupConfig = defineConfig({
-        entry: [entryFile],
-        format: ['cjs', 'esm'],
-        dts: true,
-        clean: false,
-        splitting: false,
-        sourcemap: false,
-        minify: false,
-        outDir: langDir,
-        outExtension: ({ format }) => ({
-          js: format === 'cjs' ? '.js' : '.mjs',
-          dts: format === 'cjs' ? '.d.ts' : '.d.mts'
-        }),
-        configFile: false // Don't use the main tsup config
-      })
-      
-      try {
-        await build(tsupConfig)
-        
-        // Rename files to index format with validation
-        const filesToRename = [
-          { from: `${lang}.js`, to: 'index.js' },
-          { from: `${lang}.mjs`, to: 'index.mjs' },
-          { from: `${lang}.d.ts`, to: 'index.d.ts' },
-          { from: `${lang}.d.mts`, to: 'index.d.mts' }
-        ]
-        
-        for (const file of filesToRename) {
-          const fromPath = join(langDir, file.from)
-          const toPath = join(langDir, file.to)
-          
-          if (existsSync(fromPath)) {
-            renameSync(fromPath, toPath)
-          }
-        }
-        
-        console.log(`✅ Built ${lang}`)
-      } catch (error) {
-        logError(`Error building ${lang}: ${error.message}`)
-        throw error
-      }
+    if (!existsSync(entryFile)) {
+      throw new Error(`Entry file does not exist: ${entryFile}`)
     }
-  } catch (error) {
-    logError(`Failed to build language files: ${error.message}`)
-    throw error
+    
+    mkdirSync(langDir, { recursive: true })
+    
+    const tsupConfig = defineConfig({
+      entry: [entryFile],
+      format: ['cjs', 'esm'],
+      dts: false,
+      clean: false,
+      splitting: false,
+      sourcemap: false,
+      minify: false,
+      outDir: langDir,
+      outExtension: ({ format }) => ({
+        js: format === 'cjs' ? '.js' : '.mjs'
+      }),
+      configFile: false
+    })
+    
+    await build(tsupConfig)
+    
+    // Rename files to index format
+    const filesToRename = [
+      { from: `${lang}.js`, to: 'index.js' },
+      { from: `${lang}.mjs`, to: 'index.mjs' }
+    ]
+    
+    filesToRename.forEach(({ from, to }) => {
+      const fromPath = join(langDir, from)
+      const toPath = join(langDir, to)
+      if (existsSync(fromPath)) {
+        renameSync(fromPath, toPath)
+      }
+    })
+    
+    log.success(`Built ${lang}`)
   }
 }
 
 /**
- * Clean up temporary TypeScript files and duplicate files with enhanced error handling
+ * Clean up temporary files
  */
-function cleanupEntryFiles(languageFiles) {
-  for (const lang of languageFiles) {
+function cleanupFiles(languageFiles) {
+  languageFiles.forEach(lang => {
     // Remove temporary TypeScript entry files
     const entryFile = join(CONFIG.localesDir, `${lang}.ts`)
-    try {
-      if (existsSync(entryFile)) {
-        unlinkSync(entryFile)
-      }
-    } catch (error) {
-      logWarn(`Could not remove entry file: ${entryFile} - ${error.message}`)
+    if (existsSync(entryFile)) {
+      unlinkSync(entryFile)
     }
     
     // Remove duplicate files from root dist directory
     const duplicateFiles = [
       join(CONFIG.distDir, `${lang}.js`),
-      join(CONFIG.distDir, `${lang}.mjs`),
-      join(CONFIG.distDir, `${lang}.d.ts`),
-      join(CONFIG.distDir, `${lang}.d.mts`)
+      join(CONFIG.distDir, `${lang}.mjs`)
     ]
     
-    for (const file of duplicateFiles) {
-      try {
-        if (existsSync(file)) {
-          unlinkSync(file)
-        }
-      } catch (error) {
-        logWarn(`Could not remove duplicate file: ${file} - ${error.message}`)
+    duplicateFiles.forEach(file => {
+      if (existsSync(file)) {
+        unlinkSync(file)
       }
-    }
-  }
+    })
+  })
 }
 
 /**
- * Main execution with comprehensive error handling
+ * Main execution
  */
 async function main() {
   console.log('🌍 Building individual language files...')
-  
   const startTime = Date.now()
-  let languageFiles = []
   
   try {
-    // Step 0: Validate directories
-    validateDirectories()
+    const languageFiles = getLanguageFiles()
     
-    // Step 1: Get language files
-    languageFiles = getLanguageFiles()
-    
-    // Step 2: Create TypeScript entry files
     createEntryFiles(languageFiles)
-    
-      // Step 3: Build with tsup config
-      await buildLanguageFiles(languageFiles)
-
-      // Step 4: Ensure proper module structure in TypeScript declarations
-      ensureProperModuleStructure(languageFiles)
-
-      // Step 5: Clean up temporary files
-      cleanupEntryFiles(languageFiles)
+    await buildLanguageFiles(languageFiles)
+    generateLanguageDeclarations(languageFiles)
+    copyMainDeclarations()
+    cleanupFiles(languageFiles)
     
     const duration = Date.now() - startTime
     console.log(`🎉 Successfully built ${languageFiles.length} languages in ${duration}ms`)
     
   } catch (error) {
-    logError(`Error building language files: ${error.message}`)
-    
-    // Attempt cleanup on error
-    if (languageFiles.length > 0) {
-      try {
-        cleanupEntryFiles(languageFiles)
-      } catch (cleanupError) {
-        logWarn(`Cleanup failed: ${cleanupError.message}`)
-      }
-    }
-    
+    log.error(`Build failed: ${error.message}`)
     process.exit(1)
   }
 }
 
-// Run the script with error handling
+// Run the script
 main().catch(error => {
-  logError(`Unhandled error: ${error.message}`)
+  log.error(`Unhandled error: ${error.message}`)
   process.exit(1)
 })

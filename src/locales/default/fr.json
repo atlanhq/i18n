@@ -13736,5 +13736,21 @@
     "Consider enriching these assets to improve discoverability.": "Envisagez d'enrichir ces actifs pour améliorer la découvrabilité.",
     "External setup required": "Configuration externe requise",
     "This integration is managed externally by {partnerName}. Continue setup on {partnerName}'s platform.": "Cette intégration est gérée de manière externe par {partnerName}. Continuez la configuration sur la plateforme de {partnerName}.",
-    "Request Demo": "Demander une démo"
+    "Request Demo": "Demander une démo",
+    "New: Teams Marketplace App Flow is now live! Set up Teams integration using the official Microsoft Teams Marketplace app.": "Nouveau : Le flux de l'application Teams Marketplace est maintenant en direct ! Configurez l'intégration Teams en utilisant l'application officielle Microsoft Teams Marketplace.",
+    "Please note that only users with Microsoft Teams admin access can install the Teams integration.": "Veuillez noter que seuls les utilisateurs ayant un accès administrateur Microsoft Teams peuvent installer l'intégration Teams.",
+    "({count} user)": "({count} utilisateur)",
+    "({count} users)": "({count} utilisateurs)",
+    "Error archiving integration: {errorMessage}": "Erreur lors de l'archivage de l'intégration : {errorMessage}",
+    "(from top 5 results)": "(des 5 meilleurs résultats)",
+    "Exploring upstream lineage": "Exploration de la lignée en amont",
+    "Exploring downstream lineage": "Exploration de la lignée en aval",
+    "Found {count} upstream asset | Found {count} upstream assets": "Trouvé {count} actif en amont | Trouvé {count} actifs en amont",
+    "Found {count} downstream asset | Found {count} downstream assets": "Trouvé {count} actif en aval | Trouvé {count} actifs en aval",
+    "Rules aren't scheduled. Add a schedule so your rules run automatically.": "Les règles ne sont pas programmées. Ajoutez un calendrier pour que vos règles s'exécutent automatiquement.",
+    "Dataset View": "Vue du jeu de données",
+    "Default notification is applied to this table.": "La notification par défaut est appliquée à cette table.",
+    "View configuration": "Voir la configuration",
+    "Has tests": "A des tests",
+    "Assets with at least one dbt test": "Actifs avec au moins un test dbt"
 }

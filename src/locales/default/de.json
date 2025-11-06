@@ -13736,5 +13736,21 @@
     "Consider enriching these assets to improve discoverability.": "Erwägen Sie, diese Assets anzureichern, um die Auffindbarkeit zu verbessern.",
     "External setup required": "Externe Einrichtung erforderlich",
     "This integration is managed externally by {partnerName}. Continue setup on {partnerName}'s platform.": "Diese Integration wird extern von {partnerName} verwaltet. Fahren Sie mit der Einrichtung auf der Plattform von {partnerName} fort.",
-    "Request Demo": "Demo anfordern"
+    "Request Demo": "Demo anfordern",
+    "New: Teams Marketplace App Flow is now live! Set up Teams integration using the official Microsoft Teams Marketplace app.": "Neu: Der Teams Marketplace App Flow ist jetzt live! Richten Sie die Teams-Integration mit der offiziellen Microsoft Teams Marketplace-App ein.",
+    "Please note that only users with Microsoft Teams admin access can install the Teams integration.": "Bitte beachten Sie, dass nur Benutzer mit Microsoft Teams-Adminzugriff die Teams-Integration installieren können.",
+    "({count} user)": "({count} Benutzer)",
+    "({count} users)": "({count} Benutzer)",
+    "Error archiving integration: {errorMessage}": "Fehler beim Archivieren der Integration: {errorMessage}",
+    "(from top 5 results)": "(aus den Top 5 Ergebnissen)",
+    "Exploring upstream lineage": "Erforschung der upstream-Linie",
+    "Exploring downstream lineage": "Erforschung der downstream-Linie",
+    "Found {count} upstream asset | Found {count} upstream assets": "Gefunden {count} upstream-Asset | Gefunden {count} upstream-Assets",
+    "Found {count} downstream asset | Found {count} downstream assets": "Gefunden {count} downstream-Asset | Gefunden {count} downstream-Assets",
+    "Rules aren't scheduled. Add a schedule so your rules run automatically.": "Regeln sind nicht geplant. Fügen Sie einen Zeitplan hinzu, damit Ihre Regeln automatisch ausgeführt werden.",
+    "Dataset View": "Dataset-Ansicht",
+    "Default notification is applied to this table.": "Standardbenachrichtigung wird auf diese Tabelle angewendet.",
+    "View configuration": "Konfiguration anzeigen",
+    "Has tests": "Hat Tests",
+    "Assets with at least one dbt test": "Assets mit mindestens einem dbt-Test"
 }

@@ -13736,5 +13736,21 @@
     "Consider enriching these assets to improve discoverability.": "Consider enriching these assets to improve discoverability.",
     "External setup required": "External setup required",
     "This integration is managed externally by {partnerName}. Continue setup on {partnerName}'s platform.": "This integration is managed externally by {partnerName}. Continue setup on {partnerName}'s platform.",
-    "Request Demo": "Request Demo"
+    "Request Demo": "Request Demo",
+    "New: Teams Marketplace App Flow is now live! Set up Teams integration using the official Microsoft Teams Marketplace app.": "New: Teams Marketplace App Flow is now live! Set up Teams integration using the official Microsoft Teams Marketplace app.",
+    "Please note that only users with Microsoft Teams admin access can install the Teams integration.": "Please note that only users with Microsoft Teams admin access can install the Teams integration.",
+    "({count} user)": "({count} user)",
+    "({count} users)": "({count} users)",
+    "Error archiving integration: {errorMessage}": "Error archiving integration: {errorMessage}",
+    "(from top 5 results)": "(from top 5 results)",
+    "Exploring upstream lineage": "Exploring upstream lineage",
+    "Exploring downstream lineage": "Exploring downstream lineage",
+    "Found {count} upstream asset | Found {count} upstream assets": "Found {count} upstream asset | Found {count} upstream assets",
+    "Found {count} downstream asset | Found {count} downstream assets": "Found {count} downstream asset | Found {count} downstream assets",
+    "Rules aren't scheduled. Add a schedule so your rules run automatically.": "Rules aren't scheduled. Add a schedule so your rules run automatically.",
+    "Dataset View": "Dataset View",
+    "Default notification is applied to this table.": "Default notification is applied to this table.",
+    "View configuration": "View configuration",
+    "Has tests": "Has tests",
+    "Assets with at least one dbt test": "Assets with at least one dbt test"
 }

@@ -13736,5 +13736,21 @@
     "Consider enriching these assets to improve discoverability.": "これらの資産を強化して発見可能性を向上させることを検討してください。",
     "External setup required": "外部設定が必要",
     "This integration is managed externally by {partnerName}. Continue setup on {partnerName}'s platform.": "この統合は{partnerName}によって外部で管理されています。{partnerName}のプラットフォームで設定を続行してください。",
-    "Request Demo": "デモをリクエスト"
+    "Request Demo": "デモをリクエスト",
+    "New: Teams Marketplace App Flow is now live! Set up Teams integration using the official Microsoft Teams Marketplace app.": "新しい: Teams Marketplace アプリフローがライブになりました! 公式の Microsoft Teams Marketplace アプリを使用して Teams 統合を設定してください。",
+    "Please note that only users with Microsoft Teams admin access can install the Teams integration.": "Microsoft Teams 管理者アクセス権を持つユーザーのみが Teams 統合をインストールできることに注意してください。",
+    "({count} user)": "({count} ユーザー)",
+    "({count} users)": "({count} ユーザー)",
+    "Error archiving integration: {errorMessage}": "統合のアーカイブ中にエラーが発生しました: {errorMessage}",
+    "(from top 5 results)": "(上位 5 件の結果から)",
+    "Exploring upstream lineage": "上流系譜を探索中",
+    "Exploring downstream lineage": "下流系譜を探索中",
+    "Found {count} upstream asset | Found {count} upstream assets": "見つかった {count} 上流資産 | 見つかった {count} 上流資産",
+    "Found {count} downstream asset | Found {count} downstream assets": "見つかった {count} 下流資産 | 見つかった {count} 下流資産",
+    "Rules aren't scheduled. Add a schedule so your rules run automatically.": "ルールはスケジュールされていません。ルールが自動的に実行されるようにスケジュールを追加してください。",
+    "Dataset View": "データセットビュー",
+    "Default notification is applied to this table.": "デフォルトの通知がこのテーブルに適用されています。",
+    "View configuration": "構成を表示",
+    "Has tests": "テストがあります",
+    "Assets with at least one dbt test": "少なくとも 1 つの dbt テストを持つ資産"
 }

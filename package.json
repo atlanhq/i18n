@@ -1,6 +1,6 @@
 {
     "name": "@atlanhq/i18n",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Internationalization package for Atlan's frontend applications",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
@@ -11,14 +11,44 @@
     ],
     "exports": {
         ".": {
+            "types": "./dist/index.d.ts",
             "require": "./dist/index.js",
-            "import": "./dist/index.mjs",
-            "types": "./dist/index.d.ts"
+            "import": "./dist/index.mjs"
         },
-        "./locales/*": "./src/locales/*"
+        "./locales/*": "./src/locales/*",
+        "./en": {
+            "types": "./dist/en/index.d.ts",
+            "require": "./dist/en/index.js",
+            "import": "./dist/en/index.mjs"
+        },
+        "./fr": {
+            "types": "./dist/fr/index.d.ts",
+            "require": "./dist/fr/index.js",
+            "import": "./dist/fr/index.mjs"
+        },
+        "./jp": {
+            "types": "./dist/jp/index.d.ts",
+            "require": "./dist/jp/index.js",
+            "import": "./dist/jp/index.mjs"
+        },
+        "./pt": {
+            "types": "./dist/pt/index.d.ts",
+            "require": "./dist/pt/index.js",
+            "import": "./dist/pt/index.mjs"
+        },
+        "./de": {
+            "types": "./dist/de/index.d.ts",
+            "require": "./dist/de/index.js",
+            "import": "./dist/de/index.mjs"
+        },
+        "./dprod": {
+            "types": "./dist/dprod/index.d.ts",
+            "require": "./dist/dprod/index.js",
+            "import": "./dist/dprod/index.mjs"
+        }
     },
     "scripts": {
-        "build": "tsup src/index.ts --format cjs,esm --dts",
+        "build": "tsup src/index.ts --format cjs,esm --dts --clean false && node scripts/generate-locales.mjs",
         "prepare": "pnpm build",
         "test": "jest",
         "lint": "eslint .",

@@ -1,4 +1,4 @@
-import { readdirSync, writeFileSync, mkdirSync, unlinkSync, renameSync, existsSync, statSync, readFileSync } from 'fs'
+import { readdirSync, writeFileSync, mkdirSync, unlinkSync, existsSync, statSync, readFileSync } from 'fs'
 import { join, resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { defineConfig } from 'tsup'
@@ -12,6 +12,7 @@ const projectRoot = resolve(__dirname, '..')
 const CONFIG = {
   localesDir: join(projectRoot, 'src/locales/default'),
   distDir: join(projectRoot, 'dist'),
+  langDeclarationTemplate: join(projectRoot, 'src/locale-module.d.ts.template'),
 }
 
 // Utility functions
@@ -61,20 +62,19 @@ function createEntryFiles(languageFiles) {
 }
 
 /**
- * Generate TypeScript declaration files for individual languages
+ * Copy TypeScript declaration files for individual languages from source template
  */
 function generateLanguageDeclarations(languageFiles) {
-  const declarationTemplate = (lang) => `declare module '@atlanhq/i18n/${lang}' {
-  interface Message {
-    [key: string]: string | Message
+  if (!existsSync(CONFIG.langDeclarationTemplate)) {
+    throw new Error(`Declaration template not found: ${CONFIG.langDeclarationTemplate}`)
   }
-  const langData: Message
-  export default langData
-}`
+  
+  const templateContent = readFileSync(CONFIG.langDeclarationTemplate, 'utf8')
   
   languageFiles.forEach(lang => {
     const langDir = join(CONFIG.distDir, lang)
-    const content = declarationTemplate(lang)
+    // Replace {{LANG}} placeholder with actual language code
+    const content = templateContent.replace(/\{\{LANG\}\}/g, lang)
     
     writeFileSync(join(langDir, 'index.d.ts'), content)
     
@@ -106,7 +106,14 @@ function copyMainDeclarations() {
 async function buildLanguageFiles(languageFiles) {
   const { build } = await import('tsup')
   
-  for (const lang of languageFiles) {
+  // Create all output directories upfront
+  languageFiles.forEach(lang => {
+    const langDir = join(CONFIG.distDir, lang)
+    mkdirSync(langDir, { recursive: true })
+  })
+  
+  // Build all languages in parallel
+  const buildPromises = languageFiles.map(async (lang) => {
     const entryFile = join(CONFIG.localesDir, `${lang}.ts`)
     const langDir = join(CONFIG.distDir, lang)
     
@@ -114,10 +121,10 @@ async function buildLanguageFiles(languageFiles) {
       throw new Error(`Entry file does not exist: ${entryFile}`)
     }
     
-    mkdirSync(langDir, { recursive: true })
-    
     const tsupConfig = defineConfig({
-      entry: [entryFile],
+      entry: {
+        index: entryFile
+      },
       format: ['cjs', 'esm'],
       dts: false,
       clean: false,
@@ -132,23 +139,10 @@ async function buildLanguageFiles(languageFiles) {
     })
     
     await build(tsupConfig)
-    
-    // Rename files to index format
-    const filesToRename = [
-      { from: `${lang}.js`, to: 'index.js' },
-      { from: `${lang}.mjs`, to: 'index.mjs' }
-    ]
-    
-    filesToRename.forEach(({ from, to }) => {
-      const fromPath = join(langDir, from)
-      const toPath = join(langDir, to)
-      if (existsSync(fromPath)) {
-        renameSync(fromPath, toPath)
-      }
-    })
-    
     log.success(`Built ${lang}`)
-  }
+  })
+  
+  await Promise.all(buildPromises)
 }
 
 /**
@@ -183,21 +177,30 @@ async function main() {
   console.log('🌍 Building individual language files...')
   const startTime = Date.now()
   
+  let languageFiles = []
+  
   try {
-    const languageFiles = getLanguageFiles()
+    languageFiles = getLanguageFiles()
     
     createEntryFiles(languageFiles)
     await buildLanguageFiles(languageFiles)
     generateLanguageDeclarations(languageFiles)
     copyMainDeclarations()
-    cleanupFiles(languageFiles)
     
     const duration = Date.now() - startTime
     console.log(`🎉 Successfully built ${languageFiles.length} languages in ${duration}ms`)
     
   } catch (error) {
     log.error(`Build failed: ${error.message}`)
+    if (error.stack) {
+      console.error(error.stack)
+    }
     process.exit(1)
+  } finally {
+    // Always cleanup temporary files
+    if (languageFiles.length > 0) {
+      cleanupFiles(languageFiles)
+    }
   }
 }
 

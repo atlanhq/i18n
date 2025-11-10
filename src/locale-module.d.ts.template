@@ -1,0 +1,8 @@
+declare module '@atlanhq/i18n/{{LANG}}' {
+  interface Message {
+    [key: string]: string | Message
+  }
+  const langData: Message
+  export default langData
+}
+

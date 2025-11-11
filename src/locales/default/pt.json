@@ -13787,5 +13787,9 @@
     "Filter assets by aspect field keys": "Filtrar ativos por chaves de campo de aspecto",
     "Aspect Value": "Valor do Aspecto",
     "Filter assets by aspect field values": "Filtrar ativos por valores de campo de aspecto",
-    "View data quality of SQL assets on which Dataplex monitor is setup": "Ver a qualidade dos dados dos ativos SQL nos quais o monitor do Dataplex está configurado"
+    "View data quality of SQL assets on which Dataplex monitor is setup": "Ver a qualidade dos dados dos ativos SQL nos quais o monitor do Dataplex está configurado",
+    "Switch persona": "Mudar persona",
+    "Search assets or ask questions about your metadata in natural language": "Pesquise ativos ou faça perguntas sobre seus metadados em linguagem natural",
+    "No {level} logs available for this pod": "Nenhum log {level} disponível para este pod",
+    "Run failed. View logs on the run details page to debug.": "Execução falhou. Veja os logs na página de detalhes da execução para depurar."
 }

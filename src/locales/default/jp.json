@@ -13787,5 +13787,9 @@
     "Filter assets by aspect field keys": "アスペクトフィールドキーで資産をフィルタリング",
     "Aspect Value": "アスペクト値",
     "Filter assets by aspect field values": "アスペクトフィールド値で資産をフィルタリング",
-    "View data quality of SQL assets on which Dataplex monitor is setup": "Dataplexモニターが設定されているSQL資産のデータ品質を表示"
+    "View data quality of SQL assets on which Dataplex monitor is setup": "Dataplexモニターが設定されているSQL資産のデータ品質を表示",
+    "Switch persona": "ペルソナを切り替える",
+    "Search assets or ask questions about your metadata in natural language": "資産を検索するか、メタデータについて自然言語で質問してください",
+    "No {level} logs available for this pod": "このポッドには{level}のログが利用できません",
+    "Run failed. View logs on the run details page to debug.": "実行に失敗しました。デバッグするには実行の詳細ページでログを表示してください。"
 }

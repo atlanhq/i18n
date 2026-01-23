@@ -14601,5 +14601,13 @@
     "Create tag": "Create tag",
     "Create AI model": "Create AI model",
     "Create AI application": "Create AI application",
-    "Create data product": "Create data product"
+    "Create data product": "Create data product",
+    "Unable to load lineage data": "Unable to load lineage data",
+    "Lineage unavailable": "Lineage unavailable",
+    "No lineage data available for this asset": "No lineage data available for this asset",
+    "No lineage": "No lineage",
+    "No asset selected for lineage": "No asset selected for lineage",
+    "Open lineage in new tab": "Open lineage in new tab",
+    "1s": "1s",
+    "{seconds}s": "{seconds}s"
 }

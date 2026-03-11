@@ -14762,7 +14762,6 @@
     "You're about to run all data quality rules on this table.": "Vous êtes sur le point d'exécuter toutes les règles de qualité des données sur cette table.",
     "The next scheduled run is in {minutes} minutes ({time})": "La prochaine exécution programmée est dans {minutes} minutes ({time})",
     "Run is in progress": "L'exécution est en cours",
-    "Open lineage in new tab": "Ouvrir la lignée dans un nouvel onglet",
     "Attribute Preview": "Aperçu de l'attribut",
     "Definition Copied!": "Définition copiée !",
     "Insufficient Permissions": "Autorisations insuffisantes",
@@ -15336,8 +15335,6 @@
     "Loading analyst...": "Chargement de l'analyste...",
     "External App": "Application externe",
     "Aliases": "Alias",
-    "1s": "1s",
-    "{seconds}s": "{seconds}s",
     "Certify in one-click": "Certifier en un clic",
     "Enrich with AI": "Enrichir avec l'IA",
     "Add descriptions": "Ajouter des descriptions",
@@ -15390,5 +15387,8 @@
     "You can use any Iceberg REST-compatible engine (for example Spark, Trino, DuckDB) to query Lakehouse. Follow your engine’s documentation to configure an Iceberg REST catalog using the {details} above.": "Vous pouvez utiliser n'importe quel moteur compatible avec Iceberg REST (par exemple Spark, Trino, DuckDB) pour interroger le Lakehouse. Suivez la documentation de votre moteur pour configurer un catalogue Iceberg REST en utilisant les {details} ci-dessus.",
     "Role Name": "Nom du rôle",
     "Warehouse Name": "Nom de l'entrepôt",
-    "OAuth Token URI": "URI du jeton OAuth"
+    "OAuth Token URI": "URI du jeton OAuth",
+    "Open lineage in new tab": "Ouvrir la lignée dans un nouvel onglet",
+    "1s": "1s",
+    "{seconds}s": "{seconds}s"
 }

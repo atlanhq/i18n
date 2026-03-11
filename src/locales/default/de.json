@@ -14762,7 +14762,6 @@
     "You're about to run all data quality rules on this table.": "Du bist dabei, alle Datenqualitätsregeln auf dieser Tabelle auszuführen.",
     "The next scheduled run is in {minutes} minutes ({time})": "Die nächste geplante Ausführung ist in {minutes} Minuten ({time})",
     "Run is in progress": "Ausführung ist im Gange",
-    "Open lineage in new tab": "Abstammung in neuem Tab öffnen",
     "Attribute Preview": "Attributvorschau",
     "Definition Copied!": "Definition kopiert!",
     "Insufficient Permissions": "Unzureichende Berechtigungen",
@@ -15390,5 +15389,6 @@
     "You can use any Iceberg REST-compatible engine (for example Spark, Trino, DuckDB) to query Lakehouse. Follow your engine’s documentation to configure an Iceberg REST catalog using the {details} above.": "Sie können jede Iceberg REST-kompatible Engine (zum Beispiel Spark, Trino, DuckDB) verwenden, um das Lakehouse abzufragen. Befolgen Sie die Dokumentation Ihrer Engine, um einen Iceberg REST-Katalog mit den oben genannten {details} zu konfigurieren.",
     "Role Name": "Rollenname",
     "Warehouse Name": "Lagerhausname",
-    "OAuth Token URI": "OAuth-Token-URI"
+    "OAuth Token URI": "OAuth-Token-URI",
+    "Open lineage in new tab": "Abstammung in neuem Tab öffnen"
 }

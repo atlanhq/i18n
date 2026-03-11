@@ -14762,7 +14762,6 @@
     "You're about to run all data quality rules on this table.": "次のスケジュールされた実行は{minutes}分後です（{time}）",
     "The next scheduled run is in {minutes} minutes ({time})": "実行中",
     "Run is in progress": "新しいタブで系譜を開く",
-    "Open lineage in new tab": "属性プレビュー",
     "Attribute Preview": "定義がコピーされました！",
     "Definition Copied!": "権限が不十分です",
     "Insufficient Permissions": "外部アプリの設定が見つかりません",
@@ -15390,5 +15389,6 @@
     "You can use any Iceberg REST-compatible engine (for example Spark, Trino, DuckDB) to query Lakehouse. Follow your engine’s documentation to configure an Iceberg REST catalog using the {details} above.": "Iceberg REST 互換エンジン（例：Spark、Trino、DuckDB）を使用してレイクハウスをクエリできます。上記の {details} を使用して Iceberg REST カタログを構成するために、エンジンのドキュメントに従ってください。",
     "Role Name": "ロール名",
     "Warehouse Name": "ウェアハウス名",
-    "OAuth Token URI": "OAuth トークン URI"
+    "OAuth Token URI": "OAuth トークン URI",
+    "Open lineage in new tab": "新しいタブで系譜を開く"
 }

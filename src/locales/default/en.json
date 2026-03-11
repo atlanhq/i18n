@@ -14713,7 +14713,6 @@
     "No asset selected for lineage": "No asset selected for lineage",
     "Show SQL": "Show SQL",
     "Last queried (at source)": "Last queried (at source)",
-    "I'm your data assistant. I know your": "I'm your data assistant. I know your",
     "Everything I know comes from your metadata - descriptions, lineage, tags. The richer it is, the more I can help.": "Everything I know comes from your metadata - descriptions, lineage, tags. The richer it is, the more I can help.",
     "catalog,": "catalog,",
     "respect your": "respect your",
@@ -14762,7 +14761,6 @@
     "You're about to run all data quality rules on this table.": "You're about to run all data quality rules on this table.",
     "The next scheduled run is in {minutes} minutes ({time})": "The next scheduled run is in {minutes} minutes ({time})",
     "Run is in progress": "Run is in progress",
-    "Open lineage in new tab": "Open lineage in new tab",
     "Attribute Preview": "Attribute Preview",
     "Definition Copied!": "Definition Copied!",
     "Insufficient Permissions": "Insufficient Permissions",
@@ -15390,5 +15388,6 @@
     "You can use any Iceberg REST-compatible engine (for example Spark, Trino, DuckDB) to query Lakehouse. Follow your engine’s documentation to configure an Iceberg REST catalog using the {details} above.": "You can use any Iceberg REST-compatible engine (for example Spark, Trino, DuckDB) to query Lakehouse. Follow your engine’s documentation to configure an Iceberg REST catalog using the {details} above.",
     "Role Name": "Role Name",
     "Warehouse Name": "Warehouse Name",
-    "OAuth Token URI": "OAuth Token URI"
+    "OAuth Token URI": "OAuth Token URI",
+    "Open lineage in new tab": "Open lineage in new tab"
 }

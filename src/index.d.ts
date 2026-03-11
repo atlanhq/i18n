@@ -1,6 +1,6 @@
 import { createI18n } from 'vue-i18n'
 
-export type LocaleKey = 'de' | 'dprod' | 'en' | 'fr' | 'jp' | 'pt'
+export type LocaleKey = 'de' | 'dprod' | 'en' | 'es' | 'fr' | 'jp' | 'pt'
 export interface Message {
   [key: string]: string | Message
 }
@@ -15,6 +15,7 @@ export type CreateI18nInstanceOptions = {
 
 // Export all locales individually for direct access
 export declare const en: Message
+export declare const es: Message
 export declare const fr: Message
 export declare const jp: Message
 export declare const pt: Message

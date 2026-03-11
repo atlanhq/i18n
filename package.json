@@ -21,6 +21,11 @@
             "require": "./dist/en/index.js",
             "import": "./dist/en/index.mjs"
         },
+        "./es": {
+            "types": "./dist/es/index.d.ts",
+            "require": "./dist/es/index.js",
+            "import": "./dist/es/index.mjs"
+        },
         "./fr": {
             "types": "./dist/fr/index.d.ts",
             "require": "./dist/fr/index.js",

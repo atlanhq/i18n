@@ -11,7 +11,7 @@ npm install @atlanhq/i18n
 ## Usage
 
 ```typescript
-import i18n, { en, fr, jp, pt, de } from '@atlanhq/i18n';
+import i18n, { en, es, fr, jp, pt, de } from '@atlanhq/i18n';
 
 // Use individual locales
 console.log(en.some_key);
@@ -23,6 +23,7 @@ console.log(i18n['en'].some_key);
 ## Available Locales
 
 - English - `en`
+- Spanish - `es`
 - French - `fr`
 - Japanese - `jp`
 - Portuguese - `pt`
@@ -37,6 +38,7 @@ console.log(i18n['en'].some_key);
 │   └── locales/      # Locale files
 │       └── default/  # Default locale directory
 │           ├── en.json   # English translations
+│           ├── es.json   # Spanish translations
 │           ├── fr.json   # French translations
 │           ├── jp.json   # Japanese translations
 │           ├── pt.json   # Portuguese translations

@@ -7,7 +7,8 @@ import { glob } from 'glob'
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY
 const BASE_DIRECTORY = process.env.BASE_DIRECTORY
 
-const OPENAI_API_URL = 'https://api.openai.com/v1/chat/completions'
+// Overridable for alternate endpoints (e.g. proxy or custom OpenAI-compatible API)
+const OPENAI_API_URL = process.env.OPENAI_API_URL || 'https://api.openai.com/v1/chat/completions'
 
 const configuration = {
     apiKey: OPENAI_API_KEY,
@@ -178,6 +179,11 @@ async function translateJson(data, targetLanguage) {
     )
 
     for (let i = 0; i < keys.length; i += batchSize) {
+        // 2s delay between batches to avoid rate limiting and Cloudflare blocks
+        if (i > 0) {
+            await new Promise((resolve) => setTimeout(resolve, 2000))
+        }
+
         console.log(
             `Processing batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(keys.length / batchSize)}`
         )

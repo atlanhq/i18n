@@ -2,7 +2,7 @@ import { createI18n } from 'vue-i18n'
 
 
 // Type definitions
-export type LocaleKey = 'de' | 'dprod' | 'en' | 'fr' | 'jp' | 'pt'
+export type LocaleKey = 'de' | 'dprod' | 'en' | 'es' | 'fr' | 'jp' | 'pt'
 export interface Message {
   [key: string]: string | Message
 }
@@ -18,6 +18,7 @@ export type CreateI18nInstanceOptions = {
 
 // Export all locales individually for direct access
 import enData from './locales/default/en.json'
+import esData from './locales/default/es.json'
 import frData from './locales/default/fr.json'
 import jpData from './locales/default/jp.json'
 import ptData from './locales/default/pt.json'
@@ -25,6 +26,7 @@ import deData from './locales/default/de.json'
 import dprodData from './locales/default/dprod.json'
 
 export const en: Message = enData
+export const es: Message = esData
 export const fr: Message = frData
 export const jp: Message = jpData
 export const pt: Message = ptData
@@ -34,6 +36,7 @@ export const dprod: Message = dprodData
 // Export the messages object for vue-i18n initialization
 export const messages: Record<LocaleKey, Message> = {
     en,
+    es,
     fr,
     pt,
     jp,

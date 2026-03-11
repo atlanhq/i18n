@@ -14601,5 +14601,13 @@
     "Create tag": "Tag erstellen",
     "Create AI model": "KI-Modell erstellen",
     "Create AI application": "KI-Anwendung erstellen",
-    "Create data product": "Datenprodukt erstellen"
+    "Create data product": "Datenprodukt erstellen",
+    "Unable to load lineage data": "Konnte die Abstammungsdaten nicht laden",
+    "Lineage unavailable": "Abstammung nicht verfügbar",
+    "No lineage data available for this asset": "Keine Abstammungsdaten für dieses Asset verfügbar",
+    "No lineage": "Keine Abstammung",
+    "No asset selected for lineage": "Kein Asset für die Abstammung ausgewählt",
+    "Open lineage in new tab": "Abstammung in neuem Tab öffnen",
+    "1s": "1s",
+    "{seconds}s": "{seconds}s"
 }

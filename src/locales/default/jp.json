@@ -14601,5 +14601,13 @@
     "Create tag": "タグを作成",
     "Create AI model": "AIモデルを作成",
     "Create AI application": "AIアプリケーションを作成",
-    "Create data product": "データプロダクトを作成"
+    "Create data product": "データプロダクトを作成",
+    "Unable to load lineage data": "系譜データを読み込めません",
+    "Lineage unavailable": "系譜が利用できません",
+    "No lineage data available for this asset": "この資産の系譜データは利用できません",
+    "No lineage": "系譜なし",
+    "No asset selected for lineage": "系譜のために選択された資産がありません",
+    "Open lineage in new tab": "新しいタブで系譜を開く",
+    "1s": "1秒",
+    "{seconds}s": "{seconds}秒"
 }

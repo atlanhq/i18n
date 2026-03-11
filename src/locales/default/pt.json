@@ -14601,5 +14601,13 @@
     "Create tag": "Criar etiqueta",
     "Create AI model": "Criar modelo de IA",
     "Create AI application": "Criar aplicação de IA",
-    "Create data product": "Criar produto de dados"
+    "Create data product": "Criar produto de dados",
+    "Unable to load lineage data": "Não foi possível carregar os dados de linhagem",
+    "Lineage unavailable": "Linhagem indisponível",
+    "No lineage data available for this asset": "Nenhum dado de linhagem disponível para este ativo",
+    "No lineage": "Sem linhagem",
+    "No asset selected for lineage": "Nenhum ativo selecionado para linhagem",
+    "Open lineage in new tab": "Abrir linhagem em nova aba",
+    "1s": "1s",
+    "{seconds}s": "{seconds}s"
 }

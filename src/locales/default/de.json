@@ -14713,7 +14713,6 @@
     "No asset selected for lineage": "Kein Asset für die Abstammung ausgewählt",
     "Show SQL": "SQL anzeigen",
     "Last queried (at source)": "Zuletzt abgefragt (an der Quelle)",
-    "I'm your data assistant. I know your": "Ich bin dein Datenassistent. Ich kenne deine",
     "Everything I know comes from your metadata - descriptions, lineage, tags. The richer it is, the more I can help.": "Alles, was ich weiß, stammt aus deinen Metadaten - Beschreibungen, Abstammung, Tags. Je reichhaltiger sie sind, desto mehr kann ich helfen.",
     "catalog,": "Katalog,",
     "respect your": "respektiere dein",
@@ -15390,5 +15389,6 @@
     "Role Name": "Rollenname",
     "Warehouse Name": "Lagerhausname",
     "OAuth Token URI": "OAuth-Token-URI",
-    "Open lineage in new tab": "Abstammung in neuem Tab öffnen"
+    "Open lineage in new tab": "Abstammung in neuem Tab öffnen",
+    "I'm your data assistant. I know your": "Ich bin dein Datenassistent. Ich kenne deine"
 }

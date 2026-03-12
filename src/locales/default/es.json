@@ -14713,7 +14713,6 @@
     "No asset selected for lineage": "No se ha seleccionado ningún activo para linaje",
     "Show SQL": "Mostrar SQL",
     "Last queried (at source)": "Última consulta (en origen)",
-    "I'm your data assistant. I know your": "Soy tu asistente de datos. Conozco tu",
     "Everything I know comes from your metadata - descriptions, lineage, tags. The richer it is, the more I can help.": "Todo lo que sé proviene de tus metadatos: descripciones, linaje, etiquetas. Cuanto más ricos sean, más puedo ayudar.",
     "catalog,": "catálogo,",
     "respect your": "respeta tu",
@@ -14762,7 +14761,6 @@
     "You're about to run all data quality rules on this table.": "Estás a punto de ejecutar todas las reglas de calidad de datos en esta tabla.",
     "The next scheduled run is in {minutes} minutes ({time})": "La próxima ejecución programada es en {minutes} minutos ({time})",
     "Run is in progress": "La ejecución está en progreso",
-    "Open lineage in new tab": "Abrir linaje en una nueva pestaña",
     "Attribute Preview": "Vista previa de atributos",
     "Definition Copied!": "¡Definición copiada!",
     "Insufficient Permissions": "Permisos insuficientes",
@@ -15390,5 +15388,7 @@
     "You can use any Iceberg REST-compatible engine (for example Spark, Trino, DuckDB) to query Lakehouse. Follow your engine’s documentation to configure an Iceberg REST catalog using the {details} above.": "Puedes usar cualquier motor compatible con Iceberg REST (por ejemplo, Spark, Trino, DuckDB) para consultar Lakehouse. Sigue la documentación de tu motor para configurar un catálogo REST de Iceberg usando los {details} anteriores.",
     "Role Name": "Nombre del rol",
     "Warehouse Name": "Nombre del almacén",
-    "OAuth Token URI": "URI del token OAuth"
+    "OAuth Token URI": "URI del token OAuth",
+    "Open lineage in new tab": "Abrir linaje en una nueva pestaña",
+    "I'm your data assistant. I know your": "Soy tu asistente de datos. Conozco tu"
 }

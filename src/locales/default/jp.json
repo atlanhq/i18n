@@ -14713,7 +14713,6 @@
     "No asset selected for lineage": "系譜のために選択された資産はありません",
     "Show SQL": "SQLを表示",
     "Last queried (at source)": "最後にクエリされた（ソースで）",
-    "I'm your data assistant. I know your": "私はあなたのデータアシスタントです。あなたのことを知っています",
     "Everything I know comes from your metadata - descriptions, lineage, tags. The richer it is, the more I can help.": "私が知っているすべてはあなたのメタデータから来ています - 説明、系譜、タグ。豊富であればあるほど、私はもっと助けることができます。",
     "catalog,": "カタログ、",
     "respect your": "あなたのことを尊重します",
@@ -15390,5 +15389,6 @@
     "Role Name": "ロール名",
     "Warehouse Name": "ウェアハウス名",
     "OAuth Token URI": "OAuth トークン URI",
-    "Open lineage in new tab": "新しいタブで系譜を開く"
+    "Open lineage in new tab": "新しいタブで系譜を開く",
+    "I'm your data assistant. I know your": "私はあなたのデータアシスタントです。あなたのことを知っています"
 }

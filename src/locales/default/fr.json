@@ -14713,7 +14713,6 @@
     "No asset selected for lineage": "Aucun actif sélectionné pour la lignée",
     "Show SQL": "Afficher SQL",
     "Last queried (at source)": "Dernière requête (à la source)",
-    "I'm your data assistant. I know your": "Je suis votre assistant de données. Je connais votre",
     "Everything I know comes from your metadata - descriptions, lineage, tags. The richer it is, the more I can help.": "Tout ce que je sais vient de vos métadonnées - descriptions, lignée, étiquettes. Plus elles sont riches, plus je peux vous aider.",
     "catalog,": "catalogue,",
     "respect your": "respectez votre",
@@ -15335,6 +15334,8 @@
     "Loading analyst...": "Chargement de l'analyste...",
     "External App": "Application externe",
     "Aliases": "Alias",
+    "1s": "1s",
+    "{seconds}s": "{seconds}s",
     "Certify in one-click": "Certifier en un clic",
     "Enrich with AI": "Enrichir avec l'IA",
     "Add descriptions": "Ajouter des descriptions",
@@ -15389,6 +15390,5 @@
     "Warehouse Name": "Nom de l'entrepôt",
     "OAuth Token URI": "URI du jeton OAuth",
     "Open lineage in new tab": "Ouvrir la lignée dans un nouvel onglet",
-    "1s": "1s",
-    "{seconds}s": "{seconds}s"
+    "I'm your data assistant. I know your": "Je suis votre assistant de données. Je connais votre"
 }

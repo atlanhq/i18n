@@ -15927,5 +15927,20 @@
     "BigQuery support for Lakehouse is available through a custom setup. Please head to": "BigQuery support for Lakehouse is available through a custom setup. Please head to",
     "the setup guide": "the setup guide",
     "for the steps required.": "for the steps required.",
-    "Databricks support for Lakehouse is available through a custom setup. Please head to": "Databricks support for Lakehouse is available through a custom setup. Please head to"
+    "Databricks support for Lakehouse is available through a custom setup. Please head to": "Databricks support for Lakehouse is available through a custom setup. Please head to",
+    "Define target column": "Define target column",
+    "Select the target table and column to compare with the source and verify that metric values match.": "Select the target table and column to compare with the source and verify that metric values match.",
+    "Define target table": "Define target table",
+    "Select the target table to compare with the source table and verify that row counts match.": "Select the target table to compare with the source table and verify that row counts match.",
+    "The maximum allowed difference between source and target, as a percentage of the source.": "The maximum allowed difference between source and target, as a percentage of the source.",
+    "Threshold %": "Threshold %",
+    "Allowed difference percentage": "Allowed difference percentage",
+    "Bypasses persona visibility rules for all members and guests.": "Bypasses persona visibility rules for all members and guests.",
+    "Enable \"All assets\" in Discovery": "Enable \"All assets\" in Discovery",
+    "Enabling this will allow all members and guests to view all assets in Discovery, bypassing persona visibility rules. This change affects every non-admin user on the tenant.": "Enabling this will allow all members and guests to view all assets in Discovery, bypassing persona visibility rules. This change affects every non-admin user on the tenant.",
+    "Disable \"All assets\" in Discovery": "Disable \"All assets\" in Discovery",
+    "Disabling this will restrict all members and guests to only see assets granted by their personas. Users without persona policies will lose access to assets in Discovery.": "Disabling this will restrict all members and guests to only see assets granted by their personas. Users without persona policies will lose access to assets in Discovery.",
+    "Restricts glossary visibility based on persona policies.": "Restricts glossary visibility based on persona policies.",
+    "Disable persona switcher in Glossary": "Disable persona switcher in Glossary",
+    "Disabling this will remove persona-based glossary scoping. All members and guests will see all glossaries and terms regardless of persona policies.": "Disabling this will remove persona-based glossary scoping. All members and guests will see all glossaries and terms regardless of persona policies."
 }

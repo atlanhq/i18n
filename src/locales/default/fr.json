@@ -15927,5 +15927,20 @@
     "BigQuery support for Lakehouse is available through a custom setup. Please head to": "Le support BigQuery pour Lakehouse est disponible via une configuration personnalisée. Veuillez vous rendre à",
     "the setup guide": "le guide de configuration",
     "for the steps required.": "pour les étapes requises.",
-    "Databricks support for Lakehouse is available through a custom setup. Please head to": "Le support Databricks pour Lakehouse est disponible via une configuration personnalisée. Veuillez vous rendre à"
+    "Databricks support for Lakehouse is available through a custom setup. Please head to": "Le support Databricks pour Lakehouse est disponible via une configuration personnalisée. Veuillez vous rendre à",
+    "Define target column": "Définir la colonne cible",
+    "Select the target table and column to compare with the source and verify that metric values match.": "Sélectionnez la table et la colonne cibles à comparer avec la source et vérifiez que les valeurs des métriques correspondent.",
+    "Define target table": "Définir la table cible",
+    "Select the target table to compare with the source table and verify that row counts match.": "Sélectionnez la table cible à comparer avec la table source et vérifiez que les comptes de lignes correspondent.",
+    "The maximum allowed difference between source and target, as a percentage of the source.": "La différence maximale autorisée entre la source et la cible, en pourcentage de la source.",
+    "Threshold %": "Seuil %",
+    "Allowed difference percentage": "Pourcentage de différence autorisé",
+    "Bypasses persona visibility rules for all members and guests.": "Contourne les règles de visibilité de persona pour tous les membres et invités.",
+    "Enable \"All assets\" in Discovery": "Activer \"Tous les actifs\" dans Discovery",
+    "Enabling this will allow all members and guests to view all assets in Discovery, bypassing persona visibility rules. This change affects every non-admin user on the tenant.": "L'activation de cela permettra à tous les membres et invités de voir tous les actifs dans Discovery, contournant les règles de visibilité de persona. Ce changement affecte chaque utilisateur non administrateur sur le locataire.",
+    "Disable \"All assets\" in Discovery": "Désactiver \"Tous les actifs\" dans Discovery",
+    "Disabling this will restrict all members and guests to only see assets granted by their personas. Users without persona policies will lose access to assets in Discovery.": "La désactivation de cela restreindra tous les membres et invités à ne voir que les actifs accordés par leurs personas. Les utilisateurs sans politiques de persona perdront l'accès aux actifs dans Discovery.",
+    "Restricts glossary visibility based on persona policies.": "Restreint la visibilité du glossaire en fonction des politiques de persona.",
+    "Disable persona switcher in Glossary": "Désactiver le sélecteur de persona dans le glossaire",
+    "Disabling this will remove persona-based glossary scoping. All members and guests will see all glossaries and terms regardless of persona policies.": "La désactivation de cela supprimera le ciblage du glossaire basé sur les personas. Tous les membres et invités verront tous les glossaires et termes, indépendamment des politiques de persona."
 }

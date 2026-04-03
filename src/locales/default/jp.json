@@ -15927,5 +15927,20 @@
     "BigQuery support for Lakehouse is available through a custom setup. Please head to": "LakehouseのBigQueryサポートはカスタムセットアップを通じて利用可能です。次のガイドに進んでください",
     "the setup guide": "セットアップガイド",
     "for the steps required.": "に必要な手順があります。",
-    "Databricks support for Lakehouse is available through a custom setup. Please head to": "LakehouseのDatabricksサポートはカスタムセットアップを通じて利用可能です。次のガイドに進んでください"
+    "Databricks support for Lakehouse is available through a custom setup. Please head to": "LakehouseのDatabricksサポートはカスタムセットアップを通じて利用可能です。次のガイドに進んでください",
+    "Define target column": "ターゲット列を定義する",
+    "Select the target table and column to compare with the source and verify that metric values match.": "ソースと比較するターゲットテーブルと列を選択し、メトリック値が一致することを確認します。",
+    "Define target table": "ターゲットテーブルを定義する",
+    "Select the target table to compare with the source table and verify that row counts match.": "ソーステーブルと比較するターゲットテーブルを選択し、行数が一致することを確認します。",
+    "The maximum allowed difference between source and target, as a percentage of the source.": "ソースとターゲットの間で許可される最大の差、ソースのパーセンテージとして。",
+    "Threshold %": "しきい値 %",
+    "Allowed difference percentage": "許可される差のパーセンテージ",
+    "Bypasses persona visibility rules for all members and guests.": "すべてのメンバーとゲストのためにペルソナの可視性ルールをバイパスします。",
+    "Enable \"All assets\" in Discovery": "Discoveryで「すべての資産」を有効にする",
+    "Enabling this will allow all members and guests to view all assets in Discovery, bypassing persona visibility rules. This change affects every non-admin user on the tenant.": "これを有効にすると、すべてのメンバーとゲストがDiscovery内のすべての資産を表示できるようになり、ペルソナの可視性ルールをバイパスします。この変更は、テナント内のすべての非管理者ユーザーに影響します。",
+    "Disable \"All assets\" in Discovery": "Discoveryで「すべての資産」を無効にする",
+    "Disabling this will restrict all members and guests to only see assets granted by their personas. Users without persona policies will lose access to assets in Discovery.": "これを無効にすると、すべてのメンバーとゲストは自分のペルソナによって付与された資産のみを表示できるようになります。ペルソナポリシーがないユーザーは、Discovery内の資産へのアクセスを失います。",
+    "Restricts glossary visibility based on persona policies.": "ペルソナポリシーに基づいて用語集の可視性を制限します。",
+    "Disable persona switcher in Glossary": "用語集でペルソナスイッチャーを無効にする",
+    "Disabling this will remove persona-based glossary scoping. All members and guests will see all glossaries and terms regardless of persona policies.": "これを無効にすると、ペルソナに基づく用語集のスコーピングが削除されます。すべてのメンバーとゲストは、ペルソナポリシーに関係なく、すべての用語集と用語を見ることができます。"
 }

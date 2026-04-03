@@ -15927,5 +15927,20 @@
     "BigQuery support for Lakehouse is available through a custom setup. Please head to": "BigQuery-Unterstützung für Lakehouse ist über eine benutzerdefinierte Einrichtung verfügbar. Bitte gehen Sie zu",
     "the setup guide": "dem Einrichtungsleitfaden",
     "for the steps required.": "für die erforderlichen Schritte.",
-    "Databricks support for Lakehouse is available through a custom setup. Please head to": "Databricks-Unterstützung für Lakehouse ist über eine benutzerdefinierte Einrichtung verfügbar. Bitte gehen Sie zu"
+    "Databricks support for Lakehouse is available through a custom setup. Please head to": "Databricks-Unterstützung für Lakehouse ist über eine benutzerdefinierte Einrichtung verfügbar. Bitte gehen Sie zu",
+    "Define target column": "Definiere Zielspalte",
+    "Select the target table and column to compare with the source and verify that metric values match.": "Wählen Sie die Ziel Tabelle und Spalte aus, um sie mit der Quelle zu vergleichen und zu überprüfen, ob die Metrikwerte übereinstimmen.",
+    "Define target table": "Definiere Ziel Tabelle",
+    "Select the target table to compare with the source table and verify that row counts match.": "Wählen Sie die Ziel Tabelle aus, um sie mit der Quelltabelle zu vergleichen und zu überprüfen, ob die Zeilenanzahlen übereinstimmen.",
+    "The maximum allowed difference between source and target, as a percentage of the source.": "Der maximal zulässige Unterschied zwischen Quelle und Ziel, als Prozentsatz der Quelle.",
+    "Threshold %": "Schwellenwert %",
+    "Allowed difference percentage": "Zulässiger Differenzprozentsatz",
+    "Bypasses persona visibility rules for all members and guests.": "Umgeht die Sichtbarkeitsregeln für Personas für alle Mitglieder und Gäste.",
+    "Enable \"All assets\" in Discovery": "Aktivieren Sie \"Alle Assets\" in Discovery",
+    "Enabling this will allow all members and guests to view all assets in Discovery, bypassing persona visibility rules. This change affects every non-admin user on the tenant.": "Durch die Aktivierung dieser Option können alle Mitglieder und Gäste alle Assets in Discovery anzeigen, wodurch die Sichtbarkeitsregeln für Personas umgangen werden. Diese Änderung betrifft jeden Nicht-Admin-Benutzer im Mandanten.",
+    "Disable \"All assets\" in Discovery": "Deaktivieren Sie \"Alle Assets\" in Discovery",
+    "Disabling this will restrict all members and guests to only see assets granted by their personas. Users without persona policies will lose access to assets in Discovery.": "Durch die Deaktivierung dieser Option wird allen Mitgliedern und Gästen der Zugriff auf nur die Assets gewährt, die ihren Personas zugewiesen sind. Benutzer ohne Persona-Richtlinien verlieren den Zugriff auf Assets in Discovery.",
+    "Restricts glossary visibility based on persona policies.": "Beschränkt die Sichtbarkeit des Glossars basierend auf Persona-Richtlinien.",
+    "Disable persona switcher in Glossary": "Deaktivieren Sie den Persona-Wechsler im Glossar",
+    "Disabling this will remove persona-based glossary scoping. All members and guests will see all glossaries and terms regardless of persona policies.": "Durch die Deaktivierung dieser Option wird die persona-basierte Glossar-Einschränkung entfernt. Alle Mitglieder und Gäste sehen alle Glossare und Begriffe, unabhängig von den Persona-Richtlinien."
 }

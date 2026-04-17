@@ -16121,5 +16121,14 @@
     "Installed on {count} environment(s)": "Installé sur {count} environnement(s)",
     "Install on more environments": "Installer sur plus d'environnements",
     "Deployments": "Déploiements",
-    "Self-deployed runtimes": "Runtimes auto-déployés"
+    "Self-deployed runtimes": "Runtimes auto-déployés",
+    "{count} total views on Tableau": "{count} vues totales sur Tableau",
+    "Last 2 weeks": "Dernières 2 semaines",
+    "Last 1 month": "Dernier 1 mois",
+    "Last 12 months": "Dernières 12 mois",
+    "Total view count on this asset as reported by Tableau.": "Nombre total de vues sur cet actif tel que rapporté par Tableau.",
+    "total view | total views": "vue totale | vues totales",
+    "Could not load existing credential details": "Impossible de charger les détails des identifiants existants",
+    "View count breakdown": "Répartition du nombre de vues",
+    "You don't have permission to disable this rule.": "Vous n'avez pas la permission de désactiver cette règle."
 }

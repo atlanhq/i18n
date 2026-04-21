@@ -16121,5 +16121,14 @@
     "Installed on {count} environment(s)": "Instalado em {count} ambiente(s)",
     "Install on more environments": "Instalar em mais ambientes",
     "Deployments": "Implantações",
-    "Self-deployed runtimes": "Ambientes de execução auto-implantados"
+    "Self-deployed runtimes": "Ambientes de execução auto-implantados",
+    "{count} total views on Tableau": "{count} visualizações totais no Tableau",
+    "Last 2 weeks": "Últimas 2 semanas",
+    "Last 1 month": "Último 1 mês",
+    "Last 12 months": "Últimos 12 meses",
+    "Total view count on this asset as reported by Tableau.": "Contagem total de visualizações deste ativo conforme relatado pelo Tableau.",
+    "total view | total views": "visualização total | visualizações totais",
+    "Could not load existing credential details": "Não foi possível carregar os detalhes das credenciais existentes",
+    "View count breakdown": "Detalhamento da contagem de visualizações",
+    "You don't have permission to disable this rule.": "Você não tem permissão para desativar esta regra."
 }

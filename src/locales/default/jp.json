@@ -16121,5 +16121,14 @@
     "Installed on {count} environment(s)": "{count} 環境にインストール済み",
     "Install on more environments": "さらに多くの環境にインストール",
     "Deployments": "デプロイメント",
-    "Self-deployed runtimes": "自己展開されたランタイム"
+    "Self-deployed runtimes": "自己展開されたランタイム",
+    "{count} total views on Tableau": "{count} の合計ビュー数が Tableau にあります",
+    "Last 2 weeks": "過去 2 週間",
+    "Last 1 month": "過去 1 ヶ月",
+    "Last 12 months": "過去 12 ヶ月",
+    "Total view count on this asset as reported by Tableau.": "この資産の合計ビュー数は Tableau によって報告されています。",
+    "total view | total views": "合計ビュー | 合計ビュー数",
+    "Could not load existing credential details": "既存の資格情報の詳細を読み込むことができませんでした",
+    "View count breakdown": "ビュー数の内訳",
+    "You don't have permission to disable this rule.": "このルールを無効にする権限がありません。"
 }

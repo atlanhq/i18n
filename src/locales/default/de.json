@@ -16315,5 +16315,19 @@
     "Unable to load configuration": "Konfiguration konnte nicht geladen werden",
     "The configuration form for this workflow could not be loaded. The app service may be unavailable or the config map is missing.": "Das Konfigurationsformular für diesen Workflow konnte nicht geladen werden. Der Anwendungsdienst ist möglicherweise nicht verfügbar oder die Konfigurationskarte fehlt.",
     "Workflow schedule created": "Workflow-Zeitplan erstellt",
-    "Previous schedule was removed but the new one could not be created. Please try again.": "Der vorherige Zeitplan wurde entfernt, aber der neue konnte nicht erstellt werden. Bitte versuchen Sie es erneut."
+    "Previous schedule was removed but the new one could not be created. Please try again.": "Der vorherige Zeitplan wurde entfernt, aber der neue konnte nicht erstellt werden. Bitte versuchen Sie es erneut.",
+    "Failed to load nested columns": "Fehler beim Laden der verschachtelten Spalten",
+    "struct.truncation.showing": "struct.truncation.showing",
+    "Data Risk Summary": "Datenrisikoübersicht",
+    "Counts reflect items directly under this asset only — items under nested children are not included.": "Die Zählungen spiegeln nur die Elemente wider, die direkt unter diesem Asset liegen — Elemente unter verschachtelten Kindern sind nicht enthalten.",
+    "BigID": "BigID",
+    "Classifications": "Klassifikationen",
+    "Policy violations": "Richtlinienverstöße",
+    "Credits are consumed when agents enrich metadata. Each enrichment costs 10 credit per description, 50 credits per readme, and 100 credits per SQL intelligence.": "Credits werden verbraucht, wenn Agenten Metadaten anreichern. Jede Anreicherung kostet 10 Credits pro Beschreibung, 50 Credits pro README und 100 Credits pro SQL-Intelligenz.",
+    "Discovered by {0}": "Entdeckt von {0}",
+    "Discovered {time} by {provider}": "Entdeckt {time} von {provider}",
+    "Updating Terms...": "Begriffe werden aktualisiert...",
+    "Filter assets by classifications detected by a data summary provider (e.g., BigID).": "Filtere Assets nach Klassifikationen, die von einem Datenzusammenfassungsanbieter erkannt wurden (z.B. BigID).",
+    "Count of immediate child folders only — nested folders are not included.": "Anzahl der unmittelbaren Unterordner nur — verschachtelte Ordner sind nicht enthalten.",
+    "Count of objects in this folder only — objects in nested folders are not included.": "Anzahl der Objekte in diesem Ordner nur — Objekte in verschachtelten Ordnern sind nicht enthalten."
 }

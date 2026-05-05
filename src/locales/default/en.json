@@ -16315,5 +16315,19 @@
     "Unable to load configuration": "Unable to load configuration",
     "The configuration form for this workflow could not be loaded. The app service may be unavailable or the config map is missing.": "The configuration form for this workflow could not be loaded. The app service may be unavailable or the config map is missing.",
     "Workflow schedule created": "Workflow schedule created",
-    "Previous schedule was removed but the new one could not be created. Please try again.": "Previous schedule was removed but the new one could not be created. Please try again."
+    "Previous schedule was removed but the new one could not be created. Please try again.": "Previous schedule was removed but the new one could not be created. Please try again.",
+    "Failed to load nested columns": "Failed to load nested columns",
+    "struct.truncation.showing": "struct.truncation.showing",
+    "Data Risk Summary": "Data Risk Summary",
+    "Counts reflect items directly under this asset only — items under nested children are not included.": "Counts reflect items directly under this asset only — items under nested children are not included.",
+    "BigID": "BigID",
+    "Classifications": "Classifications",
+    "Policy violations": "Policy violations",
+    "Credits are consumed when agents enrich metadata. Each enrichment costs 10 credit per description, 50 credits per readme, and 100 credits per SQL intelligence.": "Credits are consumed when agents enrich metadata. Each enrichment costs 10 credit per description, 50 credits per readme, and 100 credits per SQL intelligence.",
+    "Discovered by {0}": "Discovered by {0}",
+    "Discovered {time} by {provider}": "Discovered {time} by {provider}",
+    "Updating Terms...": "Updating Terms...",
+    "Filter assets by classifications detected by a data summary provider (e.g., BigID).": "Filter assets by classifications detected by a data summary provider (e.g., BigID).",
+    "Count of immediate child folders only — nested folders are not included.": "Count of immediate child folders only — nested folders are not included.",
+    "Count of objects in this folder only — objects in nested folders are not included.": "Count of objects in this folder only — objects in nested folders are not included."
 }

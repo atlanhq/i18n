@@ -16315,5 +16315,19 @@
     "Unable to load configuration": "Não foi possível carregar a configuração",
     "The configuration form for this workflow could not be loaded. The app service may be unavailable or the config map is missing.": "O formulário de configuração para este fluxo de trabalho não pôde ser carregado. O serviço do aplicativo pode estar indisponível ou o mapa de configuração está faltando.",
     "Workflow schedule created": "Cronograma de fluxo de trabalho criado",
-    "Previous schedule was removed but the new one could not be created. Please try again.": "O cronograma anterior foi removido, mas o novo não pôde ser criado. Por favor, tente novamente."
+    "Previous schedule was removed but the new one could not be created. Please try again.": "O cronograma anterior foi removido, mas o novo não pôde ser criado. Por favor, tente novamente.",
+    "Failed to load nested columns": "Falha ao carregar colunas aninhadas",
+    "struct.truncation.showing": "struct.truncation.showing",
+    "Data Risk Summary": "Resumo de Risco de Dados",
+    "Counts reflect items directly under this asset only — items under nested children are not included.": "As contagens refletem itens diretamente sob este ativo apenas — itens sob filhos aninhados não estão incluídos.",
+    "BigID": "BigID",
+    "Classifications": "Classificações",
+    "Policy violations": "Violações de política",
+    "Credits are consumed when agents enrich metadata. Each enrichment costs 10 credit per description, 50 credits per readme, and 100 credits per SQL intelligence.": "Créditos são consumidos quando agentes enriquecem metadados. Cada enriquecimento custa 10 créditos por descrição, 50 créditos por readme, e 100 créditos por inteligência SQL.",
+    "Discovered by {0}": "Descoberto por {0}",
+    "Discovered {time} by {provider}": "Descoberto {time} por {provider}",
+    "Updating Terms...": "Atualizando Termos...",
+    "Filter assets by classifications detected by a data summary provider (e.g., BigID).": "Filtrar ativos por classificações detectadas por um provedor de resumo de dados (por exemplo, BigID).",
+    "Count of immediate child folders only — nested folders are not included.": "Contagem de pastas filhas imediatas apenas — pastas aninhadas não estão incluídas.",
+    "Count of objects in this folder only — objects in nested folders are not included.": "Contagem de objetos nesta pasta apenas — objetos em pastas aninhadas não estão incluídos."
 }

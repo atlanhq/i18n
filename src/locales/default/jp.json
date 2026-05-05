@@ -16315,5 +16315,19 @@
     "Unable to load configuration": "構成を読み込めませんでした",
     "The configuration form for this workflow could not be loaded. The app service may be unavailable or the config map is missing.": "このワークフローの構成フォームを読み込むことができませんでした。アプリサービスが利用できないか、構成マップが欠落している可能性があります。",
     "Workflow schedule created": "ワークフローのスケジュールが作成されました",
-    "Previous schedule was removed but the new one could not be created. Please try again.": "以前のスケジュールは削除されましたが、新しいスケジュールを作成できませんでした。もう一度お試しください。"
+    "Previous schedule was removed but the new one could not be created. Please try again.": "以前のスケジュールは削除されましたが、新しいスケジュールを作成できませんでした。もう一度お試しください。",
+    "Failed to load nested columns": "ネストされた列の読み込みに失敗しました",
+    "struct.truncation.showing": "struct.truncation.showing",
+    "Data Risk Summary": "データリスクの概要",
+    "Counts reflect items directly under this asset only — items under nested children are not included.": "カウントはこの資産の直下にあるアイテムのみを反映しています — ネストされた子の下にあるアイテムは含まれていません。",
+    "BigID": "BigID",
+    "Classifications": "分類",
+    "Policy violations": "ポリシー違反",
+    "Credits are consumed when agents enrich metadata. Each enrichment costs 10 credit per description, 50 credits per readme, and 100 credits per SQL intelligence.": "エージェントがメタデータを強化する際にクレジットが消費されます。各強化は説明ごとに10クレジット、READMEごとに50クレジット、SQLインテリジェンスごとに100クレジットかかります。",
+    "Discovered by {0}": "{0}によって発見されました",
+    "Discovered {time} by {provider}": "{provider}によって{time}に発見されました",
+    "Updating Terms...": "用語を更新中...",
+    "Filter assets by classifications detected by a data summary provider (e.g., BigID).": "データサマリープロバイダー（例：BigID）によって検出された分類で資産をフィルタリングします。",
+    "Count of immediate child folders only — nested folders are not included.": "直下の子フォルダのカウントのみ — ネストされたフォルダは含まれていません。",
+    "Count of objects in this folder only — objects in nested folders are not included.": "このフォルダ内のオブジェクトのカウントのみ — ネストされたフォルダ内のオブジェクトは含まれていません。"
 }

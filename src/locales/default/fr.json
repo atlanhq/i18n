@@ -16315,5 +16315,19 @@
     "Unable to load configuration": "Impossible de charger la configuration",
     "The configuration form for this workflow could not be loaded. The app service may be unavailable or the config map is missing.": "Le formulaire de configuration pour ce flux de travail n'a pas pu être chargé. Le service d'application peut être indisponible ou la carte de configuration est manquante.",
     "Workflow schedule created": "Calendrier de flux de travail créé",
-    "Previous schedule was removed but the new one could not be created. Please try again.": "Le calendrier précédent a été supprimé mais le nouveau n'a pas pu être créé. Veuillez réessayer."
+    "Previous schedule was removed but the new one could not be created. Please try again.": "Le calendrier précédent a été supprimé mais le nouveau n'a pas pu être créé. Veuillez réessayer.",
+    "Failed to load nested columns": "Échec du chargement des colonnes imbriquées",
+    "struct.truncation.showing": "struct.truncation.showing",
+    "Data Risk Summary": "Résumé des risques de données",
+    "Counts reflect items directly under this asset only — items under nested children are not included.": "Les comptes reflètent uniquement les éléments directement sous cet actif — les éléments sous les enfants imbriqués ne sont pas inclus.",
+    "BigID": "BigID",
+    "Classifications": "Classifications",
+    "Policy violations": "Violations de politique",
+    "Credits are consumed when agents enrich metadata. Each enrichment costs 10 credit per description, 50 credits per readme, and 100 credits per SQL intelligence.": "Les crédits sont consommés lorsque les agents enrichissent les métadonnées. Chaque enrichissement coûte 10 crédits par description, 50 crédits par readme, et 100 crédits par intelligence SQL.",
+    "Discovered by {0}": "Découvert par {0}",
+    "Discovered {time} by {provider}": "Découvert {time} par {provider}",
+    "Updating Terms...": "Mise à jour des termes...",
+    "Filter assets by classifications detected by a data summary provider (e.g., BigID).": "Filtrer les actifs par classifications détectées par un fournisseur de résumé de données (par exemple, BigID).",
+    "Count of immediate child folders only — nested folders are not included.": "Compte des dossiers enfants immédiats uniquement — les dossiers imbriqués ne sont pas inclus.",
+    "Count of objects in this folder only — objects in nested folders are not included.": "Compte des objets dans ce dossier uniquement — les objets dans les dossiers imbriqués ne sont pas inclus."
 }

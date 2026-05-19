@@ -6,8 +6,18 @@ import { glob } from 'glob'
 // Fix: Correct the environment variable name
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY
 const BASE_DIRECTORY = process.env.BASE_DIRECTORY
+const MODEL = process.env.MODEL || 'gpt-4o-mini'
 
 const OPENAI_API_URL = process.env.OPENAI_API_URL || 'https://api.openai.com/v1/chat/completions'
+
+const LANGUAGE_NAMES = {
+    ko: 'Korean',
+    jp: 'Japanese',
+    fr: 'French',
+    de: 'German',
+    es: 'Spanish',
+    pt: 'Portuguese (Brazil)',
+}
 
 const configuration = {
     apiKey: OPENAI_API_KEY,
@@ -50,10 +60,10 @@ async function translateTextBatch(texts, targetLanguage, inputPrompt) {
             },
             method: 'POST',
             body: JSON.stringify({
-                model: 'gpt-4o-mini',
+                model: MODEL,
                 messages: [{ role: 'user', content: prompt }],
-                temperature: 0.3, // Reduced from 1.0 to make responses more deterministic
-                response_format: { type: 'json_object' }, // Force JSON output
+                temperature: 0.3,
+                ...(process.env.DISABLE_JSON_FORMAT !== '1' && { response_format: { type: 'json_object' } }),
             }),
         })
 
@@ -460,7 +470,7 @@ async function synchronizeLocaleFiles(allLocales) {
 
             const translatedLabels = await translateLocalizationJson(
                 missingEnglishKeys,
-                language
+                LANGUAGE_NAMES[language] || language
             )
 
             // Update locale file with translations

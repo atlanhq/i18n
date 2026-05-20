@@ -50,6 +50,11 @@
             "types": "./dist/dprod/index.d.ts",
             "require": "./dist/dprod/index.js",
             "import": "./dist/dprod/index.mjs"
+        },
+        "./ko": {
+            "types": "./dist/ko/index.d.ts",
+            "require": "./dist/ko/index.js",
+            "import": "./dist/ko/index.mjs"
         }
     },
     "scripts": {

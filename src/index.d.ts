@@ -1,6 +1,6 @@
 import { createI18n } from 'vue-i18n'
 
-export type LocaleKey = 'de' | 'dprod' | 'en' | 'es' | 'fr' | 'jp' | 'pt'
+export type LocaleKey = 'de' | 'dprod' | 'en' | 'es' | 'fr' | 'jp' | 'ko' | 'pt'
 export interface Message {
   [key: string]: string | Message
 }
@@ -21,6 +21,7 @@ export declare const jp: Message
 export declare const pt: Message
 export declare const de: Message
 export declare const dprod: Message
+export declare const ko: Message
 
 // Messages object for vue-i18n initialization
 export declare const messages: {

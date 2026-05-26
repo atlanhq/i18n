@@ -11,7 +11,7 @@ npm install @atlanhq/i18n
 ## Usage
 
 ```typescript
-import i18n, { en, es, fr, jp, pt, de } from '@atlanhq/i18n';
+import i18n, { en, es, fr, jp, ko, pt, de } from '@atlanhq/i18n';
 
 // Use individual locales
 console.log(en.some_key);
@@ -28,6 +28,7 @@ console.log(i18n['en'].some_key);
 - Japanese - `jp`
 - Portuguese - `pt`
 - German - `de`
+- Korean - `ko`
 
 ## Repository Structure
 
@@ -42,7 +43,8 @@ console.log(i18n['en'].some_key);
 │           ├── fr.json   # French translations
 │           ├── jp.json   # Japanese translations
 │           ├── pt.json   # Portuguese translations
-│           └── de.json   # German translations
+│           ├── de.json   # German translations
+│           └── ko.json   # Korean translations
 ├── scripts/          # Utility scripts
 │   └── translationScript.mjs  # Translation automation script
 ├── .github/          # GitHub configurations

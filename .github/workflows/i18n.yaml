@@ -27,7 +27,7 @@ jobs:
 
         steps:
             - name: Checkout i18n repository
-              uses: actions/checkout@v4
+              uses: actions/checkout@v6
               with:
                 ref: ${{ env.BASE_BRANCH }}
 
@@ -53,12 +53,12 @@ jobs:
                   git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
             - name: Setup pnpm
-              uses: pnpm/action-setup@v4
+              uses: pnpm/action-setup@v6
               with:
-                  version: 9
+                  version: 11
 
             - name: Set up Node.js
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v6
               with:
                   node-version: 22
                   cache: 'pnpm'
@@ -70,7 +70,7 @@ jobs:
 
             # First checkout the frontend repo to scan for new strings
             - name: Checkout frontend repository
-              uses: actions/checkout@v4
+              uses: actions/checkout@v6
               with:
                 repository: ${{ env.FRONTEND_REPO }}
                 token: ${{ secrets.ORG_PAT_GITHUB }}

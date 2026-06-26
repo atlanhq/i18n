@@ -407,7 +407,7 @@ async function synchronizeLocaleFiles(allLocales) {
 
     console.log('Creating I18N report with vue-i18n-extract...')
     const report = await VueI18NExtract.createI18NReport({
-        vueFiles: `./frontend/src/**/*.?(js|vue|ts)`,
+        vueFiles: process.env.FRONTEND_GLOB || `./frontend/src/**/*.?(js|vue|ts)`,
         languageFiles: `${BASE_DIRECTORY}/src/locales/default/*.json`,
     })
 

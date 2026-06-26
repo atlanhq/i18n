@@ -20,6 +20,9 @@ env:
     BASE_BRANCH: 'main'
     FRONTEND_REPO: 'atlanhq/atlan-frontend'
     FRONTEND_BRANCH: ${{ github.event.client_payload.frontend-branch || github.event.inputs.frontend-branch || 'develop' }}
+    # Second prod line. PRs merged directly into facelift bypass develop, so its
+    # strings must be scanned separately or they never get extracted/translated.
+    FACELIFT_BRANCH: 'facelift'
 
 jobs:
     extract-and-translate:
@@ -31,18 +34,18 @@ jobs:
               with:
                 ref: ${{ env.BASE_BRANCH }}
 
-            # Now checkout the i18n repo
-            - name: Check if branch exists in i18n repo
-              id: check-branch-exists
-              uses: GuillaumeFalourd/branch-exists@v1.1
-              with:
-                  branch: ${{ env.BRANCH_NAME }}
-
+            # Guard against a stale automated branch left by a prior run. Uses
+            # git ls-remote against the already-authenticated origin instead of a
+            # third-party action whose nested checkout duplicated the Authorization
+            # header and broke fetch with HTTP 400.
             - name: Fail if branch already exists
-              if: ${{ steps.check-branch-exists.outputs.exists == 'true' && env.BRANCH_NAME == 'automated-i18n' }}
+              if: ${{ env.BRANCH_NAME == 'automated-i18n' }}
               run: |
-                echo "::error::The branch '${{ env.BRANCH_NAME }}' already exists. Please delete or merge the existing branch before running this workflow again."
-                exit 1
+                if git ls-remote --heads origin "$BRANCH_NAME" | grep -qE "refs/heads/${BRANCH_NAME}$"; then
+                  echo "::error::The branch '$BRANCH_NAME' already exists. Please delete or merge the existing branch before running this workflow again."
+                  exit 1
+                fi
+                echo "Branch '$BRANCH_NAME' does not exist. Proceeding."
 
             - name: Create & checkout branch in i18n repo
               run: git checkout $BASE_BRANCH && git checkout -b $BRANCH_NAME
@@ -68,20 +71,35 @@ jobs:
               env:
                 ORG_PAT_GITHUB: ${{ secrets.ORG_PAT_GITHUB }}
 
-            # First checkout the frontend repo to scan for new strings
+            # Checkout the primary frontend branch (develop, or the manually
+            # dispatched branch) to scan for new strings.
             - name: Checkout frontend repository
               uses: actions/checkout@v6
               with:
                 repository: ${{ env.FRONTEND_REPO }}
                 token: ${{ secrets.ORG_PAT_GITHUB }}
-                path: frontend
+                path: frontend/develop
                 ref: ${{ env.FRONTEND_BRANCH }}
+
+            # Also checkout the facelift prod branch so its strings get extracted.
+            # Skipped only when a specific non-default branch is dispatched manually.
+            - name: Checkout frontend facelift branch
+              if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.frontend-branch == 'develop' }}
+              uses: actions/checkout@v6
+              with:
+                repository: ${{ env.FRONTEND_REPO }}
+                token: ${{ secrets.ORG_PAT_GITHUB }}
+                path: frontend/facelift
+                ref: ${{ env.FACELIFT_BRANCH }}
 
             - name: Run translation script
               run: node scripts/translationScript.mjs
               env:
                   OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
                   BASE_DIRECTORY: ${{ github.workspace }}
+                  # Glob over every checked-out branch dir (frontend/develop,
+                  # frontend/facelift) so missing keys from both prod lines union.
+                  FRONTEND_GLOB: './frontend/*/src/**/*.?(js|vue|ts)'
 
             - name: Run prettier
               run: pnpm prettier --write src/locales/**/*.json

@@ -17337,7 +17337,7 @@
     "Confluence": "Confluence",
     "Base URL": "Base URL",
     "https://your-org.atlassian.net": "https://your-org.atlassian.net",
-    "you@company.com": "you@company.com",
+    "you@company.com": "you{'@'}company.com",
     "Atlassian API token": "Atlassian API token",
     "HiBob": "HiBob",
     "Service ID": "Service ID",

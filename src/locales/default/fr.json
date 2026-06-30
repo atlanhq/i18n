@@ -17554,5 +17554,18 @@
     "Automation report": "Rapport d'Automatisation",
     "This report measures the impact of automated enrichment, from suggestion acceptance to playbook runs. It surfaces top contributors, trends, and the manual work automation saves.": "Ce rapport mesure l'impact de l'enrichissement automatisé, de l'acceptation des suggestions aux exécutions de playbook. Il met en avant les principaux contributeurs, tendances et le travail manuel que l'automatisation permet d'économiser.",
     "{count} types": "{count} types",
-    "No types available": "Aucun type disponible"
+    "No types available": "Aucun type disponible",
+    "Asset ID": "ID de l'actif",
+    "Copy asset ID": "Copier l'ID de l'actif",
+    "Asset ID copied": "ID de l'actif copié",
+    "Atlan stores up to three description sources for an asset.": "Atlan stocke jusqu'à trois sources de description pour un actif.",
+    "Atlan displays the first available: user-added, then source-synced (e.g. Snowflake column COMMENTs, CSV imports), then AI-generated. This workflow removes user-added and AI-generated descriptions. If a source-synced description exists, it will remain visible after approval.": "Atlan affiche la première disponible : ajoutée par l'utilisateur, puis synchronisée par la source (par exemple, les COMMENTs de colonne Snowflake, les importations CSV), puis générée par l'IA. Ce flux de travail supprime les descriptions ajoutées par l'utilisateur et générées par l'IA. Si une description synchronisée par la source existe, elle restera visible après approbation.",
+    "Metric generation started": "Génération de métriques commencée",
+    "Review the plan. Agent generates metrics from the scoped assets.": "Examinez le plan. L'agent génère des métriques à partir des actifs définis.",
+    "Confirm your scope before generating.": "Confirmez votre portée avant de générer.",
+    "You don't have permission to view this asset. It may be restricted by your access policies, or it may no longer exist. If you believe you should have access, share the URL and below asset link with your workspace admin.": "Vous n'avez pas la permission de voir cet actif. Il peut être restreint par vos politiques d'accès, ou il peut ne plus exister. Si vous pensez que vous devriez avoir accès, partagez l'URL et le lien de l'actif ci-dessous avec votre administrateur de l'espace de travail.",
+    "Latest run": "Dernière exécution",
+    "PDF": "PDF",
+    "DOC": "DOC",
+    "Add files and documents": "Ajouter des fichiers et des documents"
 }

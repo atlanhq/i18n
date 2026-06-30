@@ -17554,5 +17554,18 @@
     "Automation report": "Automatisierungsbericht",
     "This report measures the impact of automated enrichment, from suggestion acceptance to playbook runs. It surfaces top contributors, trends, and the manual work automation saves.": "Dieser Bericht misst die Auswirkungen der automatisierten Anreicherung, von der Akzeptanz von Vorschlägen bis zu Playbook-Ausführungen. Er hebt die wichtigsten Mitwirkenden, Trends und die manuelle Arbeit hervor, die durch die Automatisierung eingespart wird.",
     "{count} types": "{count} Typen",
-    "No types available": "Keine Typen verfügbar"
+    "No types available": "Keine Typen verfügbar",
+    "Asset ID": "Asset-ID",
+    "Copy asset ID": "Asset-ID kopieren",
+    "Asset ID copied": "Asset-ID kopiert",
+    "Atlan stores up to three description sources for an asset.": "Atlan speichert bis zu drei Beschreibungsquellen für ein Asset.",
+    "Atlan displays the first available: user-added, then source-synced (e.g. Snowflake column COMMENTs, CSV imports), then AI-generated. This workflow removes user-added and AI-generated descriptions. If a source-synced description exists, it will remain visible after approval.": "Atlan zeigt die erste verfügbare an: vom Benutzer hinzugefügt, dann quellensynchronisiert (z.B. Snowflake-Spaltenkommentare, CSV-Importe), dann KI-generiert. Dieser Workflow entfernt vom Benutzer hinzugefügte und KI-generierte Beschreibungen. Wenn eine quellensynchronisierte Beschreibung vorhanden ist, bleibt sie nach der Genehmigung sichtbar.",
+    "Metric generation started": "Metrikgenerierung gestartet",
+    "Review the plan. Agent generates metrics from the scoped assets.": "Überprüfen Sie den Plan. Der Agent generiert Metriken aus den festgelegten Assets.",
+    "Confirm your scope before generating.": "Bestätigen Sie Ihren Umfang, bevor Sie generieren.",
+    "You don't have permission to view this asset. It may be restricted by your access policies, or it may no longer exist. If you believe you should have access, share the URL and below asset link with your workspace admin.": "Sie haben keine Berechtigung, dieses Asset anzuzeigen. Es kann durch Ihre Zugriffsrichtlinien eingeschränkt sein oder möglicherweise nicht mehr existieren. Wenn Sie glauben, dass Sie Zugriff haben sollten, teilen Sie die URL und den untenstehenden Asset-Link mit Ihrem Arbeitsbereichsadministrator.",
+    "Latest run": "Letzter Lauf",
+    "PDF": "PDF",
+    "DOC": "DOC",
+    "Add files and documents": "Dateien und Dokumente hinzufügen"
 }

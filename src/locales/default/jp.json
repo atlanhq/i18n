@@ -17554,5 +17554,18 @@
     "Automation report": "自動化レポート",
     "This report measures the impact of automated enrichment, from suggestion acceptance to playbook runs. It surfaces top contributors, trends, and the manual work automation saves.": "このレポートは、提案の受け入れからプレイブックの実行まで、自動化された強化の影響を測定します。主要な貢献者、トレンド、および自動化が節約する手動作業を浮き彫りにします。",
     "{count} types": "{count}タイプ",
-    "No types available": "利用可能なタイプはありません"
+    "No types available": "利用可能なタイプはありません",
+    "Asset ID": "アセットID",
+    "Copy asset ID": "アセットIDをコピー",
+    "Asset ID copied": "アセットIDがコピーされました",
+    "Atlan stores up to three description sources for an asset.": "Atlanはアセットのために最大3つの説明ソースを保存します。",
+    "Atlan displays the first available: user-added, then source-synced (e.g. Snowflake column COMMENTs, CSV imports), then AI-generated. This workflow removes user-added and AI-generated descriptions. If a source-synced description exists, it will remain visible after approval.": "Atlanは最初に利用可能なものを表示します: ユーザー追加、次にソース同期（例: Snowflake列COMMENT、CSVインポート）、次にAI生成。このワークフローはユーザー追加およびAI生成の説明を削除します。ソース同期の説明が存在する場合、承認後も表示されます。",
+    "Metric generation started": "メトリック生成が開始されました",
+    "Review the plan. Agent generates metrics from the scoped assets.": "計画をレビューしてください。エージェントはスコープされたアセットからメトリックを生成します。",
+    "Confirm your scope before generating.": "生成する前にスコープを確認してください。",
+    "You don't have permission to view this asset. It may be restricted by your access policies, or it may no longer exist. If you believe you should have access, share the URL and below asset link with your workspace admin.": "このアセットを表示する権限がありません。アクセスポリシーによって制限されているか、もはや存在しない可能性があります。アクセス権があると思われる場合は、URLと下記のアセットリンクをワークスペース管理者と共有してください。",
+    "Latest run": "最新の実行",
+    "PDF": "PDF",
+    "DOC": "DOC",
+    "Add files and documents": "ファイルとドキュメントを追加"
 }

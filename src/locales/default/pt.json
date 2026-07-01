@@ -17554,5 +17554,18 @@
     "Automation report": "Relatório de Automação",
     "This report measures the impact of automated enrichment, from suggestion acceptance to playbook runs. It surfaces top contributors, trends, and the manual work automation saves.": "Este relatório mede o impacto do enriquecimento automatizado, desde a aceitação de sugestões até a execução de playbooks. Ele destaca os principais contribuintes, tendências e o trabalho manual que a automação economiza.",
     "{count} types": "{count} tipos",
-    "No types available": "Sem tipos disponíveis"
+    "No types available": "Sem tipos disponíveis",
+    "Asset ID": "ID do ativo",
+    "Copy asset ID": "Copiar ID do ativo",
+    "Asset ID copied": "ID do ativo copiado",
+    "Atlan stores up to three description sources for an asset.": "Atlan armazena até três fontes de descrição para um ativo.",
+    "Atlan displays the first available: user-added, then source-synced (e.g. Snowflake column COMMENTs, CSV imports), then AI-generated. This workflow removes user-added and AI-generated descriptions. If a source-synced description exists, it will remain visible after approval.": "Atlan exibe a primeira disponível: adicionada pelo usuário, depois sincronizada por fonte (por exemplo, comentários de coluna do Snowflake, importações CSV), e então gerada por IA. Este fluxo de trabalho remove descrições adicionadas pelo usuário e geradas por IA. Se uma descrição sincronizada por fonte existir, ela permanecerá visível após a aprovação.",
+    "Metric generation started": "Geração de métricas iniciada",
+    "Review the plan. Agent generates metrics from the scoped assets.": "Revise o plano. O agente gera métricas a partir dos ativos escopados.",
+    "Confirm your scope before generating.": "Confirme seu escopo antes de gerar.",
+    "You don't have permission to view this asset. It may be restricted by your access policies, or it may no longer exist. If you believe you should have access, share the URL and below asset link with your workspace admin.": "Você não tem permissão para visualizar este ativo. Ele pode estar restrito por suas políticas de acesso, ou pode não existir mais. Se você acredita que deveria ter acesso, compartilhe a URL e o link do ativo abaixo com o administrador do seu espaço de trabalho.",
+    "Latest run": "Última execução",
+    "PDF": "PDF",
+    "DOC": "DOC",
+    "Add files and documents": "Adicionar arquivos e documentos"
 }

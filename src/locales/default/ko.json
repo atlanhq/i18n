@@ -17554,5 +17554,18 @@
     "Automation report": "자동화 보고서",
     "This report measures the impact of automated enrichment, from suggestion acceptance to playbook runs. It surfaces top contributors, trends, and the manual work automation saves.": "이 보고서는 제안 수락에서 플레이북 실행까지 자동화된 풍부화의 영향을 측정합니다. 주요 기여자, 트렌드 및 자동화가 절약하는 수동 작업을 드러냅니다.",
     "{count} types": "{count} 유형",
-    "No types available": "사용 가능한 유형이 없습니다."
+    "No types available": "사용 가능한 유형이 없습니다.",
+    "Asset ID": "자산 ID",
+    "Copy asset ID": "자산 ID 복사",
+    "Asset ID copied": "자산 ID 복사됨",
+    "Atlan stores up to three description sources for an asset.": "Atlan은 자산에 대해 최대 세 개의 설명 소스를 저장합니다.",
+    "Atlan displays the first available: user-added, then source-synced (e.g. Snowflake column COMMENTs, CSV imports), then AI-generated. This workflow removes user-added and AI-generated descriptions. If a source-synced description exists, it will remain visible after approval.": "Atlan은 사용자가 추가한 것, 그 다음 소스 동기화된 것(예: Snowflake 열 COMMENTs, CSV 가져오기), 마지막으로 AI 생성된 것을 포함하여 첫 번째로 사용 가능한 것을 표시합니다. 이 워크플로우는 사용자 추가 및 AI 생성 설명을 제거합니다. 소스 동기화된 설명이 존재하는 경우, 승인 후에도 계속 표시됩니다.",
+    "Metric generation started": "메트릭 생성 시작됨",
+    "Review the plan. Agent generates metrics from the scoped assets.": "계획을 검토하십시오. 에이전트는 범위가 지정된 자산에서 메트릭을 생성합니다.",
+    "Confirm your scope before generating.": "생성하기 전에 범위를 확인하십시오.",
+    "You don't have permission to view this asset. It may be restricted by your access policies, or it may no longer exist. If you believe you should have access, share the URL and below asset link with your workspace admin.": "이 자산을 볼 수 있는 권한이 없습니다. 액세스 정책에 의해 제한되었거나 더 이상 존재하지 않을 수 있습니다. 액세스할 수 있다고 생각되면, URL과 아래 자산 링크를 작업 공간 관리자와 공유하십시오.",
+    "Latest run": "최신 실행",
+    "PDF": "PDF",
+    "DOC": "DOC",
+    "Add files and documents": "파일 및 문서 추가"
 }

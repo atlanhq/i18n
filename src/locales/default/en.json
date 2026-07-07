@@ -17567,5 +17567,17 @@
     "Latest run": "Latest run",
     "PDF": "PDF",
     "DOC": "DOC",
-    "Add files and documents": "Add files and documents"
+    "Add files and documents": "Add files and documents",
+    "Generate again": "Generate again",
+    "Omni ID": "Omni ID",
+    "Omni Model": "Omni Model",
+    "Model Kind": "Model Kind",
+    "Omni Topic": "Omni Topic",
+    "Base View": "Base View",
+    "Omni Folder": "Omni Folder",
+    "Omni Document": "Omni Document",
+    "Document Type": "Document Type",
+    "Document type": "Document type",
+    "Whether the document is a dashboard or a workbook": "Whether the document is a dashboard or a workbook",
+    "Manage starred assets notifications": "Manage starred assets notifications"
 }

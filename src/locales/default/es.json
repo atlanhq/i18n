@@ -17567,5 +17567,17 @@
     "Latest run": "Última ejecución",
     "PDF": "PDF",
     "DOC": "DOC",
-    "Add files and documents": "Agregar archivos y documentos"
+    "Add files and documents": "Agregar archivos y documentos",
+    "Generate again": "Generar de nuevo",
+    "Omni ID": "Omni ID",
+    "Omni Model": "Modelo Omni",
+    "Model Kind": "Tipo de modelo",
+    "Omni Topic": "Tema Omni",
+    "Base View": "Vista base",
+    "Omni Folder": "Carpeta Omni",
+    "Omni Document": "Documento Omni",
+    "Document Type": "Tipo de documento",
+    "Document type": "tipo de documento",
+    "Whether the document is a dashboard or a workbook": "Si el documento es un panel o un libro de trabajo",
+    "Manage starred assets notifications": "Gestionar notificaciones de activos destacados"
 }

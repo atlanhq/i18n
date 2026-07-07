@@ -17567,5 +17567,17 @@
     "Latest run": "최신 실행",
     "PDF": "PDF",
     "DOC": "DOC",
-    "Add files and documents": "파일 및 문서 추가"
+    "Add files and documents": "파일 및 문서 추가",
+    "Generate again": "다시 생성",
+    "Omni ID": "옴니 ID",
+    "Omni Model": "옴니 모델",
+    "Model Kind": "모델 종류",
+    "Omni Topic": "옴니 주제",
+    "Base View": "기본 보기",
+    "Omni Folder": "옴니 폴더",
+    "Omni Document": "옴니 문서",
+    "Document Type": "문서 유형",
+    "Document type": "문서 유형",
+    "Whether the document is a dashboard or a workbook": "문서가 대시보드인지 워크북인지 여부",
+    "Manage starred assets notifications": "즐겨찾기 자산 알림 관리"
 }

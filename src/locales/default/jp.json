@@ -17567,5 +17567,17 @@
     "Latest run": "最新の実行",
     "PDF": "PDF",
     "DOC": "DOC",
-    "Add files and documents": "ファイルと文書を追加"
+    "Add files and documents": "ファイルと文書を追加",
+    "Generate again": "再生成",
+    "Omni ID": "オムニID",
+    "Omni Model": "オムニモデル",
+    "Model Kind": "モデルの種類",
+    "Omni Topic": "オムニトピック",
+    "Base View": "ベースビュー",
+    "Omni Folder": "オムニフォルダー",
+    "Omni Document": "オムニドキュメント",
+    "Document Type": "ドキュメントタイプ",
+    "Document type": "ドキュメントタイプ",
+    "Whether the document is a dashboard or a workbook": "ドキュメントがダッシュボードかワークブックか",
+    "Manage starred assets notifications": "スター付きアセット通知を管理する"
 }

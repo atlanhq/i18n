@@ -17567,5 +17567,17 @@
     "Latest run": "Letzter Lauf",
     "PDF": "PDF",
     "DOC": "DOC",
-    "Add files and documents": "Dateien und Dokumente hinzufügen"
+    "Add files and documents": "Dateien und Dokumente hinzufügen",
+    "Generate again": "Erneut generieren",
+    "Omni ID": "Omni-ID",
+    "Omni Model": "Omni-Modell",
+    "Model Kind": "Modelltyp",
+    "Omni Topic": "Omni-Thema",
+    "Base View": "Basisansicht",
+    "Omni Folder": "Omni-Ordner",
+    "Omni Document": "Omni-Dokument",
+    "Document Type": "Dokumenttyp",
+    "Document type": "Dokumenttyp",
+    "Whether the document is a dashboard or a workbook": "Ob das Dokument ein Dashboard oder ein Arbeitsbuch ist",
+    "Manage starred assets notifications": "Benachrichtigungen für markierte Assets verwalten"
 }

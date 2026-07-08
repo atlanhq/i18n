@@ -17579,5 +17579,17 @@
     "Document Type": "Type de document",
     "Document type": "Type de document",
     "Whether the document is a dashboard or a workbook": "Que le document soit un tableau de bord ou un classeur",
-    "Manage starred assets notifications": "Gérer les notifications des actifs favoris"
+    "Manage starred assets notifications": "Gérer les notifications des actifs favoris",
+    "This count excludes partial assets - entities created by lineage event parsing that aren't tied to a registered source connection. Check Reporting for the full asset total.": "Ce compte exclut les actifs partiels - entités créées par l'analyse des événements de lignée qui ne sont pas liées à une connexion source enregistrée. Consultez le Reporting pour le total complet des actifs.",
+    "All-time views count on the source (Tableau Cloud only)": "Nombre de vues de tous les temps sur la source (Tableau Cloud uniquement)",
+    "Filter by this asset": "Filtrer par cet actif",
+    "Only PDF, Markdown, HTML, YAML, JSON, TXT, and DOCX files are accepted": "Seules les fichiers PDF, Markdown, HTML, YAML, JSON, TXT et DOCX sont acceptés",
+    "Upload knowledge file": "Télécharger le fichier de connaissances",
+    "PDF, MD, HTML, YAML, JSON, TXT, DOCX · Max 50 MB per file": "PDF, MD, HTML, YAML, JSON, TXT, DOCX · Max 50 Mo par fichier",
+    "Accepted formats: PDF, Markdown, HTML, YAML, JSON, TXT": "Formats acceptés : PDF, Markdown, HTML, YAML, JSON, TXT",
+    "PDF, MD, HTML, YAML, JSON, TXT · Max 50 MB per file": "PDF, MD, HTML, YAML, JSON, TXT · Max 50 Mo par fichier",
+    "Set up a workflow to start monitoring its runs here": "Configurez un flux de travail pour commencer à surveiller ses exécutions ici",
+    "Set up a workflow to manage it here": "Configurez un flux de travail pour le gérer ici",
+    "It may have been deleted and is no longer available.": "Il se peut qu'il ait été supprimé et n'est plus disponible.",
+    "We couldn't load this workflow. Please try again.": "Nous n'avons pas pu charger ce flux de travail. Veuillez réessayer."
 }

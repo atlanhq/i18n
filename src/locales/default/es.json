@@ -17579,5 +17579,17 @@
     "Document Type": "Tipo de documento",
     "Document type": "tipo de documento",
     "Whether the document is a dashboard or a workbook": "Si el documento es un panel o un libro de trabajo",
-    "Manage starred assets notifications": "Gestionar notificaciones de activos destacados"
+    "Manage starred assets notifications": "Gestionar notificaciones de activos destacados",
+    "This count excludes partial assets - entities created by lineage event parsing that aren't tied to a registered source connection. Check Reporting for the full asset total.": "Este conteo excluye activos parciales - entidades creadas por el análisis de eventos de linaje que no están vinculadas a una conexión de fuente registrada. Consulta Informes para el total completo de activos.",
+    "All-time views count on the source (Tableau Cloud only)": "Conteo de vistas de todos los tiempos en la fuente (solo Tableau Cloud)",
+    "Filter by this asset": "Filtrar por este activo",
+    "Only PDF, Markdown, HTML, YAML, JSON, TXT, and DOCX files are accepted": "Solo se aceptan archivos PDF, Markdown, HTML, YAML, JSON, TXT y DOCX",
+    "Upload knowledge file": "Subir archivo de conocimiento",
+    "PDF, MD, HTML, YAML, JSON, TXT, DOCX · Max 50 MB per file": "PDF, MD, HTML, YAML, JSON, TXT, DOCX · Máx 50 MB por archivo",
+    "Accepted formats: PDF, Markdown, HTML, YAML, JSON, TXT": "Formatos aceptados: PDF, Markdown, HTML, YAML, JSON, TXT",
+    "PDF, MD, HTML, YAML, JSON, TXT · Max 50 MB per file": "PDF, MD, HTML, YAML, JSON, TXT · Máx 50 MB por archivo",
+    "Set up a workflow to start monitoring its runs here": "Configura un flujo de trabajo para comenzar a monitorear sus ejecuciones aquí",
+    "Set up a workflow to manage it here": "Configura un flujo de trabajo para gestionarlo aquí",
+    "It may have been deleted and is no longer available.": "Puede que haya sido eliminado y ya no esté disponible.",
+    "We couldn't load this workflow. Please try again.": "No pudimos cargar este flujo de trabajo. Por favor, inténtalo de nuevo."
 }

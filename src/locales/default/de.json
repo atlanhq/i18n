@@ -17579,5 +17579,17 @@
     "Document Type": "Dokumenttyp",
     "Document type": "Dokumenttyp",
     "Whether the document is a dashboard or a workbook": "Ob das Dokument ein Dashboard oder ein Arbeitsbuch ist",
-    "Manage starred assets notifications": "Benachrichtigungen für markierte Assets verwalten"
+    "Manage starred assets notifications": "Benachrichtigungen für markierte Assets verwalten",
+    "This count excludes partial assets - entities created by lineage event parsing that aren't tied to a registered source connection. Check Reporting for the full asset total.": "Diese Anzahl schließt teilweise Assets aus - Entitäten, die durch das Parsen von Ereignislinien erstellt wurden und nicht mit einer registrierten Quellverbindung verbunden sind. Überprüfen Sie die Berichterstattung für die gesamte Asset-Anzahl.",
+    "All-time views count on the source (Tableau Cloud only)": "Gesamtanzahl der Ansichten auf der Quelle (nur Tableau Cloud)",
+    "Filter by this asset": "Nach diesem Asset filtern",
+    "Only PDF, Markdown, HTML, YAML, JSON, TXT, and DOCX files are accepted": "Nur PDF-, Markdown-, HTML-, YAML-, JSON-, TXT- und DOCX-Dateien werden akzeptiert",
+    "Upload knowledge file": "Wissen Datei hochladen",
+    "PDF, MD, HTML, YAML, JSON, TXT, DOCX · Max 50 MB per file": "PDF, MD, HTML, YAML, JSON, TXT, DOCX · Max 50 MB pro Datei",
+    "Accepted formats: PDF, Markdown, HTML, YAML, JSON, TXT": "Akzeptierte Formate: PDF, Markdown, HTML, YAML, JSON, TXT",
+    "PDF, MD, HTML, YAML, JSON, TXT · Max 50 MB per file": "PDF, MD, HTML, YAML, JSON, TXT · Max 50 MB pro Datei",
+    "Set up a workflow to start monitoring its runs here": "Richten Sie einen Workflow ein, um seine Ausführungen hier zu überwachen",
+    "Set up a workflow to manage it here": "Richten Sie einen Workflow ein, um ihn hier zu verwalten",
+    "It may have been deleted and is no longer available.": "Es könnte gelöscht worden sein und ist nicht mehr verfügbar.",
+    "We couldn't load this workflow. Please try again.": "Wir konnten diesen Workflow nicht laden. Bitte versuchen Sie es erneut."
 }

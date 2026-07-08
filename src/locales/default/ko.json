@@ -17579,5 +17579,17 @@
     "Document Type": "문서 유형",
     "Document type": "문서 유형",
     "Whether the document is a dashboard or a workbook": "문서가 대시보드인지 워크북인지 여부",
-    "Manage starred assets notifications": "즐겨찾기 자산 알림 관리"
+    "Manage starred assets notifications": "즐겨찾기 자산 알림 관리",
+    "This count excludes partial assets - entities created by lineage event parsing that aren't tied to a registered source connection. Check Reporting for the full asset total.": "이 카운트는 등록된 소스 연결에 연결되지 않은 계보 이벤트 파싱으로 생성된 부분 자산을 제외합니다. 전체 자산 총계를 보려면 보고서를 확인하세요.",
+    "All-time views count on the source (Tableau Cloud only)": "소스의 전체 조회 수(테이블로 클라우드 전용)",
+    "Filter by this asset": "이 자산으로 필터링",
+    "Only PDF, Markdown, HTML, YAML, JSON, TXT, and DOCX files are accepted": "PDF, Markdown, HTML, YAML, JSON, TXT 및 DOCX 파일만 허용됩니다.",
+    "Upload knowledge file": "지식 파일 업로드",
+    "PDF, MD, HTML, YAML, JSON, TXT, DOCX · Max 50 MB per file": "PDF, MD, HTML, YAML, JSON, TXT, DOCX · 파일당 최대 50MB",
+    "Accepted formats: PDF, Markdown, HTML, YAML, JSON, TXT": "허용되는 형식: PDF, Markdown, HTML, YAML, JSON, TXT",
+    "PDF, MD, HTML, YAML, JSON, TXT · Max 50 MB per file": "PDF, MD, HTML, YAML, JSON, TXT · 파일당 최대 50MB",
+    "Set up a workflow to start monitoring its runs here": "여기에서 실행 모니터링을 시작하기 위해 워크플로를 설정하세요.",
+    "Set up a workflow to manage it here": "여기에서 워크플로를 관리하기 위해 설정하세요.",
+    "It may have been deleted and is no longer available.": "삭제되었을 수 있으며 더 이상 사용할 수 없습니다.",
+    "We couldn't load this workflow. Please try again.": "이 워크플로를 로드할 수 없습니다. 다시 시도해 주세요."
 }

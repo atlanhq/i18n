@@ -17579,5 +17579,17 @@
     "Document Type": "ドキュメントタイプ",
     "Document type": "ドキュメントタイプ",
     "Whether the document is a dashboard or a workbook": "ドキュメントがダッシュボードかワークブックか",
-    "Manage starred assets notifications": "スター付きアセット通知を管理する"
+    "Manage starred assets notifications": "スター付きアセット通知を管理する",
+    "This count excludes partial assets - entities created by lineage event parsing that aren't tied to a registered source connection. Check Reporting for the full asset total.": "このカウントには、登録されたソース接続に関連付けられていない系譜イベント解析によって作成された部分資産は含まれていません。完全な資産合計はレポートを確認してください。",
+    "All-time views count on the source (Tableau Cloud only)": "ソース上の全期間ビュー数（Tableau Cloudのみ）",
+    "Filter by this asset": "この資産でフィルタリング",
+    "Only PDF, Markdown, HTML, YAML, JSON, TXT, and DOCX files are accepted": "PDF、Markdown、HTML、YAML、JSON、TXT、およびDOCXファイルのみが受け入れられます",
+    "Upload knowledge file": "知識ファイルをアップロード",
+    "PDF, MD, HTML, YAML, JSON, TXT, DOCX · Max 50 MB per file": "PDF、MD、HTML、YAML、JSON、TXT、DOCX · ファイルごとに最大50 MB",
+    "Accepted formats: PDF, Markdown, HTML, YAML, JSON, TXT": "受け入れられる形式：PDF、Markdown、HTML、YAML、JSON、TXT",
+    "PDF, MD, HTML, YAML, JSON, TXT · Max 50 MB per file": "PDF、MD、HTML、YAML、JSON、TXT · ファイルごとに最大50 MB",
+    "Set up a workflow to start monitoring its runs here": "ここで実行を監視するためのワークフローを設定",
+    "Set up a workflow to manage it here": "ここで管理するためのワークフローを設定",
+    "It may have been deleted and is no longer available.": "削除された可能性があり、もはや利用できません。",
+    "We couldn't load this workflow. Please try again.": "このワークフローを読み込めませんでした。もう一度お試しください。"
 }

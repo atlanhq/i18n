@@ -17579,5 +17579,17 @@
     "Document Type": "Tipo de Documento",
     "Document type": "tipo de documento",
     "Whether the document is a dashboard or a workbook": "Se o documento é um painel ou uma pasta de trabalho",
-    "Manage starred assets notifications": "Gerenciar notificações de ativos favoritos"
+    "Manage starred assets notifications": "Gerenciar notificações de ativos favoritos",
+    "This count excludes partial assets - entities created by lineage event parsing that aren't tied to a registered source connection. Check Reporting for the full asset total.": "Essa contagem exclui ativos parciais - entidades criadas pela análise de eventos de linhagem que não estão vinculadas a uma conexão de fonte registrada. Verifique Relatórios para o total completo de ativos.",
+    "All-time views count on the source (Tableau Cloud only)": "Contagem de visualizações de todos os tempos na fonte (apenas Tableau Cloud)",
+    "Filter by this asset": "Filtrar por este ativo",
+    "Only PDF, Markdown, HTML, YAML, JSON, TXT, and DOCX files are accepted": "Apenas arquivos PDF, Markdown, HTML, YAML, JSON, TXT e DOCX são aceitos",
+    "Upload knowledge file": "Carregar arquivo de conhecimento",
+    "PDF, MD, HTML, YAML, JSON, TXT, DOCX · Max 50 MB per file": "PDF, MD, HTML, YAML, JSON, TXT, DOCX · Máx 50 MB por arquivo",
+    "Accepted formats: PDF, Markdown, HTML, YAML, JSON, TXT": "Formatos aceitos: PDF, Markdown, HTML, YAML, JSON, TXT",
+    "PDF, MD, HTML, YAML, JSON, TXT · Max 50 MB per file": "PDF, MD, HTML, YAML, JSON, TXT · Máx 50 MB por arquivo",
+    "Set up a workflow to start monitoring its runs here": "Configure um fluxo de trabalho para começar a monitorar suas execuções aqui",
+    "Set up a workflow to manage it here": "Configure um fluxo de trabalho para gerenciá-lo aqui",
+    "It may have been deleted and is no longer available.": "Pode ter sido excluído e não está mais disponível.",
+    "We couldn't load this workflow. Please try again.": "Não conseguimos carregar este fluxo de trabalho. Por favor, tente novamente."
 }

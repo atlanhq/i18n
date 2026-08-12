@@ -18007,5 +18007,17 @@
     "Looks like your personas don’t have permission to view this product! If you need access, please contact your admin.": "あなたのペルソナにはこの製品を表示する権限がないようです！アクセスが必要な場合は、管理者に連絡してください。",
     "Looks like your current persona doesn’t have access to it.": "現在のペルソナにはアクセス権がないようです。",
     "Looks like {name} persona doesn’t have access to this domain.": "{name}のペルソナにはこのドメインへのアクセス権がないようです。",
-    "Looks like {name} persona doesn’t have access to this product.": "{name}のペルソナにはこの製品へのアクセス権がないようです。"
+    "Looks like {name} persona doesn’t have access to this product.": "{name}のペルソナにはこの製品へのアクセス権がないようです。",
+    "Generating report…": "レポートを生成中…",
+    "Failed to download artifact": "アーティファクトのダウンロードに失敗しました",
+    "Failed to load HTML ({error})": "HTMLの読み込みに失敗しました ({error})",
+    "No image URL provided": "画像URLが提供されていません",
+    "this artifact": "このアーティファクト",
+    "Please update \"{title}\": {feedback}": "「{title}」を更新してください: {feedback}",
+    "Loading the credentials form": "認証情報フォームを読み込んでいます",
+    "Something went wrong, please try again": "何かがうまくいきませんでした。もう一度お試しください",
+    "Add contract": "契約を追加",
+    "Click to scroll down to custom metadata widget": "カスタムメタデータウィジェットにスクロールダウンするにはクリックしてください",
+    "AI-generated readme for this {typeLabel} based on its location, metadata and query history.": "その場所、メタデータ、クエリ履歴に基づいて生成されたこの{typeLabel}のAI生成のREADME。",
+    "Already logged out": "すでにログアウトしています"
 }

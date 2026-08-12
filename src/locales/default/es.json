@@ -18007,5 +18007,17 @@
     "Looks like your personas don’t have permission to view this product! If you need access, please contact your admin.": "Parece que tus personas no tienen permiso para ver este producto! Si necesitas acceso, por favor contacta a tu administrador.",
     "Looks like your current persona doesn’t have access to it.": "Parece que tu persona actual no tiene acceso a esto.",
     "Looks like {name} persona doesn’t have access to this domain.": "Parece que la persona de {name} no tiene acceso a este dominio.",
-    "Looks like {name} persona doesn’t have access to this product.": "Parece que la persona de {name} no tiene acceso a este producto."
+    "Looks like {name} persona doesn’t have access to this product.": "Parece que la persona de {name} no tiene acceso a este producto.",
+    "Generating report…": "Generando informe…",
+    "Failed to download artifact": "Error al descargar el artefacto",
+    "Failed to load HTML ({error})": "Error al cargar HTML ({error})",
+    "No image URL provided": "No se proporcionó URL de imagen",
+    "this artifact": "este artefacto",
+    "Please update \"{title}\": {feedback}": "Por favor actualiza \"{title}\": {feedback}",
+    "Loading the credentials form": "Cargando el formulario de credenciales",
+    "Something went wrong, please try again": "Algo salió mal, por favor intenta de nuevo",
+    "Add contract": "Agregar contrato",
+    "Click to scroll down to custom metadata widget": "Haz clic para desplazarte hacia abajo al widget de metadatos personalizados",
+    "AI-generated readme for this {typeLabel} based on its location, metadata and query history.": "README generado por IA para este {typeLabel} basado en su ubicación, metadatos e historial de consultas.",
+    "Already logged out": "Ya has cerrado sesión"
 }

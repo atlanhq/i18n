@@ -18007,5 +18007,17 @@
     "Looks like your personas don’t have permission to view this product! If you need access, please contact your admin.": "Il semble que vos personas n'aient pas la permission de voir ce produit ! Si vous avez besoin d'accès, veuillez contacter votre administrateur.",
     "Looks like your current persona doesn’t have access to it.": "Il semble que votre persona actuelle n'ait pas accès à cela.",
     "Looks like {name} persona doesn’t have access to this domain.": "Il semble que la persona de {name} n'ait pas accès à ce domaine.",
-    "Looks like {name} persona doesn’t have access to this product.": "Il semble que la persona de {name} n'ait pas accès à ce produit."
+    "Looks like {name} persona doesn’t have access to this product.": "Il semble que la persona de {name} n'ait pas accès à ce produit.",
+    "Generating report…": "Génération du rapport…",
+    "Failed to download artifact": "Échec du téléchargement de l'artéfact",
+    "Failed to load HTML ({error})": "Échec du chargement du HTML ({error})",
+    "No image URL provided": "Aucune URL d'image fournie",
+    "this artifact": "cet artéfact",
+    "Please update \"{title}\": {feedback}": "Veuillez mettre à jour \"{title}\": {feedback}",
+    "Loading the credentials form": "Chargement du formulaire d'identification",
+    "Something went wrong, please try again": "Une erreur s'est produite, veuillez réessayer",
+    "Add contract": "Ajouter un contrat",
+    "Click to scroll down to custom metadata widget": "Cliquez pour faire défiler vers le bas jusqu'au widget de métadonnées personnalisées",
+    "AI-generated readme for this {typeLabel} based on its location, metadata and query history.": "README généré par l'IA pour ce {typeLabel} basé sur son emplacement, ses métadonnées et son historique de requêtes.",
+    "Already logged out": "Déjà déconnecté"
 }

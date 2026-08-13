@@ -18007,5 +18007,17 @@
     "Looks like your personas don’t have permission to view this product! If you need access, please contact your admin.": "Looks like your personas don’t have permission to view this product! If you need access, please contact your admin.",
     "Looks like your current persona doesn’t have access to it.": "Looks like your current persona doesn’t have access to it.",
     "Looks like {name} persona doesn’t have access to this domain.": "Looks like {name} persona doesn’t have access to this domain.",
-    "Looks like {name} persona doesn’t have access to this product.": "Looks like {name} persona doesn’t have access to this product."
+    "Looks like {name} persona doesn’t have access to this product.": "Looks like {name} persona doesn’t have access to this product.",
+    "Generating report…": "Generating report…",
+    "Failed to download artifact": "Failed to download artifact",
+    "Failed to load HTML ({error})": "Failed to load HTML ({error})",
+    "No image URL provided": "No image URL provided",
+    "this artifact": "this artifact",
+    "Please update \"{title}\": {feedback}": "Please update \"{title}\": {feedback}",
+    "Loading the credentials form": "Loading the credentials form",
+    "Something went wrong, please try again": "Something went wrong, please try again",
+    "Add contract": "Add contract",
+    "Click to scroll down to custom metadata widget": "Click to scroll down to custom metadata widget",
+    "AI-generated readme for this {typeLabel} based on its location, metadata and query history.": "AI-generated readme for this {typeLabel} based on its location, metadata and query history.",
+    "Already logged out": "Already logged out"
 }

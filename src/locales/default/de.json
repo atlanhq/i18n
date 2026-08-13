@@ -18007,5 +18007,17 @@
     "Looks like your personas don’t have permission to view this product! If you need access, please contact your admin.": "Es sieht so aus, als hätten Ihre Personas keine Berechtigung, dieses Produkt anzuzeigen! Wenn Sie Zugriff benötigen, wenden Sie sich bitte an Ihren Administrator.",
     "Looks like your current persona doesn’t have access to it.": "Es sieht so aus, als hätte Ihre aktuelle Persona keinen Zugriff darauf.",
     "Looks like {name} persona doesn’t have access to this domain.": "Es sieht so aus, als hätte die Persona von {name} keinen Zugriff auf diese Domain.",
-    "Looks like {name} persona doesn’t have access to this product.": "Es sieht so aus, als hätte die Persona von {name} keinen Zugriff auf dieses Produkt."
+    "Looks like {name} persona doesn’t have access to this product.": "Es sieht so aus, als hätte die Persona von {name} keinen Zugriff auf dieses Produkt.",
+    "Generating report…": "Bericht wird generiert…",
+    "Failed to download artifact": "Herunterladen des Artefakts fehlgeschlagen",
+    "Failed to load HTML ({error})": "HTML konnte nicht geladen werden ({error})",
+    "No image URL provided": "Es wurde keine Bild-URL angegeben",
+    "this artifact": "dieses Artefakt",
+    "Please update \"{title}\": {feedback}": "Bitte aktualisieren Sie \"{title}\": {feedback}",
+    "Loading the credentials form": "Lade das Anmeldeformular",
+    "Something went wrong, please try again": "Etwas ist schiefgelaufen, bitte versuchen Sie es erneut",
+    "Add contract": "Vertrag hinzufügen",
+    "Click to scroll down to custom metadata widget": "Klicken Sie, um nach unten zum benutzerdefinierten Metadaten-Widget zu scrollen",
+    "AI-generated readme for this {typeLabel} based on its location, metadata and query history.": "KI-generierte README für dieses {typeLabel} basierend auf seinem Standort, Metadaten und Abfrageverlauf.",
+    "Already logged out": "Bereits abgemeldet"
 }

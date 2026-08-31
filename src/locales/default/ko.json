@@ -8196,6 +8196,8 @@
     "Request to publish": "게시 요청",
     "Request to revoke data access in the source": "소스에서 데이터 접근 취소 요청",
     "Request type": "요청 유형",
+    "Metadata change": "메타데이터 변경",
+    "Filter by request type": "요청 유형별 필터",
     "Request update": "업데이트 요청",
     "Request was approved": "요청이 승인되었습니다",
     "Request was archived after it was withdrawn by requestor": "요청자가 철회한 후 요청이 보관되었습니다",

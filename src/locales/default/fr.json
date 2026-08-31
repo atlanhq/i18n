@@ -8196,6 +8196,8 @@
     "Request to publish": "Demander à publier",
     "Request to revoke data access in the source": "Demande de révocation de l'accès aux données dans la source",
     "Request type": "Type de demande",
+    "Metadata change": "Modification de métadonnées",
+    "Filter by request type": "Filtrer par type de demande",
     "Request update": "Demander une mise à jour",
     "Request was approved": "La demande a été approuvée",
     "Request was archived after it was withdrawn by requestor": "La demande a été archivée après avoir été retirée par le demandeur",

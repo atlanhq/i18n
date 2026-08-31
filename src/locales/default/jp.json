@@ -8196,6 +8196,8 @@
     "Request to publish": "公開リクエスト",
     "Request to revoke data access in the source": "ソースでデータアクセスを取り消すリクエスト",
     "Request type": "リクエストタイプ",
+    "Metadata change": "メタデータの変更",
+    "Filter by request type": "リクエストタイプでフィルター",
     "Request update": "更新をリクエスト",
     "Request was approved": "リクエストが承認されました",
     "Request was archived after it was withdrawn by requestor": "リクエストはリクエスターによって撤回された後にアーカイブされました",

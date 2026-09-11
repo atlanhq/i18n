@@ -18628,5 +18628,10 @@
     "No skills match your search.": "Aucune compétence ne correspond à votre recherche.",
     "No workspace skills yet": "Pas encore de compétences d'espace de travail",
     "Skills teach the agent how your team does things. This workspace hasn’t published any yet, and the template’s built-in skills still apply.": "Les compétences enseignent à l'agent comment votre équipe fait les choses. Cet espace de travail n'a pas encore publié de compétences, et les compétences intégrées du modèle s'appliquent toujours.",
-    "Confirm selection": "Confirmer la sélection"
+    "Confirm selection": "Confirmer la sélection",
+    "Genie Agent": "Agent Genie",
+    "Databricks Genie Agent": "Agent Genie Databricks",
+    "Parent path": "Chemin parent",
+    "Space ID": "ID d'espace",
+    "Atlan AI is taking longer than expected. Check back in a moment.": "Atlan AI prend plus de temps que prévu. Revenez dans un moment."
 }

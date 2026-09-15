@@ -18628,5 +18628,10 @@
     "No skills match your search.": "검색과 일치하는 기술이 없습니다.",
     "No workspace skills yet": "아직 작업 공간 기술이 없습니다",
     "Skills teach the agent how your team does things. This workspace hasn’t published any yet, and the template’s built-in skills still apply.": "기술은 에이전트에게 팀이 작업을 수행하는 방법을 가르칩니다. 이 작업 공간에서는 아직 게시된 기술이 없으며, 템플릿의 내장 기술이 여전히 적용됩니다.",
-    "Confirm selection": "선택 확인"
+    "Confirm selection": "선택 확인",
+    "Genie Agent": "지니 에이전트",
+    "Databricks Genie Agent": "다타브릭스 지니 에이전트",
+    "Parent path": "상위 경로",
+    "Space ID": "공간 ID",
+    "Atlan AI is taking longer than expected. Check back in a moment.": "아틀란 AI가 예상보다 오래 걸리고 있습니다. 잠시 후 다시 확인하세요."
 }

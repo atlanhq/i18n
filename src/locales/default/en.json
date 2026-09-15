@@ -18628,5 +18628,10 @@
     "No skills match your search.": "No skills match your search.",
     "No workspace skills yet": "No workspace skills yet",
     "Skills teach the agent how your team does things. This workspace hasn’t published any yet, and the template’s built-in skills still apply.": "Skills teach the agent how your team does things. This workspace hasn’t published any yet, and the template’s built-in skills still apply.",
-    "Confirm selection": "Confirm selection"
+    "Confirm selection": "Confirm selection",
+    "Genie Agent": "Genie Agent",
+    "Databricks Genie Agent": "Databricks Genie Agent",
+    "Parent path": "Parent path",
+    "Space ID": "Space ID",
+    "Atlan AI is taking longer than expected. Check back in a moment.": "Atlan AI is taking longer than expected. Check back in a moment."
 }

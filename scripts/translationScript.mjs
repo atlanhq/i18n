@@ -392,6 +392,38 @@ async function synchronizeLocaleFiles(allLocales) {
     return keysNeedingTranslation
 }
 
+// atlan-frontend's asset-type builders no longer translate as they are built.
+// They record a message with tr('Key') and the component resolves it at render,
+// because translating during the catalogue build cost 304,625 t() calls on a
+// cold load. vue-i18n-extract only matches $t/t/tc, so every key written that
+// way is invisible to it and would never reach en.json. Rewrite tr( back to t(
+// in the throwaway frontend checkout before extracting; the workflow deletes
+// that directory immediately afterwards, so nothing is written back upstream.
+const IMPORTS_TR =
+    /import\s*\{[^}]*\btr\b[^}]*\}\s*from\s*['"]~\/utils\/i18n\/messageKey['"]/
+
+async function unwrapDeferredMessages(globPattern) {
+    const files = await glob(globPattern)
+    let rewritten = 0
+
+    for (const file of files) {
+        const source = fs.readFileSync(file, 'utf8')
+        // Scoped to files that import the helper: `tr` is also a ProseMirror
+        // transaction binding in the frontend editor code.
+        if (!IMPORTS_TR.test(source)) continue
+
+        const unwrapped = source.replace(/\btr\(/g, 't(')
+        if (unwrapped === source) continue
+
+        fs.writeFileSync(file, unwrapped)
+        rewritten += 1
+    }
+
+    console.log(
+        `Rewrote tr( to t( in ${rewritten} file(s) so deferred keys are extracted`
+    )
+}
+
 ; (async function () {
     console.log('Starting translation script...')
 
@@ -405,9 +437,14 @@ async function synchronizeLocaleFiles(allLocales) {
         process.exit(1)
     }
 
+    const frontendGlob =
+        process.env.FRONTEND_GLOB || `./frontend/src/**/*.?(js|vue|ts)`
+
+    await unwrapDeferredMessages(frontendGlob)
+
     console.log('Creating I18N report with vue-i18n-extract...')
     const report = await VueI18NExtract.createI18NReport({
-        vueFiles: process.env.FRONTEND_GLOB || `./frontend/src/**/*.?(js|vue|ts)`,
+        vueFiles: frontendGlob,
         languageFiles: `${BASE_DIRECTORY}/src/locales/default/*.json`,
     })
 

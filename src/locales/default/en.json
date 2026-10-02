@@ -18876,5 +18876,16 @@
     "README outline": "README outline",
     "On this page": "On this page",
     "Open README outline": "Open README outline",
-    "Got a PowerPoint? Export it as a PDF before uploading — we read the slides, including charts and diagrams.": "Got a PowerPoint? Export it as a PDF before uploading — we read the slides, including charts and diagrams."
+    "Got a PowerPoint? Export it as a PDF before uploading — we read the slides, including charts and diagrams.": "Got a PowerPoint? Export it as a PDF before uploading — we read the slides, including charts and diagrams.",
+    "Enabling propagation applies the tag to all downstream assets connected to this source asset via lineage.": "Enabling propagation applies the tag to all downstream assets connected to this source asset via lineage.",
+    "unused credits have expired and no longer count toward your available credits. To get more credits,": "unused credits have expired and no longer count toward your available credits. To get more credits,",
+    "Allocated": "Allocated",
+    "Used": "Used",
+    "Over limit": "Over limit",
+    "Analysis Field": "Analysis Field",
+    "QuickSight Analysis Field": "QuickSight Analysis Field",
+    "Analysis qualified name": "Analysis qualified name",
+    "Excel stopped responding, so the import was stopped. Close and reopen the panel, then try again.": "Excel stopped responding, so the import was stopped. Close and reopen the panel, then try again.",
+    "Skipped assets": "Skipped assets",
+    "could not be written; see the console for details": "could not be written; see the console for details"
 }

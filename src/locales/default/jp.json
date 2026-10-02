@@ -18876,5 +18876,16 @@
     "README outline": "READMEアウトライン",
     "On this page": "このページで",
     "Open README outline": "READMEアウトラインを開く",
-    "Got a PowerPoint? Export it as a PDF before uploading — we read the slides, including charts and diagrams.": "PowerPointがありますか？アップロードする前にPDFとしてエクスポートしてください — スライド、チャート、図を読み取ります。"
+    "Got a PowerPoint? Export it as a PDF before uploading — we read the slides, including charts and diagrams.": "PowerPointがありますか？アップロードする前にPDFとしてエクスポートしてください — スライド、チャート、図を読み取ります。",
+    "Enabling propagation applies the tag to all downstream assets connected to this source asset via lineage.": "伝播を有効にすると、このソース資産に接続されているすべての下流資産にタグが適用されます。",
+    "unused credits have expired and no longer count toward your available credits. To get more credits,": "未使用のクレジットは期限切れになり、利用可能なクレジットにはカウントされません。クレジットを増やすには、",
+    "Allocated": "割り当て済み",
+    "Used": "使用済み",
+    "Over limit": "制限を超えました",
+    "Analysis Field": "分析フィールド",
+    "QuickSight Analysis Field": "QuickSight分析フィールド",
+    "Analysis qualified name": "分析の完全修飾名",
+    "Excel stopped responding, so the import was stopped. Close and reopen the panel, then try again.": "Excelが応答を停止したため、インポートが停止されました。パネルを閉じて再度開き、もう一度試してください。",
+    "Skipped assets": "スキップされた資産",
+    "could not be written; see the console for details": "書き込むことができませんでした; 詳細についてはコンソールを参照してください"
 }

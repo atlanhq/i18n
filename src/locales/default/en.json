@@ -18887,5 +18887,6 @@
     "Analysis qualified name": "Analysis qualified name",
     "Excel stopped responding, so the import was stopped. Close and reopen the panel, then try again.": "Excel stopped responding, so the import was stopped. Close and reopen the panel, then try again.",
     "Skipped assets": "Skipped assets",
-    "could not be written; see the console for details": "could not be written; see the console for details"
+    "could not be written; see the console for details": "could not be written; see the console for details",
+    "Matches only assets where this attribute is set directly. Columns and other child assets aren't covered unless it's assigned to them too.": "Matches only assets where this attribute is set directly. Columns and other child assets aren't covered unless it's assigned to them too."
 }

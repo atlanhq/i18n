@@ -18876,5 +18876,16 @@
     "README outline": "Esboço do README",
     "On this page": "Nesta página",
     "Open README outline": "Abrir esboço do README",
-    "Got a PowerPoint? Export it as a PDF before uploading — we read the slides, including charts and diagrams.": "Tem um PowerPoint? Exporte-o como PDF antes de fazer o upload — lemos os slides, incluindo gráficos e diagramas."
+    "Got a PowerPoint? Export it as a PDF before uploading — we read the slides, including charts and diagrams.": "Tem um PowerPoint? Exporte-o como PDF antes de fazer o upload — lemos os slides, incluindo gráficos e diagramas.",
+    "Enabling propagation applies the tag to all downstream assets connected to this source asset via lineage.": "Habilitar a propagação aplica a tag a todos os ativos a jusante conectados a este ativo de origem por meio de linhagem.",
+    "unused credits have expired and no longer count toward your available credits. To get more credits,": "créditos não utilizados expiraram e não contam mais para seus créditos disponíveis. Para obter mais créditos,",
+    "Allocated": "Alocado",
+    "Used": "Usado",
+    "Over limit": "Acima do limite",
+    "Analysis Field": "Campo de Análise",
+    "QuickSight Analysis Field": "Campo de Análise QuickSight",
+    "Analysis qualified name": "nome qualificado da análise",
+    "Excel stopped responding, so the import was stopped. Close and reopen the panel, then try again.": "O Excel parou de responder, então a importação foi interrompida. Feche e reabra o painel, então tente novamente.",
+    "Skipped assets": "Ativos ignorados",
+    "could not be written; see the console for details": "não pôde ser escrito; veja o console para detalhes"
 }

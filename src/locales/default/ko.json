@@ -18876,5 +18876,16 @@
     "README outline": "README 개요",
     "On this page": "이 페이지에서",
     "Open README outline": "README 개요 열기",
-    "Got a PowerPoint? Export it as a PDF before uploading — we read the slides, including charts and diagrams.": "PowerPoint가 있습니까? 업로드하기 전에 PDF로 내보내세요 — 슬라이드, 차트 및 다이어그램을 읽습니다."
+    "Got a PowerPoint? Export it as a PDF before uploading — we read the slides, including charts and diagrams.": "PowerPoint가 있습니까? 업로드하기 전에 PDF로 내보내세요 — 슬라이드, 차트 및 다이어그램을 읽습니다.",
+    "Enabling propagation applies the tag to all downstream assets connected to this source asset via lineage.": "전파를 활성화하면 이 소스 자산과 연결된 모든 하류 자산에 태그가 적용됩니다.",
+    "unused credits have expired and no longer count toward your available credits. To get more credits,": "사용하지 않은 크레딧이 만료되어 더 이상 사용 가능한 크레딧에 포함되지 않습니다. 더 많은 크레딧을 얻으려면",
+    "Allocated": "할당됨",
+    "Used": "사용됨",
+    "Over limit": "한도 초과",
+    "Analysis Field": "분석 필드",
+    "QuickSight Analysis Field": "QuickSight 분석 필드",
+    "Analysis qualified name": "분석 자격 이름",
+    "Excel stopped responding, so the import was stopped. Close and reopen the panel, then try again.": "Excel이 응답하지 않아서 가져오기가 중단되었습니다. 패널을 닫았다가 다시 열고 다시 시도하십시오.",
+    "Skipped assets": "건너뛴 자산",
+    "could not be written; see the console for details": "작성할 수 없었습니다. 자세한 내용은 콘솔을 참조하십시오."
 }
